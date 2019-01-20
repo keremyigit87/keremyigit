@@ -84,8 +84,11 @@ body {
 
 @font-face {
     font-family: 'keremi';
-    src: url('/keremyigit/fonts/keremi.eot');
-    src: url('/keremyigit/fonts/keremi.eot') format('embedded-opentype'), url('/keremyigit/fonts/keremi.woff') format('woff'), url('/keremyigit/fonts/keremi.ttf') format('truetype'), url('/keremyigit/fonts/keremi.svg') format('svg');
+    src: url('{{ site.baseurl }}/fonts/keremi.eot');
+    src: url('{{ site.baseurl }}/fonts/keremi.eot') format('embedded-opentype'),
+    url('{{ site.baseurl }}/fonts/keremi.woff') format('woff'),
+    url('{{ site.baseurl }}/fonts/keremi.ttf') format('truetype'),
+    url('{{ site.baseurl }}/fonts/keremi.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }
