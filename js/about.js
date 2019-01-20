@@ -8,3 +8,8 @@ var topDark = document.getElementsByClassName('top-dark')[0],
     main = document.getElementsByClassName('main')[0],
     pageTransition = document.getElementsByClassName('page-transition-wrapper')[0],
     socialIcons = document.getElementsByClassName('social-icons')[0];
+
+$(window).load(function() {
+    $('.ky-loading').fadeOut(1000);
+    $('.main-section').fadeIn(1000);
+});
