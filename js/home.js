@@ -46,16 +46,16 @@ $(window).load(function() {
             topDark.classList.add('animationY');
             bottomDark.classList.add('animationY');
             setTimeout(function() {
-                mySignAnimation.play();
+                navigationHome.classList.add('animationNav');
                 setTimeout(function() {
-                    mySign.classList.add('animationSign');
+                    socialIcons.classList.add('animationX');
                     setTimeout(function() {
-                        navigationHome.classList.add('animationNav');
+                        mySignAnimation.play();
                         setTimeout(function() {
-                            socialIcons.classList.add('animationX');
-                        }, 1200);
+                            mySign.classList.add('animationSign');
+                        }, 1500);
                     }, 500);
-                }, 1500);
+                }, 1200);
             }, 800);
         }, 1600);
     }, 1000);
@@ -81,7 +81,7 @@ navAboutTrigger.addEventListener('click', function() {
             pageTransition.classList.add('page-transition');
             setTimeout(function() {
                 window.location.pathname = '/about';
-            }, 2500);
+            }, 2000);
         }, 500);
     }, 200);
 

@@ -13,3 +13,11 @@ $(window).load(function() {
     $('.ky-loading').fadeOut(1000);
     $('.main-section').fadeIn(1000);
 });
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 150) {
+        $('header').addClass("sticky");
+    } else {
+        $('header').removeClass("sticky");
+    }
+});
