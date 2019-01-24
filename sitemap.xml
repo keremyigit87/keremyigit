@@ -4,12 +4,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9/">
 {% for post in site.posts %}
-    {% include sitemap.xml entry=post %}
+{% if post %}
+    {% include sitemap-entry.xml entry=post %}
+    {% endif %}
 {% endfor %}
 
 {% for page in site.pages %}
  {% if page.layout %}
-    {% include sitemap.xml entry=page %}
+    {% include sitemap-entry.xml entry=page %}
     {% endif %}
 {% endfor %}
 </urlset>
