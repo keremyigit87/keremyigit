@@ -764,9 +764,10 @@ section#home {
         Page Transition
    =========================== */
 
-.page-transition-wrapper {
+.page-transition-wrapper,
+.page-transition-wrapper-white {
     overflow: hidden;
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 100vh;
     z-index: 100;
@@ -797,17 +798,17 @@ section#home {
 }
 
 .pt-1 {
-    background: #fff;
+    background: #000;
     transition-duration: 1s;
 }
 
 .pt-2 {
-    background: #000;
+    background: #fff;
     transition-duration: 1.5s;
 }
 
 .pt-3 {
-    background: #fff;
+    background: #000;
     transition-duration: 1.8s;
 }
 
@@ -903,6 +904,15 @@ section#home {
     width: 66.66%;
 }
 
+@media(max-width:1200px) {
+    .col-6 {
+        width: 100%;
+    }
+    .container {
+        max-width: 768px;
+    }
+}
+
 .container * {
     box-sizing: border-box;
 }
@@ -923,4 +933,8 @@ section#home {
 .space-100 {
     display: block;
     height: 100px;
+}
+
+.black-bg {
+    background: #000;
 }

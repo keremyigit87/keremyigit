@@ -3,6 +3,7 @@ var topDark = document.getElementsByClassName('top-dark')[0],
     mySign = document.getElementById('mysign'),
     body = document.getElementsByTagName('body')[0],
     navAboutTrigger = document.getElementById('nav-about'),
+    navCaseTrigger = document.getElementById('nav-case-studies'),
     navigationHome = document.getElementsByTagName('nav')[0],
     mytitle = document.querySelector('.flyin'),
     main = document.getElementsByClassName('main')[0],
@@ -81,7 +82,32 @@ navAboutTrigger.addEventListener('click', function() {
             pageTransition.classList.add('page-transition');
             setTimeout(function() {
                 window.location.pathname = '/about';
-            }, 2000);
+            }, 1800);
+        }, 500);
+    }, 200);
+
+});
+
+
+
+/* ========================
+       Open Case Studies
+   ======================== */
+
+navCaseTrigger.addEventListener('click', function() {
+    navigationHome.classList.remove('animationNav');
+    socialIcons.classList.remove('animationX');
+    setTimeout(function() {
+        topDark.classList.remove('animationY');
+        bottomDark.classList.remove('animationY');
+        $(function() {
+            $('.flyin').addClass('hidden');
+        });
+        setTimeout(function() {
+            pageTransition.classList.add('page-transition');
+            setTimeout(function() {
+                window.location.pathname = '/case-studies';
+            }, 1800);
         }, 500);
     }, 200);
 

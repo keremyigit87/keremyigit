@@ -7,4 +7,9 @@ var topDark = document.getElementsByClassName('top-dark')[0],
     mytitle = document.querySelector('.flyin'),
     main = document.getElementsByClassName('main')[0],
     pageTransition = document.getElementsByClassName('page-transition-wrapper')[0],
-    socialIcons = document.getElementsByClassName('social-icons')[0];
+    socialIcons = document.getElementsByClassName('social-icons')[0],
+    navTrigger = document.getElementsByClassName('ky-menu')[0],
+    body = document.getElementsByTagName('body')[0];
+
+
+window.history.pushState({}, location.pathname);
