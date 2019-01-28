@@ -10,6 +10,11 @@ footer {
     z-index: 20;
 }
 
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 .transition3s {
     transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     -webkit-transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -691,6 +696,28 @@ section#home {
     position: absolute;
 }
 
+.openingloading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100;
+}
+
+#firstPreloading {
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+}
+
 
 /* ========================
         Main Page Animation
@@ -710,6 +737,25 @@ section#home {
     -moz-transition: transform .6s;
     -ms-transition: transform .6s;
     -o-transition: transform .6s;
+}
+
+.mysign {
+    width: 250px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .6s;
+    -webkit-transition: all .6s;
+    -moz-transition: all .6s;
+    -o-transition: all .6s;
+}
+
+.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.mysign img {
+    width: 100%;
 }
 
 #mysign.animationSign {
@@ -937,4 +983,51 @@ section#home {
 
 .black-bg {
     background: #000;
+}
+
+@media(max-width:768px) {
+    .flyin {
+        width: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
+    }
+    .flyin li {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .mysign {
+        width: 180px;
+    }
+    .social-icons li {
+        display: table-cell;
+    }
+    .social-icons {
+        left: 50%;
+        transform: translate(-50%, -200%);
+        -webkit-transform: translate(-50%, -200%);
+        -moz-transform: translate(-50%, -200%);
+        -ms-transform: translate(-50%, -200%);
+        -o-transform: translate(-50%, -200%);
+    }
+    .social-icons.animationX {
+        transform: translate(-50%, 0);
+        -webkit-transform: translate(-50%, 0);
+        -moz-transform: translate(-50%, 0);
+        -ms-transform: translate(-50%, 0);
+        -o-transform: translate(-50%, 0);
+    }
+    .mysign.center-middle {
+        top: 70%;
+    }
+    .col-4,
+    .col-8 {
+        width: 100%;
+    }
+    .space-100 {
+        height: 50px;
+    }
 }

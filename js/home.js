@@ -8,58 +8,75 @@ var topDark = document.getElementsByClassName('top-dark')[0],
     mytitle = document.querySelector('.flyin'),
     main = document.getElementsByClassName('main')[0],
     pageTransition = document.getElementsByClassName('page-transition-wrapper')[0],
-    socialIcons = document.getElementsByClassName('social-icons')[0];
+    socialIcons = document.getElementsByClassName('social-icons')[0],
+    blackSign = document.getElementsByClassName('mysign')[0];
 /* ========================
         Lottie Animation
    ======================== */
-var kyPreloader = document.getElementById('preloader');
-var preload = {
-    container: kyPreloader,
-    renderer: 'svg',
-    loop: true,
-    autoplay: true,
-    path: './js/loader.json',
-};
-var anim;
+// var kyPreloader = document.getElementById('preloader');
+// var preload = {
+//     container: kyPreloader,
+//     renderer: 'svg',
+//     loop: true,
+//     autoplay: true,
+//     path: './js/loader.json',
+// };
+// var anim;
 
-anim = bodymovin.loadAnimation(preload);
+// anim = bodymovin.loadAnimation(preload);
 
-var mysign = document.getElementById('mysign');
-var mySignAnimation = lottie.loadAnimation({
-    container: mysign,
+// var mysign = document.getElementById('mysign');
+// var mySignAnimation = lottie.loadAnimation({
+//     container: mysign,
+//     renderer: 'svg',
+//     loop: false,
+//     autoplay: false,
+//     path: './js/data.json'
+// });
+// mySignAnimation.setSpeed(4);
+
+
+var firstPreloader = document.getElementById('firstPreloading');
+var firstPreload = {
+    container: firstPreloader,
     renderer: 'svg',
     loop: false,
-    autoplay: false,
-    path: './js/data.json'
-});
+    autoplay: true,
+    path: './js/sign-black.json',
+};
+var animLoad;
 
-mySignAnimation.setSpeed(4);
+animLoad = bodymovin.loadAnimation(firstPreload).setSpeed(2);
+
+
+
 
 $(window).load(function() {
-    $('.ky-loading').fadeOut(1000);
-    $('.main-section').fadeIn(1000);
     setTimeout(function() {
-        $(function() {
-            $('.flyin').removeClass('hidden');
-        });
+        $('.openingloading').fadeOut(1000);
+        $('.main-section').fadeIn(1000);
         setTimeout(function() {
-            body.classList.add('startAnim');
-            topDark.classList.add('animationY');
-            bottomDark.classList.add('animationY');
+            $(function() {
+                $('.flyin').removeClass('hidden');
+            });
             setTimeout(function() {
-                navigationHome.classList.add('animationNav');
+                body.classList.add('startAnim');
+                topDark.classList.add('animationY');
+                bottomDark.classList.add('animationY');
                 setTimeout(function() {
-                    socialIcons.classList.add('animationX');
+                    navigationHome.classList.add('animationNav');
                     setTimeout(function() {
-                        mySignAnimation.play();
+                        socialIcons.classList.add('animationX');
                         setTimeout(function() {
-                            mySign.classList.add('animationSign');
-                        }, 1500);
-                    }, 500);
-                }, 1200);
-            }, 800);
-        }, 1600);
-    }, 1000);
+                            // mySignAnimation.play();
+                            blackSign.classList.add('visible');
+                        }, 500);
+                    }, 1200);
+                }, 800);
+            }, 1600);
+        }, 1000);
+    }, 2500);
+
 });
 
 
@@ -94,21 +111,21 @@ navAboutTrigger.addEventListener('click', function() {
        Open Case Studies
    ======================== */
 
-navCaseTrigger.addEventListener('click', function() {
-    navigationHome.classList.remove('animationNav');
-    socialIcons.classList.remove('animationX');
-    setTimeout(function() {
-        topDark.classList.remove('animationY');
-        bottomDark.classList.remove('animationY');
-        $(function() {
-            $('.flyin').addClass('hidden');
-        });
-        setTimeout(function() {
-            pageTransition.classList.add('page-transition');
-            setTimeout(function() {
-                window.location.pathname = '/case-studies';
-            }, 1800);
-        }, 500);
-    }, 200);
+// navCaseTrigger.addEventListener('click', function() {
+//     navigationHome.classList.remove('animationNav');
+//     socialIcons.classList.remove('animationX');
+//     setTimeout(function() {
+//         topDark.classList.remove('animationY');
+//         bottomDark.classList.remove('animationY');
+//         $(function() {
+//             $('.flyin').addClass('hidden');
+//         });
+//         setTimeout(function() {
+//             pageTransition.classList.add('page-transition');
+//             setTimeout(function() {
+//                 window.location.pathname = '/case-studies';
+//             }, 1800);
+//         }, 500);
+//     }, 200);
 
-});
+// });

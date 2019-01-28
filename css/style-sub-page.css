@@ -1079,6 +1079,47 @@ body.process .ky-menu {
     -o-transition: all .6s;
 }
 
+.about .my-header-scroll-logo {
+    left: 120px;
+}
+
+.about .my-header-scroll-logo img.k-logo-white,
+.about .my-header-scroll-logo img.k-logo-black {
+    opacity: 0;
+    visibility: hidden
+}
+
+.about .my-header-scroll-logo img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.about .sticky .my-header-scroll-logo img.k-logo-white {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.about .sticky .my-header-scroll-logo img.k-logo-black {
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.about .my-header-logo #nav-to-home {
+    transition: all .3s;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s;
+    -o-transition: all .3s;
+}
+
+.about .sticky .my-header-logo #nav-to-home {
+    opacity: 0;
+    visibility: hidden;
+}
+
 body.process.fp-viewing-uxRoadmap .my-header-scroll-logo {
     opacity: 0;
     visibility: hidden;
@@ -1104,4 +1145,56 @@ body.process.fp-viewing-uxRoadmap .my-header-scroll-logo {
 .fp-viewing-development .my-header-scroll-logo .k-logo-white {
     visibility: hidden;
     opacity: 0;
+}
+
+@media(max-width:996px) {
+    .my-header-logo {
+        display: none;
+    }
+    .nav-two {
+        display: none;
+    }
+    .ky-menu {
+        visibility: visible;
+        opacity: 1;
+    }
+    .about .my-header-scroll-logo img.k-logo-black {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@media(max-width:768px) {
+    .about .my-header-scroll-logo {
+        left: 40px;
+    }
+    .ky-menu {
+        right: 40px;
+    }
+    .skill-h2:after {
+        content: none;
+    }
+    .footer-social {
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .footer-social ul {
+        display: inline-block;
+    }
+    #footer-two {
+        text-align: center;
+    }
+    .footer-mail {
+        margin-left: 0;
+        margin-right: 20px;
+    }
+    .footer-phone {
+        margin-left: 20px;
+    }
+    .btn-arrow {
+        margin-left: 0;
+    }
 }

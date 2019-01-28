@@ -14,9 +14,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/style-sub-page.css" /> {% include analytics.html %}
 </head>
 
-<body>
-
-    {%- include header-two.html -%}
+<body class="about">{%- include header-two.html -%}
     <div class="space-120"></div>
     <div class="space-120"></div>
     <main>
@@ -94,5 +92,12 @@
 </body>
 <script src="{{ site.baseurl }}/js/jquery-2.1.4.js"></script>
 <script src="{{ site.baseurl }}/js/about.js"></script>
+<script>
+    var uri = window.location.toString();
+    if (uri.indexOf("#") > 0) {
+        var clean_uri = uri.substring(0, uri.indexOf("#"));
+        window.history.replaceState({}, document.title, clean_uri);
+    }
+</script>
 
 </html>
