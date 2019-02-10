@@ -23,7 +23,6 @@ function openHome() {
             TweenMax.to('#home .my-brand-wrapper h1', 1, {
                 opacity: 1
             });
-
             TweenMax.to(".vline1", 1, {
                 height: "100vh",
                 delay: 1.9,
@@ -122,6 +121,7 @@ function openHome() {
 //         opacity: 1,
 //         visibility: 'visible',
 //     })
+
 
 // });
 // homeToAbout.addEventListener('click', function() {
