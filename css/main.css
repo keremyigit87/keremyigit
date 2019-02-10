@@ -614,3 +614,10 @@ section#about .about-container {
 #home .my-main-nav ul li a.more-coming:before {
     content: none;
 }
+
+@media(max-width:768px) {
+    #home .my-main-nav ul li a.more-coming {
+        margin-bottom: -10px;
+        height: 150px;
+    }
+}
