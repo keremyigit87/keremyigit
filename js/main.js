@@ -1,33 +1,134 @@
-function autoType(elementClass, typingSpeed) {
-    var thhis = $(elementClass);
-    thhis.css({
-        "position": "relative",
-        "display": "inline-block"
+var scene = document.getElementsByClassName('js-scene')[0];
+var parallax = new Parallax(scene);
+
+var scene2 = document.getElementsByClassName('js-scene2')[0];
+var parallax2 = new Parallax(scene2);
+
+var body = document.getElementsByTagName('body')[0];
+var homeToAbout = document.getElementById('homeToAbout');
+
+openHome();
+
+function openHome() {
+    TweenMax.to('.my-hello', 1, {
+        y: -100,
     });
-    thhis.prepend('<div class="cursor" style="right: initial; left:0;"></div>');
-    thhis = thhis.find(".text-js");
-    var text = thhis.text().trim().split('');
-    var amntOfChars = text.length;
-    var newString = "";
-    thhis.text("|");
     setTimeout(function() {
-        thhis.css("opacity", 1);
-        thhis.prev().removeAttr("style");
-        thhis.text("");
-        for (var i = 0; i < amntOfChars; i++) {
-            (function(i, char) {
-                setTimeout(function() {
-                    newString += char;
-                    thhis.text(newString);
-                }, i * typingSpeed);
-            })(i + 1, text[i]);
-        }
-    }, 1500);
+        body.classList.add('openHome');
+        clearTimeout();
+        setTimeout(function() {
+            TweenMax.from('#home .my-brand-wrapper h1', 1, {
+                y: 100,
+            });
+            TweenMax.to('#home .my-brand-wrapper h1', 1, {
+                opacity: 1
+            });
+            TweenMax.to(".vline1", 1, {
+                height: "100vh",
+                delay: 1.9,
+            });
+            TweenMax.from(".dribbble-icon", 1, {
+                y: 100,
+                delay: 1.9,
+            });
+            TweenMax.to(".dribbble-icon", 1, {
+                opacity: 1,
+                delay: 1.9,
+            });
+            TweenMax.to(".vline2", 1, {
+                height: "100vh",
+                delay: 2.2,
+            });
+
+            TweenMax.from(".behance-icon", 1, {
+                y: 100,
+                delay: 2.2,
+            });
+            TweenMax.to(".behance-icon", 1, {
+                opacity: 1,
+                delay: 2.2,
+            });
+            TweenMax.to(".vline3", 1, {
+                height: "100vh",
+                delay: 2.5,
+            });
+
+            TweenMax.from(".linkedin-icon", 1, {
+                y: 100,
+                delay: 2.5,
+            });
+            TweenMax.to(".linkedin-icon", 1, {
+                opacity: 1,
+                delay: 2.5,
+            });
+            TweenMax.to(".vline4", 1, {
+                height: "100vh",
+                delay: 2.8,
+            });
+            TweenMax.from(".twitter-icon", 1, {
+                y: 100,
+                delay: 2.8,
+            });
+            TweenMax.to(".twitter-icon", 1, {
+                opacity: 1,
+                delay: 2.8,
+            });
+            TweenMax.to(".vline5", 1, {
+                height: "100vh",
+                delay: 3.1,
+            });
+            TweenMax.from(".facebook-icon", 1, {
+                y: 100,
+                delay: 3.1,
+            });
+            TweenMax.to(".facebook-icon", 1, {
+                opacity: 1,
+                delay: 3.1,
+            });
+
+
+        }, 500);
+    }, 500);
 }
 
-$(document).ready(function() {
-    // Now to start autoTyping just call the autoType function with the 
-    // class of outer div
-    // The second paramter is the speed between each letter is typed.   
-    autoType(".type-js", 200);
-});
+
+// homeToAbout.addEventListener('click', function() {
+//     TweenMax.to('#about', .5, {
+//         left: "0px",
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.my-main-nav', .5, {
+//         x: 800,
+//         opacity: 0,
+//         transformOrigin: "right",
+//         ease: Power2.easeInOut
+//     }, 0)
+//     TweenMax.to('#home .my-brand-wrapper', .5, {
+//         color: "#000",
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.my-hello', 1, {
+//         opacity: 0,
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.my-brand-wrapper h1', .5, {
+//         scale: .6,
+//         y: -40,
+//         transformOrigin: "left",
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.hamburger-menu .menu', 1, {
+//         opacity: 1,
+//         visibility: 'visible',
+//     })
+
+
+// });
+// homeToAbout.addEventListener('click', function() {
+//     if (t2.reversed()) {
+//         t2.play();
+//     } else {
+//         t2.reverse();
+//     }
+//     // window.location.pathname = '/about';
+// });
