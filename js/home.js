@@ -1,131 +1,134 @@
-var topDark = document.getElementsByClassName('top-dark')[0],
-    bottomDark = document.getElementsByClassName('bottom-dark')[0],
-    mySign = document.getElementById('mysign'),
-    body = document.getElementsByTagName('body')[0],
-    navAboutTrigger = document.getElementById('nav-about'),
-    navCaseTrigger = document.getElementById('nav-case-studies'),
-    navigationHome = document.getElementsByTagName('nav')[0],
-    mytitle = document.querySelector('.flyin'),
-    main = document.getElementsByClassName('main')[0],
-    pageTransition = document.getElementsByClassName('page-transition-wrapper')[0],
-    socialIcons = document.getElementsByClassName('social-icons')[0],
-    blackSign = document.getElementsByClassName('mysign')[0];
-/* ========================
-        Lottie Animation
-   ======================== */
-// var kyPreloader = document.getElementById('preloader');
-// var preload = {
-//     container: kyPreloader,
-//     renderer: 'svg',
-//     loop: true,
-//     autoplay: true,
-//     path: './js/loader.json',
-// };
-// var anim;
+var scene = document.getElementsByClassName('js-scene')[0];
+var parallax = new Parallax(scene);
 
-// anim = bodymovin.loadAnimation(preload);
+var scene2 = document.getElementsByClassName('js-scene2')[0];
+var parallax2 = new Parallax(scene2);
 
-// var mysign = document.getElementById('mysign');
-// var mySignAnimation = lottie.loadAnimation({
-//     container: mysign,
-//     renderer: 'svg',
-//     loop: false,
-//     autoplay: false,
-//     path: './js/data.json'
-// });
-// mySignAnimation.setSpeed(4);
+var body = document.getElementsByTagName('body')[0];
+var homeToAbout = document.getElementById('homeToAbout');
 
+openHome();
 
-var firstPreloader = document.getElementById('firstPreloading');
-var firstPreload = {
-    container: firstPreloader,
-    renderer: 'svg',
-    loop: false,
-    autoplay: true,
-    path: './js/sign-black.json',
-};
-var animLoad;
-
-animLoad = bodymovin.loadAnimation(firstPreload).setSpeed(2);
-
-
-
-
-$(window).load(function() {
+function openHome() {
+    TweenMax.to('.my-hello', 1, {
+        y: -100,
+    });
     setTimeout(function() {
-        $('.openingloading').fadeOut(1000);
-        $('.main-section').fadeIn(1000);
+        body.classList.add('openHome');
+        clearTimeout();
         setTimeout(function() {
-            $(function() {
-                $('.flyin').removeClass('hidden');
+            TweenMax.from('#home .my-brand-wrapper h1', 1, {
+                y: 100,
             });
-            setTimeout(function() {
-                body.classList.add('startAnim');
-                topDark.classList.add('animationY');
-                bottomDark.classList.add('animationY');
-                setTimeout(function() {
-                    navigationHome.classList.add('animationNav');
-                    setTimeout(function() {
-                        socialIcons.classList.add('animationX');
-                        setTimeout(function() {
-                            // mySignAnimation.play();
-                            blackSign.classList.add('visible');
-                        }, 500);
-                    }, 1200);
-                }, 800);
-            }, 1600);
-        }, 1000);
-    }, 2500);
+            TweenMax.to('#home .my-brand-wrapper h1', 1, {
+                opacity: 1
+            });
 
-});
+            TweenMax.to(".vline1", 1, {
+                height: "100vh",
+                delay: 1.9,
+            });
+            TweenMax.from(".dribbble-icon", 1, {
+                y: 100,
+                delay: 1.9,
+            });
+            TweenMax.to(".dribbble-icon", 1, {
+                opacity: 1,
+                delay: 1.9,
+            });
+            TweenMax.to(".vline2", 1, {
+                height: "100vh",
+                delay: 2.2,
+            });
+
+            TweenMax.from(".behance-icon", 1, {
+                y: 100,
+                delay: 2.2,
+            });
+            TweenMax.to(".behance-icon", 1, {
+                opacity: 1,
+                delay: 2.2,
+            });
+            TweenMax.to(".vline3", 1, {
+                height: "100vh",
+                delay: 2.5,
+            });
+
+            TweenMax.from(".linkedin-icon", 1, {
+                y: 100,
+                delay: 2.5,
+            });
+            TweenMax.to(".linkedin-icon", 1, {
+                opacity: 1,
+                delay: 2.5,
+            });
+            TweenMax.to(".vline4", 1, {
+                height: "100vh",
+                delay: 2.8,
+            });
+            TweenMax.from(".twitter-icon", 1, {
+                y: 100,
+                delay: 2.8,
+            });
+            TweenMax.to(".twitter-icon", 1, {
+                opacity: 1,
+                delay: 2.8,
+            });
+            TweenMax.to(".vline5", 1, {
+                height: "100vh",
+                delay: 3.1,
+            });
+            TweenMax.from(".facebook-icon", 1, {
+                y: 100,
+                delay: 3.1,
+            });
+            TweenMax.to(".facebook-icon", 1, {
+                opacity: 1,
+                delay: 3.1,
+            });
 
 
-
-
-/* ========================
-          Open About
-   ======================== */
-
-navAboutTrigger.addEventListener('click', function() {
-    navigationHome.classList.remove('animationNav');
-    socialIcons.classList.remove('animationX');
-    setTimeout(function() {
-        topDark.classList.remove('animationY');
-        bottomDark.classList.remove('animationY');
-        $(function() {
-            $('.flyin').addClass('hidden');
-        });
-        setTimeout(function() {
-            pageTransition.classList.add('page-transition');
-            setTimeout(function() {
-                window.location.pathname = '/about';
-            }, 1800);
         }, 500);
-    }, 200);
-
-});
-
+    }, 500);
+}
 
 
-/* ========================
-       Open Case Studies
-   ======================== */
+// homeToAbout.addEventListener('click', function() {
+//     TweenMax.to('#about', .5, {
+//         left: "0px",
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.my-main-nav', .5, {
+//         x: 800,
+//         opacity: 0,
+//         transformOrigin: "right",
+//         ease: Power2.easeInOut
+//     }, 0)
+//     TweenMax.to('#home .my-brand-wrapper', .5, {
+//         color: "#000",
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.my-hello', 1, {
+//         opacity: 0,
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.my-brand-wrapper h1', .5, {
+//         scale: .6,
+//         y: -40,
+//         transformOrigin: "left",
+//         ease: Power2.easeInOut
+//     }, 0);
+//     TweenMax.to('.hamburger-menu .menu', 1, {
+//         opacity: 1,
+//         visibility: 'visible',
+//     })
 
-// navCaseTrigger.addEventListener('click', function() {
-//     navigationHome.classList.remove('animationNav');
-//     socialIcons.classList.remove('animationX');
-//     setTimeout(function() {
-//         topDark.classList.remove('animationY');
-//         bottomDark.classList.remove('animationY');
-//         $(function() {
-//             $('.flyin').addClass('hidden');
-//         });
-//         setTimeout(function() {
-//             pageTransition.classList.add('page-transition');
-//             setTimeout(function() {
-//                 window.location.pathname = '/case-studies';
-//             }, 1800);
-//         }, 500);
-//     }, 200);
-
+// });
+// homeToAbout.addEventListener('click', function() {
+//     if (t2.reversed()) {
+//         t2.play();
+//     } else {
+//         t2.reverse();
+//     }
+//     // window.location.pathname = '/about';
 // });
