@@ -617,7 +617,7 @@ section#about .about-container {
 
 @media(max-width:768px) {
     #home .my-main-nav ul li a.more-coming {
-        margin-bottom: -10px;
+        margin-bottom: -11px;
         height: 150px;
     }
 }
