@@ -8,18 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:300,500|Vollkorn:400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/style.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/scroll.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/style-sub-page.css" /> {% include analytics.html %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/style-sub-page.css" />{% include analytics.html %}
 </head>
 
 
-<body class="process">
+<body class="process page">
 
-    {%- include header-two.html -%}
+
+    {% include header.html %}
     <main id="fullpage">
         <section class="section" data-anchor="first-section">
             <div class="mouse">
@@ -412,7 +411,7 @@
                             <li>Front-End Development</li>
                         </ul>
                     </div>
-                    <div class="col-6 hidden-responsive ">
+                    <div class="col-6 hidden-responsive">
                         <div class="icon-container">
                             <div class="icon-wrapper">
                                 <div class="development-icon process-icons">yazılım ikonu</div>
@@ -426,12 +425,15 @@
         </section>
     </main>
 
+    <div class="page-transition"></div>
 
 </body>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="{{ site.baseurl }}/js/jquery-2.1.4.js"></script>
 <script src="{{ site.baseurl }}/js/fullpage.min.js"></script>
-<script src="{{ site.baseurl }}/js/about.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/scrolloverflow.min.js"></script>
+<script src="{{ site.baseurl }}/js/process.js"></script>
 
 <script>
     new fullpage('#fullpage', {
@@ -441,7 +443,15 @@
         anchors: ['uxRoadmap', 'discovery', 'workshops', 'analysis', 'research', 'envision', 'definition', 'storyboard', 'ai', 'design', 'prototype', 'userTest', 'visualDesign', 'implementation', 'development'],
         navigationTooltips: ['yol Haritası', 'Keşfet', 'Workshoplar', 'Analiz', 'Araştırma', 'Düşün', 'Problem Tanımlama', 'Storyboards', 'Bilgi Mimarisi', 'Tasarım', 'Prototip', 'Kullanıcı Testleri', 'Arayüz Tasarımı', 'Uygulama', 'Yazılım'],
         keyboardScrolling: true,
-        sectionSelector: 'section'
+        sectionSelector: 'section',
+        scrollOverflow: true,
+        scrollOverflowOptions: {
+            scrollbars: true,
+            mouseWheel: true,
+            hideScrollbars: false,
+            fadeScrollbars: false,
+            disableMouse: true
+        }
     });
 </script>
 

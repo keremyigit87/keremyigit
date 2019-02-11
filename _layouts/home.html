@@ -34,8 +34,7 @@
     {% include analytics.html %}
 </head>
 
-<body id="home">
-    {% include header.html %}
+<body id="home" class="page">
     <main>
         <section>
             <div class="my-brand-wrapper js-scene">
@@ -48,8 +47,8 @@
             <nav class="my-main-nav">
                 <ul>
                     <!-- <li><a href="#" data-text="Case Studies" class="link-mask" id="">Case Studies</a></li> -->
-                    <!-- <li><a href="#" data-text="About" class="link-mask" id="homeToAbout">About</a></li> -->
-                    <li><a href="javascript:void(0);" data-text="More Coming Soon" class="link-mask more-coming">More Coming Soon...</a></li>
+                    <li><a href="javascript:void();" data-text="About" class="link-mask" id="homeToAbout">About</a></li>
+                    <!-- <li><a href="javascript:void(0);" data-text="More Coming Soon" class="link-mask more-coming">More Coming Soon...</a></li> -->
                     <li><a href="mailto:hello@keremyigit.com" data-text="Contact Me" class="link-mask">Contact Me</a></li>
                 </ul>
             </nav>
@@ -70,6 +69,7 @@
             </div>
         </section>
     </main>
+    <div class="page-transition"></div>
 </body>
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>

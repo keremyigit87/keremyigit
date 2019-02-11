@@ -859,6 +859,9 @@ ul.process-list li:before {
     .margin-bottom-30 {
         margin-bottom: 20px;
     }
+    .font-82-dark-grey {
+        font-size: 50px;
+    }
     .font-40-black {
         font-size: 31px;
         line-height: 42px;

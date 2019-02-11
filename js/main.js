@@ -10,6 +10,7 @@ var homeToAbout = document.getElementById('homeToAbout');
 openHome();
 
 function openHome() {
+    body.classList.add('show');
     TweenMax.to('.my-hello', 1, {
         y: -100,
     });
@@ -92,38 +93,43 @@ function openHome() {
 }
 
 
-// homeToAbout.addEventListener('click', function() {
-//     TweenMax.to('#about', .5, {
-//         left: "0px",
-//         ease: Power2.easeInOut
-//     }, 0);
-//     TweenMax.to('.my-main-nav', .5, {
-//         x: 800,
-//         opacity: 0,
-//         transformOrigin: "right",
-//         ease: Power2.easeInOut
-//     }, 0)
-//     TweenMax.to('#home .my-brand-wrapper', .5, {
-//         color: "#000",
-//         ease: Power2.easeInOut
-//     }, 0);
-//     TweenMax.to('.my-hello', 1, {
-//         opacity: 0,
-//         ease: Power2.easeInOut
-//     }, 0);
-//     TweenMax.to('.my-brand-wrapper h1', .5, {
-//         scale: .6,
-//         y: -40,
-//         transformOrigin: "left",
-//         ease: Power2.easeInOut
-//     }, 0);
-//     TweenMax.to('.hamburger-menu .menu', 1, {
-//         opacity: 1,
-//         visibility: 'visible',
-//     })
-
-
-// });
+homeToAbout.addEventListener('click', function() {
+    TweenMax.to('#about', .5, {
+        left: "0px",
+        ease: Power2.easeInOut
+    }, 0);
+    TweenMax.to('.my-main-nav', .5, {
+        x: 800,
+        opacity: 0,
+        transformOrigin: "right",
+        ease: Power2.easeInOut
+    }, 0)
+    TweenMax.to('#home .my-brand-wrapper', .5, {
+        color: "#000",
+        ease: Power2.easeInOut
+    }, 0);
+    TweenMax.to('.my-hello', 1, {
+        opacity: 0,
+        ease: Power2.easeInOut
+    }, 0);
+    TweenMax.to('.my-brand-wrapper h1', .5, {
+        scale: .6,
+        y: -40,
+        transformOrigin: "left",
+        ease: Power2.easeInOut
+    }, 0);
+    TweenMax.to('.hamburger-menu .menu', 1, {
+        opacity: 1,
+        visibility: 'visible',
+    })
+    TweenMax.to('.page-transition', 1, {
+        transform: 'translateX(0)',
+        ease: Power2.easeInOut
+    })
+    setTimeout(function() {
+        window.location.pathname = '/about';
+    }, 1200)
+});
 // homeToAbout.addEventListener('click', function() {
 //     if (t2.reversed()) {
 //         t2.play();

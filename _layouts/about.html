@@ -1,98 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <!-- Meta Tags -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+    <title>{%if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}
+    </title>
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.image }}" />
+    <meta property="og:site_name" content="Kerem Yiğit's Blog">
+    <meta property="article:publisher" content="http://www.facebook.com/kerem.yigit.566" />
+    <meta property="article:author" content="https://www.facebook.com/kerem.yigit.566" />
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+    <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Nunito" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/style.css" />{% include analytics.html %}
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
+
+    <!-- Modernizr -->
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+    {% include analytics.html %}
 </head>
 
-<body class="about">
-    <div class="space-120"></div>
-    <div class="space-120"></div>
-    <main>
-        <section id="about">
-            <div class="about-container">
-                <div class="row">
-                    <div class="col-12">
-                        <span class="ky-hey">HEY</span>
-                        <h4 class="ky-my">My name is <span>Kerem</span>, I’m a Turkey based <span>UI/UX Designer & UI Developer</span> with 5+ years of experience.</h4>
-                    </div>
+<body id="about" class="page">
+    {% include header.html %}
+    <section>
+        <div class="my-brand-wrapper js-scene">
+            <h5 class="layer" data-depth="0.2"><span>I am</span> <strong>Kerem Yiğit</strong></h5>
+            <h1>UI / UX Designer <br/>& UI Developer</h1>
+        </div>
+        <div class="about-container">
+            <div class="row">
+                <div class="space150"></div>
+                <div class="space150"></div>
+                <h4 class="ky-my">My name is <span>Kerem</span>, I’m a Turkey based <span>UI/UX Designer &amp; UI Developer</span> with 5+ years of experience.</h4>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <h2 class="skill-h2">Skills</h2>
                 </div>
-                <div class="row">
-                    <div class="col-4">
-                        <h2>About Me</h2>
-                    </div>
-                    <div class="col-8">
-                        <p>Profesyonel tasarım hayatını ilk olarak lise yıllarımda teknik resim ile tanıdım, ardından istanbul üniversitesi elektronik haberleşme bitirdikten sonra teknik çizim yapabileceğim bir iş bulma hayali ile bir çok şirkette çalıştım.
-                            2013 yılında e-ticaret ile tanıştıktan sonra tüm ilgim bilişim sektöründe tasarım ve yazılıma kaymaya başladı. O yıl boyunca kendimi tasarım, SEO ve front-end koflarında geliştirirken, 2014 yılında sherpa aracılığı ile kullanıcı
-                            deneyimi kavramını keşfettim.</p>
-                        <p>O yılından itibaren de arayüz geliştirme ve kullanıcı deneyimi üzerine çalıştım. Bu süre boyunca kendimi HTML, CSS ve Javascript üzerine geliştirmeye devam ettim. Aynı zamanda SEO, marka kimliği ve sosyal medya konularında da danışmanlıklar
-                            verdim.
-                        </p>
-                        <p>Kendimi geliştirmeyi, insan-odaklı tasarımı benimsemeyi her zaman değişmez bir kural olarak gördüm, zamanla ‘bunu neden böyle yaptın?’ sorularına veriye dayalı cevaplar vermeye başladım.</p>
-                        <p>Mobil uygulamalar, kurumsal ve e-ticaret siteleri, ERP, CRM projeleri, intranet, portfolyo siteleri gibi birçok projede freelancer, yarı-zamanlı ya da tam-zamanlı olarak çalıştım.</p>
-                        <p>Birçok start-up ile birlikte çalışmanın yanında kendi kendi projelerimiz de hali hazırda devam etmektedir.</p>
-                        <a href="#" target="_blank" class="btn-arrow">Resume</a>
-                    </div>
+                <div class="col-4">
+                    <ul>
+                        <li>User Researching</li>
+                        <li>Discovery &amp; Needs Analysis</li>
+                        <li>Conversion Optimization</li>
+                        <li>User Experience Strategy &amp; Design</li>
+                        <li>User Interface Design</li>
+                        <li>Interaction &amp; Motion Design</li>
+                        <li>Wireframing &amp; Prototyping</li>
+                        <li>Information Architecture</li>
+                        <li>Usability Testing</li>
+                        <li>Persona &amp; Stroyboarding</li>
+                    </ul>
                 </div>
-                <div class="space-100"></div>
-                <div class="space-100"></div>
-                <div class="row">
-                    <div class="col-4">
-                        <h2 class="skill-h2">Skills</h2>
-                    </div>
-                    <div class="col-4">
-                        <ul>
-                            <li>User Researching</li>
-                            <li>Discovery & Needs Analysis</li>
-                            <li>Conversion Optimization</li>
-                            <li>User Experience Strategy & Design</li>
-                            <li>User Interface Design</li>
-                            <li>Interaction & Motion Design</li>
-                            <li>Wireframing & Prototyping</li>
-                            <li>Information Architecture</li>
-                            <li>Usability Testing</li>
-                            <li>Persona & Stroyboarding</li>
-                        </ul>
-                    </div>
-                    <div class="col-4">
-                        <ul>
-                            <li>HTLM5 / CSS3</li>
-                            <li>Javascript</li>
-                            <li>Angular</li>
-                            <li>Wordpress</li>
-                            <li>Jekyll</li>
-                            <li>Bootstrap</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="space-100"></div>
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                        <a href="#" class="btn-arrow big-btn">UX PROCESS</a>
-                    </div>
-                    <div class="col-4">
-                        <a href="#" class="btn-arrow big-btn-2">CASE STUIES</a></div>
+                <div class="col-4">
+                    <ul>
+                        <li>HTLM5 / CSS3</li>
+                        <li>Javascript</li>
+                        <li>Angular</li>
+                        <li>Wordpress</li>
+                        <li>Jekyll</li>
+                        <li>Bootstrap</li>
+                    </ul>
                 </div>
             </div>
-        </section>
-    </main>
-    <div class="space-100"></div>
-    <div class="space-100"></div>
+        </div>
+        <div class="space150"></div>
+        {% include footer.html %}
+    </section>
+    <div class="page-transition"></div>
 </body>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 <script src="{{ site.baseurl }}/js/about.js"></script>
-<script>
-    var uri = window.location.toString();
-    if (uri.indexOf("#") > 0) {
-        var clean_uri = uri.substring(0, uri.indexOf("#"));
-        window.history.replaceState({}, document.title, clean_uri);
-    }
-</script>
 
 </html>
