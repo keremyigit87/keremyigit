@@ -2,8 +2,9 @@ var scene = document.getElementsByClassName('js-scene')[0];
 var parallax = new Parallax(scene);
 
 var goToHome = document.getElementsByClassName('sign-logo-wrapper')[0];
-var goToHome2 = document.getElementById('goToHome2');
-var goToProcess = document.getElementById('goToProcess');
+var headerToHome = document.getElementById('headerToHome');
+var headerToCase = document.getElementById('headerToCase');
+var headerToAbout = document.getElementById('headerToAbout');
 
 var body = document.getElementsByTagName('body')[0];
 openAbout();
@@ -48,7 +49,7 @@ function openAbout() {
 }
 
 goToHome.addEventListener('click', function() {
-    TweenMax.to('.page-transition', 1, {
+    TweenMax.to('.page-transition-black', 1, {
         transform: 'translateX(0)',
         ease: Power2.easeInOut
     })
@@ -56,33 +57,41 @@ goToHome.addEventListener('click', function() {
         window.location.pathname = '/';
     }, 1200)
 })
+headerToHome.addEventListener('click', function() {
+    body.classList.remove('open-menu');
+    setTimeout(function() {
+        TweenMax.to('.page-transition-black', 1, {
+            transform: 'translateX(0)',
+            ease: Power2.easeInOut
+        })
+        setTimeout(function() {
+            window.location.pathname = '/';
+        }, 1200)
+    }, 500)
+})
+headerToCase.addEventListener('click', function() {
+    body.classList.remove('open-menu');
+    setTimeout(function() {
+        TweenMax.to('.page-transition-black', 1, {
+            transform: 'translateX(100%)',
+            ease: Power2.easeInOut
+        })
+        TweenMax.to('.page-transition-white', 1, {
+            transform: 'translateX(0)',
+            ease: Power2.easeInOut
+        });
+        setTimeout(function() {
+            window.location.pathname = '/case-studies';
+        }, 1200)
+    }, 500)
+})
+headerToAbout.addEventListener('click', function() {
+    body.classList.remove('open-menu');
+})
 
 
 
 
-
-// hamburgerMenu.addEventListener('click', function() {
-
-//     body.classList.toggle('openMenu');
-// });
-
-
-// document.getElementsByTagName('section')[0].addEventListener('click', function() {
-
-//     body.classList.remove('openMenu');
-// });
-
-
-// goToHome2.addEventListener('click', function() {
-//     body.classList.remove('openMenu');
-//     TweenMax.to('.page-transition', 1, {
-//         transform: 'translateX(0)',
-//         ease: Power2.easeInOut
-//     })
-//     setTimeout(function() {
-//         window.location.pathname = '/';
-//     }, 1200)
-// })
 goToHome.addEventListener('mouseenter', function() {
     TweenMax.to(goToHome, 1, {
         scale: 1.3

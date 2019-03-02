@@ -8,6 +8,15 @@ var body = document.getElementsByTagName('body')[0];
 var homeToAbout = document.getElementById('homeToAbout');
 var homeToCase = document.getElementById('homeToCase');
 
+// if (localStorage.getItem('first')) {
+//     console.log('ikinci kez');
+//     openHome();
+// } else {
+//     console.log('ilk kez');
+//     localStorage.setItem('first', 'welcome');
+//     openWelcome();
+// }
+
 openHome();
 
 function openHome() {
@@ -46,9 +55,13 @@ function openHome() {
     }, 3300);
 }
 
+function openWelcome() {
+
+};
+
 
 homeToAbout.addEventListener('click', function() {
-    TweenMax.to('.page-transition', 1, {
+    TweenMax.to('.page-transition-white', 1, {
         transform: 'translateX(0)',
         ease: Power2.easeInOut
     })
@@ -59,7 +72,7 @@ homeToAbout.addEventListener('click', function() {
 
 
 homeToCase.addEventListener('click', function() {
-    TweenMax.to('.page-transition', 1, {
+    TweenMax.to('.page-transition-white', 1, {
         transform: 'translateX(0)',
         ease: Power2.easeInOut
     })
