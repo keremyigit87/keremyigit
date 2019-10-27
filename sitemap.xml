@@ -14,4 +14,10 @@
     {% include sitemap-entry.xml entry=page %}
     {% endif %}
 {% endfor %}
+
+{% for work in site.works %}
+ {% if work.layout %}
+    {% include sitemap-entry.xml entry=work %}
+    {% endif %}
+{% endfor %}
 </urlset>

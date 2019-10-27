@@ -1,11 +1,12 @@
 var scene = document.getElementsByClassName("js-scene")[0];
-var parallax = new Parallax(scene);
+// var parallax = new Parallax(scene);
 
 var goToHome = document.getElementsByClassName("sign-logo-wrapper")[0];
 var headerToHome = document.getElementById("headerToHome");
-var headerToCase = document.getElementById("headerToCase");
+var headerToWorks = document.getElementById("headerToWorks");
 var headerToAbout = document.getElementById("headerToAbout");
-var hamburgerMenu = document.getElementsByClassName("hamburger-menu")[0];
+var HamburgerTrigger = document.getElementById("nav-container");
+var trlTrigger = document.getElementsByClassName("trl")[0];
 
 var body = document.getElementsByTagName("body")[0];
 openAbout();
@@ -31,15 +32,15 @@ function openAbout() {
   });
 
   TweenMax.staggerFrom(
-    "#about .about-container ul li",
+    "#about .about-container ul.firstList li",
     1,
     {
       opacity: 0,
       y: 200,
-      delay: 1.1,
+      delay: 0.7,
       ease: Power2.easeInOut
     },
-    0.2
+    0.1
   );
   TweenMax.from(".hamburger-menu", 1, {
     opacity: 0,
@@ -81,7 +82,7 @@ headerToHome.addEventListener("click", function() {
   }, 500);
 });
 // Case study sayfasına geçiş stransition'ı js
-/*headerToCase.addEventListener("click", function() {
+headerToWorks.addEventListener("click", function() {
   body.classList.remove("open-menu");
   setTimeout(function() {
     TweenMax.to(".page-transition-black", 1, {
@@ -93,10 +94,11 @@ headerToHome.addEventListener("click", function() {
       ease: Power2.easeInOut
     });
     setTimeout(function() {
-      window.location.pathname = "/case-studies";
+      window.location.pathname = "/work-studies";
     }, 1200);
   }, 500);
-});*/
+});
+
 headerToAbout.addEventListener("click", function() {
   body.classList.remove("open-menu");
 });
@@ -112,13 +114,7 @@ goToHome.addEventListener("mouseleave", function() {
   });
 });
 
-var menuTrigger = document.getElementsByClassName("h-menu")[0];
-
-menuTrigger.addEventListener("click", function() {
+HamburgerTrigger.addEventListener("click", function() {
   body.classList.toggle("open-menu");
-  if (body.classList.contains("open-menu")) {
-    document.getElementsByTagName("span")[0].innerHTML = "close";
-  } else {
-    document.getElementsByTagName("span")[0].innerHTML = "menu";
-  }
+  HamburgerTrigger.classList.toggle("pushed");
 });

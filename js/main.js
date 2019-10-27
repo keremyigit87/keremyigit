@@ -6,7 +6,7 @@ var parallax2 = new Parallax(scene2);
 
 var body = document.getElementsByTagName("body")[0];
 var homeToAbout = document.getElementById("homeToAbout");
-var homeToCase = document.getElementById("homeToCase");
+var homeToWorks = document.getElementById("homeToWorks");
 
 // if (localStorage.getItem('first')) {
 //     console.log('ikinci kez');
@@ -83,12 +83,12 @@ homeToAbout.addEventListener("click", function() {
 });
 
 // Case study sayfasına geçiş stransition'ı js
-/*homeToCase.addEventListener("click", function() {
+homeToWorks.addEventListener("click", function() {
   TweenMax.to(".page-transition-white", 1, {
     transform: "translateX(0)",
     ease: Power2.easeInOut
   });
   setTimeout(function() {
-    window.location.pathname = "/case-studies";
+    window.location.pathname = "/works";
   }, 1200);
-});*/
+});

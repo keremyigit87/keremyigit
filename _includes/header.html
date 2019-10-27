@@ -1,16 +1,156 @@
 <header>
-    <div class="h-menu">
-        <span>menu</span>
+    <div class="sign-logo-wrapper js-scene">
+        <p class="sign-logo layer" data-depth="0.4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
+                <g id="Group_1" data-name="Group 1" transform="translate(-1198 -662)">
+                    <path id="Path_1" data-name="Path 1"
+                        d="M1233,662h-9.863l-17.308,17.3V662H1198v35h7.829v-7.907l1.373-1.363,3.3-3.28,4.91-4.878Z"
+                        transform="translate(0 0)" />
+                    <path id="Path_2" data-name="Path 2" d="M1326.87,845.814l11.319,11.129h9.326l-15.982-15.733Z"
+                        transform="translate(-114.515 -159.947)" />
+                </g>
+            </svg>
+        </p>
     </div>
+    <div class="language-switch">
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} {% for page in pages %}
+        <a href="{{ page.url }}" class="{{ page.lang }} enl">{{ page.lang }}</a> {% endfor %}
+    </div>
+    <div id="nav-container">
+        <div class="toggle-icon">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <!-- /toggle-icon -->
+    </div>
+    <!-- /nav-container -->
     <nav class="menu-wrapper">
+        {% if page.lang == 'TR' %}
         <ul>
-            <li><a href="javascript:void();" id="headerToHome"><span class="menu-title">Home</span> <span
-                        class="menu-subTitle">You want to go home page</span></a></li>
-            <li><a href="javascript:void();" id="headerToAbout"><span class="menu-title">About Me</span> <span
-                        class="menu-subTitle">Who am i, what am i doing?</span></a></li>
-            <!-- <li><a href="javascript:void();" id="headerToCase"><span class="menu-title">Case Studies</span> <span class="menu-subTitle">Explorer to my portfolio</span></a></li> -->
-            <li><a href="mailto:hello@keremyigit.com" id="headerToHome"><span class="menu-title">Contact</span> <span
-                        class="menu-subTitle">Get in touch and find me</span></a></li>
-        </ul>
+            <li>
+                <a href="javascript:void();" id="headerToHome"><span class="menu-title">Anasayfa</span>
+                    <span class="menu-subTitle">Anasayfaya dönmek isteyebilirsin</span></a>
+            </li>
+            <li>
+                <a href="javascript:void();" id="headerToAbout"><span class="menu-title">Hakkımda</span>
+                    <span class="menu-subTitle">Ben kimim? Ne yaparım?</span></a>
+            </li>
+            <!--<li><a href="javascript:void();" id="headerToWorks"><span class="menu-title">İşlerim</span> <span
+                        class="menu-subTitle">Protfolyomu araştır</span></a></li>-->
+            <li>
+                <a href="mailto:hello@keremyigit.com" id="headerToHome"><span class="menu-title">İletişim</span>
+                    <span class="menu-subTitle">Benimle nasıl iletişime geçebilirsin?</span></a>
+            </li>
+        </ul>{% endif %} {% if page.lang == 'EN' %}
+        <ul>
+            <li>
+                <a href="javascript:void();" id="headerToHome"><span class="menu-title">Home</span>
+                    <span class="menu-subTitle">You want to go home page</span></a>
+            </li>
+            <li>
+                <a href="javascript:void();" id="headerToAbout"><span class="menu-title">About Me</span>
+                    <span class="menu-subTitle">Who am i, what am i doing?</span></a>
+            </li>
+            <!--<li><a href="javascript:void();" id="headerToWorks"><span class="menu-title">Works</span> <span
+                        class="menu-subTitle">Explorer to my portfolio</span></a></li>-->
+            <li>
+                <a href="mailto:hello@keremyigit.com" id="headerToHome"><span class="menu-title">Contact</span>
+                    <span class="menu-subTitle">Get in touch and find me</span></a>
+            </li>
+        </ul>{% endif %}
     </nav>
 </header>
+<script>
+    var mobileScreenSize = window.matchMedia("(max-width: 768px)");
+    window.onscroll = function() {
+        stickyFunction();
+    };
+    if (mobileScreenSize.matches) {
+
+        function stickyFunction() {
+            var y = window.pageYOffset;
+            if (y > 50) {
+                TweenMax.to(".sign-logo-wrapper", 1, {
+                    x: "-20px",
+                    y: "-40px",
+                    ease: Ease.easeInOut
+                });
+
+                TweenMax.to("#nav-container", 1, {
+                    x: "20px",
+                    y: "-40px",
+                    ease: Ease.easeInOut,
+                    backgroundColor: '#000'
+                });
+                HamburgerTrigger.classList.add('sticky');
+                TweenMax.to('.language-switch', 1, {
+                    x: "50px",
+                    y: "-40px",
+                    ease: Ease.easeInOut,
+                })
+            } else {
+                TweenMax.to(".sign-logo-wrapper", 1, {
+                    y: "0px",
+                    x: "0px",
+                    ease: Ease.easeInOut
+                });
+                TweenMax.to("#nav-container", 1, {
+                    x: "0px",
+                    y: "0px",
+                    ease: Ease.easeInOut,
+                    backgroundColor: 'transparent'
+                });
+                HamburgerTrigger.classList.remove('sticky');
+                TweenMax.to('.language-switch', 1, {
+                    x: "0px",
+                    y: "0px",
+                    ease: Ease.easeInOut,
+                })
+            }
+        }
+    } else {
+
+        function stickyFunction() {
+            var y = window.pageYOffset;
+            if (y > 50) {
+                TweenMax.to(".sign-logo-wrapper", 1, {
+                    x: "-100px",
+                    y: "-70px",
+                    ease: Ease.easeInOut
+                });
+
+                TweenMax.to("#nav-container", 1, {
+                    x: "100px",
+                    y: "-70px",
+                    ease: Ease.easeInOut,
+                    backgroundColor: '#000'
+                });
+                HamburgerTrigger.classList.add('sticky');
+                TweenMax.to('.language-switch', 1, {
+                    x: "170px",
+                    y: "-70px",
+                    ease: Ease.easeInOut,
+                })
+            } else {
+                TweenMax.to(".sign-logo-wrapper", 1, {
+                    y: "0px",
+                    x: "0px",
+                    ease: Ease.easeInOut
+                });
+                TweenMax.to("#nav-container", 1, {
+                    x: "0px",
+                    y: "0px",
+                    ease: Ease.easeInOut,
+                    backgroundColor: 'transparent'
+                });
+                HamburgerTrigger.classList.remove('sticky');
+                TweenMax.to('.language-switch', 1, {
+                    x: "0px",
+                    y: "0px",
+                    ease: Ease.easeInOut,
+                })
+            }
+        }
+    }
+</script>

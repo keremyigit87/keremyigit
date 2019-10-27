@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ page.lang }}">
 
 <head>
     <!-- Meta Tags -->
@@ -28,6 +28,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
     <!-- Modernizr -->
     <script src="{{ site.baseurl }}/js/modernizr.js"></script>
@@ -35,66 +36,114 @@
 </head>
 
 <body id="about" class="page">
-    {% include header.html %}
+
+
+    {% assign pages=site.pages | where:"lang", page.lang %} {% for page in pages %}
     <section>
-        <div class="sign-logo-wrapper js-scene">
-            <p class="sign-logo layer" data-depth="0.4"><svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 35 35">
-                    <g id="Group_1" data-name="Group 1" transform="translate(-1198 -662)">
-                        <path id="Path_1" data-name="Path 1"
-                            d="M1233,662h-9.863l-17.308,17.3V662H1198v35h7.829v-7.907l1.373-1.363,3.3-3.28,4.91-4.878Z"
-                            transform="translate(0 0)" />
-                        <path id="Path_2" data-name="Path 2" d="M1326.87,845.814l11.319,11.129h9.326l-15.982-15.733Z"
-                            transform="translate(-114.515 -159.947)" />
-                    </g>
-                </svg>
-            </p>
-        </div>
         <div class="about-container">
             <div class="row">
                 <div class="space150"></div>
                 <div class="space150"></div>
-                <h4 class="ky-my">My name is <span>Kerem</span>, I’m a Turkey based <span>UI/UX Designer &amp; UI
-                        Developer</span> with 5+ years of experience.</h4>
+                <div class="aboutIntro anim">{{page.introText}}</div>
+                <div class="space30"></div>
+                <!-- <a class="button"><span>BLOG<i class="btn-arrow-icon"></i></span></a> -->
             </div>
+            <div class="space50"></div>
             <div class="row">
-                <div class="col-4">
-                    <h2 class="skill-h2">Skills</h2>
-                </div>
-                <div class="col-4">
-                    <ul>
-                        <li>User Researching</li>
-                        <li>Discovery &amp; Needs Analysis</li>
-                        <li>Conversion Optimization</li>
-                        <li>User Experience Strategy &amp; Design</li>
-                        <li>User Interface Design</li>
-                        <li>Interaction &amp; Motion Design</li>
-                        <li>Wireframing &amp; Prototyping</li>
-                        <li>Information Architecture</li>
-                        <li>Usability Testing</li>
-                        <li>Persona &amp; Stroyboarding</li>
+                <div class="col-6">
+                    <ul class="aboutList firstList">
+                        <li>
+                            <span class="anim">{{page.abilityTitle}}</span>
+                        </li>
+                        {{page.abilityContent}}
                     </ul>
                 </div>
-                <div class="col-4">
-                    <ul>
-                        <li>HTLM5 / CSS3</li>
-                        <li>Javascript</li>
-                        <li>Angular</li>
-                        <li>Wordpress</li>
-                        <li>Jekyll</li>
-                        <li>Bootstrap</li>
+                <div class="col-6">
+                    <ul class="aboutList firstList">
+                        <li>
+                            <span>{{page.myToolsTitle}}</span>
+                        </li>
+                        {{page.myToolsList}}
                     </ul>
+                </div>
+            </div>
+            <div class="space150"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{page.storyTitle}}</h2>
+                    <p class="text anim">{{page.storyContent}}</p>
+                    <div class="space30"></div>
+                </div>
+            </div>
+            <div class="space150"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{page.collaborationTitle}}</h2>
+                    <p class="text anim">{{page.collaborationContent}}</p>
+                    <div class="space30"></div>
+                    <ul class="aboutList anim">
+                        <li>
+                            <span>{{page.collaborationSubtitle}}</span>
+                        </li>
+                        {{page.collaborationTools}}
+                    </ul>
+                </div>
+            </div>
+            <div class="space150"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{page.devTitle}}</h2>
+                    <p class="text anim">{{page.devContent}}</p>
+                    <div class="space30"></div>
+                    <ul class="aboutList anim">
+                        {{page.devList}}
+                    </ul>
+                </div>
+            </div>
+            <div class="space150"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{page.experienceTitle}}</h2>
+                    <p class="text anim">{{page.experienceContent}}</p>
+                </div>
+            </div>
+            <div class="space150"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{page.designThinkingTitle}}</h2>
+                    <p class="text anim">{{page.designThinkingContent}}</p>
+                </div>
+            </div>
+            <div class="space150"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{page.musicTitle}}</h2>
+                    <p class="text anim">{{page.musicContent}}</p>
+                    <a href="https://www.instagram.com/thebandnerede/" class="band-box anim" target="_blank">
+                        <img src="/img/the_band.jpg" alt="">
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCYWG86Ia6QyxNc5QCkuKpwA" class="band-box anim" target="_blank">
+                        <img src="/img/funkout.jpg" alt="">
+                    </a>
                 </div>
             </div>
         </div>
         <div class="space150"></div>
-        {% include footer.html %}
     </section>
+    {% include footer.html %} {% endfor %} {% include header.html %}
     <div class="page-transition-white"></div>
     <div class="page-transition-black"></div>
+
+    <script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            duration: 2000,
+            distance: '100px',
+        })
+    </script>
 </body>
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 <script src="{{ site.baseurl }}/js/about.js"></script>
 
 </html>
