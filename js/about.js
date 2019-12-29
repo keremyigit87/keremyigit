@@ -101,6 +101,7 @@ headerToHome.addEventListener("click", function() {
 
 headerToAbout.addEventListener("click", function() {
   body.classList.remove("open-menu");
+  HamburgerTrigger.classList.remove("pushed");
 });
 
 goToHome.addEventListener("mouseenter", function() {

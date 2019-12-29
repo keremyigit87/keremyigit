@@ -12,10 +12,10 @@
             </svg>
         </p>
     </div>
-    <div class="language-switch">
+    <!-- <div class="language-switch">
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} {% for page in pages %}
         <a href="{{ page.url }}" class="{{ page.lang }} enl">{{ page.lang }}</a> {% endfor %}
-    </div>
+    </div> -->
     <div id="nav-container">
         <div class="toggle-icon">
             <span class="bar"></span>
@@ -26,43 +26,27 @@
     </div>
     <!-- /nav-container -->
     <nav class="menu-wrapper">
-        {% if page.lang == 'TR' %}
+        
         <ul>
             <li>
-                <a href="javascript:void();" id="headerToHome"><span class="menu-title">Anasayfa</span>
+                <a href="javascript:void(0);" id="headerToHome"><span class="menu-title">Anasayfa</span>
                     <span class="menu-subTitle">Anasayfaya dönmek isteyebilirsin</span></a>
             </li>
             <li>
-                <a href="javascript:void();" id="headerToAbout"><span class="menu-title">Hakkımda</span>
+                <a href="javascript:void(0);" id="headerToAbout"><span class="menu-title">Hakkımda</span>
                     <span class="menu-subTitle">Ben kimim? Ne yaparım?</span></a>
             </li>
             <!--<li><a href="javascript:void();" id="headerToWorks"><span class="menu-title">İşlerim</span> <span
                         class="menu-subTitle">Protfolyomu araştır</span></a></li>-->
             <li>
                 <a href="mailto:hello@keremyigit.com" id="headerToHome"><span class="menu-title">İletişim</span>
-                    <span class="menu-subTitle">Benimle nasıl iletişime geçebilirsin?</span></a>
+                    <span class="menu-subTitle">Mail göndermek iiçin tıklayın!</span></a>
             </li>
-        </ul>{% endif %} {% if page.lang == 'EN' %}
-        <ul>
-            <li>
-                <a href="javascript:void();" id="headerToHome"><span class="menu-title">Home</span>
-                    <span class="menu-subTitle">You want to go home page</span></a>
-            </li>
-            <li>
-                <a href="javascript:void();" id="headerToAbout"><span class="menu-title">About Me</span>
-                    <span class="menu-subTitle">Who am i, what am i doing?</span></a>
-            </li>
-            <!--<li><a href="javascript:void();" id="headerToWorks"><span class="menu-title">Works</span> <span
-                        class="menu-subTitle">Explorer to my portfolio</span></a></li>-->
-            <li>
-                <a href="mailto:hello@keremyigit.com" id="headerToHome"><span class="menu-title">Contact</span>
-                    <span class="menu-subTitle">Get in touch and find me</span></a>
-            </li>
-        </ul>{% endif %}
+        </ul>
     </nav>
 </header>
 <script>
-    var mobileScreenSize = window.matchMedia("(max-width: 768px)");
+    var mobileScreenSize = window.matchMedia("(max-width: 1200px)");
     window.onscroll = function() {
         stickyFunction();
     };

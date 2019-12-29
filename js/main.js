@@ -24,7 +24,7 @@ function openHome() {
   TweenMax.from(".my-hello", 1, {
     y: -500,
     opacity: 0,
-    ease: Power2.easeInOut
+    ease:  Power1.easeInOut
   });
   TweenMax.from("#home .my-brand-wrapper h1", 1, {
     y: 100,
@@ -78,11 +78,11 @@ homeToAbout.addEventListener("click", function() {
     ease: Power2.easeInOut
   });
   setTimeout(function() {
-    window.location.pathname = "/about";
+    window.location.pathname = "/hakkimda";
   }, 1200);
 });
 
-// Case study sayfasına geçiş stransition'ı js
+
 homeToWorks.addEventListener("click", function() {
   TweenMax.to(".page-transition-white", 1, {
     transform: "translateX(0)",
