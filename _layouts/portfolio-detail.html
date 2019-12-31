@@ -33,43 +33,11 @@
     <script src="{{ site.baseurl }}/js/modernizr.js"></script>
     {% include analytics.html %}
 </head>
-
-<body id="home" class="page">
+<body class="portfolio-detail">
+    {% include header.html %}
+    <a href="{{site.baseurl}}/works" class="work-back">BACK</a>
     <main>
-        <section>
-            <div class="my-brand-wrapper js-scene">
-                <h5 class="layer" data-depth="0.2"><span>I am</span> <strong>Kerem Yiğit</strong></h5>
-                <h1>UI / UX Designer <br />& UI Developer</h1>
-            </div>
-            <div class="my-hello js-scene2">
-                <div class="layer" data-depth="0.2">hello</div>
-            </div>
-            <nav class="my-main-nav">
-                <ul>
-                    <li><a href="javascript:void(0);" data-text="Works" class="link-mask" id="homeToWorks">Works</a></li>
-                    <li><a href="javascript:void(0);" data-text="About" class="link-mask" id="homeToAbout">About</a></li>
-                    <!-- <li><a href="javascript:void(0);" data-text="More Coming Soon" class="link-mask more-coming">More Coming Soon...</a></li> -->
-                    <li><a href="mailto:hello@keremyigit.com" data-text="Contact Me" class="link-mask">Contact Me</a>
-                    </li>
-                </ul>
-            </nav>
-            <ul class="my-main-social">
-                <li class="facebook-icon"><a href="https://www.facebook.com/kerem.yigit.566" target="_blank" rel="noopener noreferrer">facebook</a></li>
-                <li class="twitter-icon"><a href="https://twitter.com/benboyleritimin" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                <li class="linkedin-icon"><a href="https://www.linkedin.com/in/keremyigit/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-                </li>
-                <li class="behance-icon"><a href="https://www.behance.net/keremyigit" target="_blank" rel="noopener noreferrer">Behance</a></li>
-                <li class="dribbble-icon"><a href="https://dribbble.com/Rilley" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
-
-            </ul>
-            <div class="my-main-lines">
-                <div class="vline vline1"></div>
-                <div class="vline vline2"></div>
-                <div class="vline vline3"></div>
-                <div class="vline vline4"></div>
-                <div class="vline vline5"></div>
-            </div>
-        </section>
+        {{content}}
     </main>
     <div class="page-transition-white"></div>
     <div class="page-transition-black"></div>
@@ -81,10 +49,12 @@
             <p>and this is my portfolio website</p>
         </div>
     </div>
+    {% include footer.html %}
 </body>
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
-<script src="{{ site.baseurl }}/js/main.js"></script>
+<script src="{{ site.baseurl }}/js/detail-page.js"></script>
+
 
 </html>

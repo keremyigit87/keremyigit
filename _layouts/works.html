@@ -49,12 +49,12 @@
                 </ul>
             </nav>
             <ul class="my-main-social">
-                <li class="facebook-icon"><a href="https://www.facebook.com/kerem.yigit.566" target="_blank">facebook</a></li>
-                <li class="twitter-icon"><a href="https://twitter.com/benboyleritimin" target="_blank">Twitter</a></li>
-                <li class="linkedin-icon"><a href="https://www.linkedin.com/in/keremyigit/" target="_blank">Linkedin</a>
+                <li class="facebook-icon"><a href="https://www.facebook.com/kerem.yigit.566" target="_blank" rel="noopener noreferrer">facebook</a></li>
+                <li class="twitter-icon"><a href="https://twitter.com/benboyleritimin" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li class="linkedin-icon"><a href="https://www.linkedin.com/in/keremyigit/" target="_blank" rel="noopener noreferrer">Linkedin</a>
                 </li>
-                <li class="behance-icon"><a href="https://www.behance.net/keremyigit" target="_blank">Behance</a></li>
-                <li class="dribbble-icon"><a href="https://dribbble.com/Rilley" target="_blank">Dribbble</a></li>
+                <li class="behance-icon"><a href="https://www.behance.net/keremyigit" target="_blank" rel="noopener noreferrer">Behance</a></li>
+                <li class="dribbble-icon"><a href="https://dribbble.com/Rilley" target="_blank" rel="noopener noreferrer">Dribbble</a></li>
 
             </ul>
             <div class="my-main-lines">
@@ -71,127 +71,27 @@
                 <a href="" class="work-item empty-item-1 work case code mb-0"></a>
                 <a href="" class="work-item empty-item-2 work case code mb-0"></a>
 
-                <a href="" class="work-item work">
+                {% for portfolio in site.pages %}
+                {% if portfolio.category == 'portfolio' %}
+                <a href="javascript:void(0)" class="work-item {{portfolio.tag}}" onclick="pageTransition('{{site.baseurl}}{{portfolio.url}}')" data-order="{{portfolio.order}}">
                     <div class="tilt-wrapper" data-tilt>
                         <div class="img-wrapper">
-                            <img src="../img/2.jpg" alt="">
+                            <img src="{{site.baseurl}}/img/portfolio/{{portfolio.image}}" alt="">
                         </div>
                         <div class="img-shadow"></div>
                         <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
+                            <p class="title">{{ portfolio.title }}</p>
+                            <p class="subtitle">{{ portfolio.subtitle }}</p>
                         </div>
                     </div>
                 </a>
-                <a href="" class="work-item case one-item">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/3.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="work-item code">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/4.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="work-item work">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/5.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="work-item case one-item">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/1.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="" class="work-item work">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/2.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="work-item case one-item">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/3.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="work-item code">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/4.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="work-item work">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/5.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="" class="work-item case one-item">
-                    <div class="tilt-wrapper" data-tilt>
-                        <div class="img-wrapper">
-                            <img src="../img/2.jpg" alt="">
-                        </div>
-                        <div class="img-shadow"></div>
-                        <div class="content-wrapper">
-                            <p class="title">TEST</p>
-                            <p class="subtitle">SUBTITLE</p>
-                        </div>
-                    </div>
-                </a>
+                <script>
+                    function pageTransition(url){
+                        window.location.href = url;
+                    }
+                </script>
+                {% endif %}
+                {% endfor %}
 
 
                 
@@ -226,8 +126,12 @@ $(window).load(function(){
         animationOptions: {
             duration: 750,
             easing: 'linear',
-            queue: false
+            queue: false,
         },percentPosition: true,
+        getSortData: {
+            order: '[data-order]'
+        },
+        sortBy : 'order'
     });
  
     $('#home.work .my-main-nav ul li a').click(function(){
