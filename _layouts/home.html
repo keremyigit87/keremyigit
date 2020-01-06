@@ -25,12 +25,14 @@
     <link rel="canonical" href="{{ page.url | prepend: site.url }}">
 
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
+    <noscript id="deferred-styles">
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400">
+        <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
+    </noscript>
 
     <!-- Modernizr -->
-    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+    <script src="{{ site.baseurl }}/js/modernizr.js" defer></script>
     {% include analytics.html %}
 </head>
 
