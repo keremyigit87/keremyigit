@@ -49,7 +49,7 @@ function openHome() {
       y: 200,
       opacity: 0,
       ease: Power2.easeInOut,
-      delay: 2.8
+      delay: 1.8
     },
     0.3
   );
@@ -60,7 +60,7 @@ function openHome() {
       y: 100,
       opacity: 0,
       ease: Power2.easeInOut,
-      delay: 5
+      delay: 2.8
     },
     -0.3
   );

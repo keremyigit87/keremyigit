@@ -43,8 +43,8 @@
             </div>
             <nav class="my-main-nav">
                 <ul>
-                    <li><a href="javascript:void(0);" data-text="Works" class="link-mask active" id="" data-filter=".work">Works</a></li>
-                    <li><a href="javascript:void(0);" data-text="Case Studies" class="link-mask" id="" data-filter=".case">Case Studies</a></li>
+                    <li><a href="javascript:void(0);" data-text="Case Studies" class="link-mask active" id="" data-filter=".case">Case Studies</a></li>
+                    <li><a href="javascript:void(0);" data-text="Works" class="link-mask" id="" data-filter=".work">Works</a></li>
                     <li><a href="javascript:void(0);" data-text="Codes" class="link-mask" data-filter=".code">Codes</a></li>
                 </ul>
             </nav>
@@ -73,7 +73,7 @@
 
                 {% for portfolio in site.pages %}
                 {% if portfolio.category == 'portfolio' %}
-                <a href="javascript:void(0)" class="work-item {{portfolio.tag}}" onclick="pageTransition('{{site.baseurl}}{{portfolio.url}}')" data-order="{{portfolio.order}}">
+                <a href="javascript:void(0)" class="work-item {{portfolio.tag}} {{portfolio.width}}" onclick="pageTransition('{{site.baseurl}}{{portfolio.url}}')" data-order="{{portfolio.order}}">
                     <div class="tilt-wrapper" data-tilt>
                         <div class="img-wrapper">
                             <img src="{{site.baseurl}}/img/portfolio/{{portfolio.image}}" alt="">
@@ -122,7 +122,7 @@
 $(window).load(function(){
     var $container = $('.works-list-wrapper');
     $container.isotope({
-        filter: '.work',
+        filter: '.case',
         animationOptions: {
             duration: 750,
             easing: 'linear',

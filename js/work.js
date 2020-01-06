@@ -35,6 +35,12 @@ function openHome() {
     },
     0.3
   );
+  TweenMax.from('.works-list-container', 1.5,{
+	  opacity:0,
+	  y:200,
+	  ease:Power4.easeInOut,
+	  delay:1.8
+  });
   TweenMax.staggerFrom(
     "#home .my-main-nav ul li",
     1,

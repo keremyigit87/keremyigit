@@ -26,7 +26,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
@@ -38,7 +38,6 @@
 <body id="about" class="page">
 
 
-    {% assign pages=site.pages | where:"lang", page.lang %} {% for page in pages %}
     <section>
         <div class="about-container">
             <div class="row">
@@ -130,7 +129,7 @@
         </div>
         <div class="space150"></div>
     </section>
-    {% include footer.html %} {% endfor %} {% include header.html %}
+    {% include footer.html %} {% include header.html %}
     <div class="page-transition-white"></div>
     <div class="page-transition-black"></div>
 

@@ -46,8 +46,9 @@
 }
 
 .space100 {
-    display: block;
+    display: inline-block;
     height: 100px;
+    width: 100%;
 }
 
 .space50 {
@@ -1271,7 +1272,29 @@ body.open-menu {
 /* ==========================
         spaces
    ==========================  */
-
+.p-20{
+    padding: 20px;
+}
+.pr-20{
+    padding-right: 20px;
+}
+.pl-20{
+    padding-left: 20px;
+}
+.pt-20{
+    padding-top: 20px;
+}
+.pb-20{
+    padding-bottom: 20px;
+}
+.ph-20{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pv-20{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 .p-40 {
     padding: 40px;
 }
@@ -1423,12 +1446,12 @@ body.open-menu {
 }
 
 .title {
-    font-size: 21px;
+    font-size: 23px;
     color: #000;
     font-weight: 600;
     font-family: 'Montserrat';
     line-height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 14px;
 }
 
 .text {
@@ -1526,17 +1549,17 @@ body.open-menu {
 }
 .works-list-container .img-wrapper{
     position: relative;
-    height: 250px;
+    height: auto;
     overflow: hidden;
 }
-.works-list-container .img-shadow {
-    background: url(../img/item-shadow.png) no-repeat center center;    
+.works-list-container .work-item .img-shadow {  
+    background: url(../img/item-shadow.png) no-repeat center center;  
+    background-size: 100% 100%;
     position: absolute;
     bottom: 30px;
     left: 0;
     right: 0;
     height: 130px;
-    background-size: cover;
     z-index: -1;
 }
 .empty-item-1{
@@ -1546,15 +1569,7 @@ body.open-menu {
     height: 50px !important;
 }
 .works-list-container .img-wrapper img{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    width: 120%;
+    width: 100%;
 }
 .works-list-container .content-wrapper{
     text-align: left;
@@ -1677,10 +1692,63 @@ body.open-menu {
         top: 40px;
         left: 80px;
     }
+    .detail-img-wrapper.pr-20{
+        padding-right: 0px;
+    }
+    .detail-img-wrapper.pl-20{
+        padding-left: 0px;
+    }
 }
 .w-200px{
     width: 200px;
 }
 .text-center{
     text-align: center;
+}
+.detail-subtitle{
+    font-weight: 600;
+    color:#555;
+    font-size: 14px;
+}
+.mission-list{
+    margin: 10px 0;
+}
+.mission-list li{
+    margin: 15px 0;
+    color:#7d7d7d;
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+}
+.img-text{font-size: 10px;
+    color: #898989;
+    margin-top: 10px;
+}
+
+.h5{color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.detail-li{
+    font-size: 16px;
+    color: #5A5A5A;
+    font-weight: 100;
+    font-family: 'Nunito';
+    line-height: 27px;
+    list-style: circle;
+    padding-left: 19px;
+}
+.work-list-2-grid .work-item.full{
+    width: 100%;
+}
+@media(max-width:768px){
+    #footer-two{
+        height: 55px;
+    }
+}
+@media(max-width:390px){
+    #footer-two{
+        height: 140px;
+    }
 }

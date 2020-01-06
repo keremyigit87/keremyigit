@@ -13,7 +13,7 @@ openDetailPage();
 
 function openDetailPage() {
   body.classList.add("show");
-  TweenMax.from(".sign-logo-wrapper", 0.3, {
+  TweenMax.from(".sign-logo-wrapper, .work-back", 0.3, {
     width: "0px",
     ease: Power2.easeInOut
   });
