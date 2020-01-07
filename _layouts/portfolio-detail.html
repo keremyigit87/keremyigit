@@ -26,17 +26,17 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400&display=swap">
 
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
     <!-- Modernizr -->
     <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-    {% include analytics.html %}
+    {% include_cached analytics.html %}
 </head>
 <body class="portfolio-detail">
-    {% include header.html %}
+    {% include_cached header.html %}
     <a href="{{site.baseurl}}/works" class="work-back">BACK</a>
     <main>
         {{content}}
@@ -51,7 +51,7 @@
             <p>and this is my portfolio website</p>
         </div>
     </div>
-    {% include footer.html %}
+    {% include_cached footer.html %}
 </body>
 
 <script type="text/javascript">

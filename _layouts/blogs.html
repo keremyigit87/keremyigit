@@ -26,16 +26,16 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400&display=swap">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
 
     <!-- Modernizr -->
     <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-    {% include analytics.html %}
+    {% include_cached analytics.html %}
 </head>
 
 <body id="work-studies" class="page">
-    {% include header.html %}
+    {% include_cached header.html %}
     <section>
         <div class="sign-logo-wrapper js-scene">
             <p class="sign-logo layer" data-depth="0.4">K</p>
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="space150"></div>
-        {% include footer.html %}
+        {% include_cached footer.html %}
     </section>
     <div class="page-transition-white"></div>
     <div class="page-transition-black"></div>

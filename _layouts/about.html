@@ -26,13 +26,13 @@
 
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400&display=swap">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
     <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 
     <!-- Modernizr -->
     <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-    {% include analytics.html %}
+    {% include_cached analytics.html %}
 </head>
 
 <body id="about" class="page">
@@ -129,7 +129,7 @@
         </div>
         <div class="space150"></div>
     </section>
-    {% include footer.html %} {% include header.html %}
+    {% include_cached footer.html %} {% include_cached header.html %}
     <div class="page-transition-white"></div>
     <div class="page-transition-black"></div>
 
