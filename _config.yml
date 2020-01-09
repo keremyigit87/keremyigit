@@ -36,6 +36,7 @@ gzip:
     - '.html'
     - '.css'
     - '.js'
+    - '.md'
 
 css:
   style: compressed
