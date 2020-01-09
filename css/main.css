@@ -1598,31 +1598,48 @@ body.open-menu {
     font-weight: 300;
 }
 @media(max-width:1200px){
+    .works-list-container .work-item .img-shadow{
+        bottom: 90px;
+        height: 80px;
+    }
+    #home .my-main-nav ul li a{
+        color: #5f5f5f;
+    }
+    .work-list-2-grid .work-item{
+        margin-bottom: 80px;
+    }
+    .works-list-container{
+        top: 9vh;
+    }
     #home.work .my-brand-wrapper{
         display: none;
     }
     #home.work .my-main-nav{
-        top: 0;
-    bottom: inherit;
-    left: 20px;
+        top: inherit;
+    bottom: 0;
+    left: inherit;
     right: inherit;
+    width: 100%;
     }
     #home.work .my-main-nav ul{
-        text-align: left;
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
     }
     #home.work .bg-dark{
-        width: calc(100% - 90px);
-        height: 130px;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
         z-index: 10;
     }
     #home.work .my-main-nav ul li{
-        margin-right: 24px;
+        margin: 0 20px;
+        display: inline-block;
     }
     #home.work .my-main-nav ul li a{
         font-size:18px;
     }
     #home.work .my-main-nav ul li{
-        margin-top: 17px;
     }
     #home.work .my-main-lines .vline:nth-of-type(1){
         right: 20vw;
