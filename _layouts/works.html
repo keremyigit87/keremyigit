@@ -116,6 +116,21 @@
 <script src="{{ site.baseurl }}/js/isotope-pkgd.min.js"></script>
 <script>
 
+
+function pageTransition(url){
+	TweenMax.to(".bg-dark", 1, {
+		width: '100%',
+		ease: Power2.easeInOut,
+	  });
+	  TweenMax.to('.page-transition-white',1,{
+		transform: "translateX(0)",
+	  ease: Power3.easeOut,
+	  delay:0.4,
+	  });
+	  setTimeout(function() {
+		window.location.pathname = url;
+	  }, 2200);
+}
 $(window).load(function(){
     var $container = $('.works-list-wrapper');
     $container.isotope({
