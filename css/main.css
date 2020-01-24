@@ -74,7 +74,10 @@
 .w-100 {
     width: 100%;
 }
-
+.ph-0{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
 
 /* ==========================
         Homepage Styles
@@ -908,10 +911,14 @@ body.open-menu {
     .roadmap-shape {
         display: none !important;
     }
+    [class*='col-']{
+        padding: 0;
+        margin: 0;
+    }
 }
 
 .container * {
-    box-sizing: border-box;
+    box-sizing: content-box;
 }
 
 
@@ -1768,4 +1775,56 @@ body.open-menu {
     #footer-two{
         height: 140px;
     }
+}
+.iframe{
+    border: 10px solid #000;
+    border-radius: 10px;
+}
+.goToSite{
+    background: #000;
+    color:#fff;
+    padding: 20px 50px;
+    text-decoration: none;
+    position: relative;
+    transition: padding-right .3s;
+}
+.goToSite span{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    background: #fff;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+}
+.goToSite:hover span{
+    opacity: 1;
+    visibility: visible;
+    right: 22px;
+}
+.goToSite:hover {
+    padding-right: 70px;
+}
+.goToSite span:after{
+    content: '';
+    position: absolute;
+    top: -3px;
+    right: 0;
+    width: 8px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.goToSite span:before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 0;
+    width: 8px;
+    height: 2px;
+    background: #fff;
+    transform: rotate(-45deg);
 }

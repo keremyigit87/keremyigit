@@ -321,3 +321,18 @@ headerToAbout.addEventListener("click", function() {
 
 
 
+
+function pageTransition(url){
+	TweenMax.to(".bg-dark", 1, {
+		width: '100%',
+		ease: Power2.easeInOut,
+	  });
+	  TweenMax.to('.page-transition-white',1,{
+		transform: "translateX(0)",
+	  ease: Power3.easeOut,
+	  delay:0.4,
+	  });
+	  setTimeout(function() {
+		window.location.pathname = url;
+	  }, 2200);
+}
