@@ -30,6 +30,9 @@ plugins:
   - jekyll-gzip
   - jekyll-include-cache
 
+gem: 
+  - jekyll-sitemap
+
 #gzip configuration
 gzip:
   extensions:
