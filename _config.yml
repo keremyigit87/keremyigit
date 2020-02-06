@@ -32,6 +32,7 @@ plugins:
 
 gem: 
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 include: 
   - .htaccess
