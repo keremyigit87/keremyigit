@@ -7,6 +7,7 @@ var parallax2 = new Parallax(scene2);
 var body = document.getElementsByTagName("body")[0];
 var homeToAbout = document.getElementById("homeToAbout");
 var homeToWorks = document.getElementById("homeToWorks");
+var homeToServices = document.getElementById("homeToServices");
 
 // if (localStorage.getItem('first')) {
 //     console.log('ikinci kez');
@@ -79,6 +80,16 @@ homeToAbout.addEventListener("click", function() {
   });
   setTimeout(function() {
     window.location.pathname = "/hakkimda";
+  }, 1200);
+});
+
+homeToServices.addEventListener("click", function() {
+  TweenMax.to(".page-transition-white", 1, {
+    transform: "translateX(0)",
+    ease: Power2.easeInOut
+  });
+  setTimeout(function() {
+    window.location.pathname = "/service";
   }, 1200);
 });
 

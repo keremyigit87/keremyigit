@@ -118,18 +118,18 @@
 
 
 function pageTransition(url){
-	TweenMax.to(".bg-dark", 1, {
-		width: '100%',
-		ease: Power2.easeInOut,
-	  });
-	  TweenMax.to('.page-transition-white',1,{
-		transform: "translateX(0)",
-	  ease: Power3.easeOut,
-	  delay:0.4,
-	  });
+	TweenMax.to(".page-transition-black", 1.5, {
+      transform: "translateX(100%)",
+      ease: Power2.easeInOut
+    });
+    TweenMax.to(".page-transition-white", 1.5, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut,
+      delay:0.1
+    });
 	  setTimeout(function() {
 		window.location.pathname = url;
-	  }, 1200);
+	  }, 1700);
 }
 $(window).load(function(){
     var $container = $('.works-list-wrapper');

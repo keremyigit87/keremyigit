@@ -5,6 +5,7 @@ var goToHome = document.getElementsByClassName("sign-logo-wrapper")[0];
 var headerToHome = document.getElementById("headerToHome");
 var headerToWorks = document.getElementById("headerToWorks");
 var headerToAbout = document.getElementById("headerToAbout");
+var headerToService = document.getElementById("headerToService");
 var HamburgerTrigger = document.getElementById("nav-container");
 var trlTrigger = document.getElementsByClassName("trl")[0];
 
@@ -60,6 +61,18 @@ function openAbout() {
   );
 }
 
+headerToService.addEventListener("click", function() {
+  body.classList.remove("open-menu");
+  setTimeout(function() {
+    TweenMax.to(".page-transition-black", 1, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut
+    });
+    setTimeout(function() {
+      window.location.pathname = "/service";
+    }, 1200);
+  }, 500);
+});
 goToHome.addEventListener("click", function() {
   TweenMax.to(".page-transition-black", 1, {
     transform: "translateX(0)",
@@ -125,8 +138,13 @@ headerToWork.addEventListener("click", function() {
   body.classList.remove("open-menu");
   setTimeout(function() {
     TweenMax.to(".page-transition-black", 1, {
-      transform: "translateX(0)",
+      transform: "translateX(100%)",
       ease: Power2.easeInOut
+    });
+    TweenMax.to(".page-transition-white", 1, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut,
+      delay:0.1
     });
     setTimeout(function() {
       window.location.pathname = "/works";

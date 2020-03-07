@@ -6,6 +6,7 @@ var parallax = new Parallax(scene);
 var body = document.getElementsByTagName("body")[0];
 var homeToAbout = document.getElementById("homeToAbout");
 var homeToWorks = document.getElementById("homeToWorks");
+var homeToService = document.getElementById("homeToService");
 var HamburgerTrigger = document.getElementById("nav-container");
 var headerToHome = document.getElementById("headerToHome");
 
@@ -113,6 +114,18 @@ headerToAbout.addEventListener("click", function() {
   }, 500);
 });
 
+headerToService.addEventListener("click", function() {
+	body.classList.remove("open-menu");
+	setTimeout(function() {
+	  TweenMax.to(".page-transition-white", 1, {
+		transform: "translateX(0)",
+		ease: Power2.easeInOut
+	  });
+	  setTimeout(function() {
+		window.location.pathname = "/service";
+	  }, 1200);
+	}, 500);
+  });
 
 
 

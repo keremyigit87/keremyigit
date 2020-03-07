@@ -4,27 +4,55 @@ var scene = document.getElementsByClassName("js-scene")[0];
 var goToHome = document.getElementsByClassName("sign-logo-wrapper")[0];
 var headerToHome = document.getElementById("headerToHome");
 var headerToWorks = document.getElementById("headerToWorks");
+var headerToService = document.getElementById("headerToService");
 var headerToAbout = document.getElementById("headerToAbout");
-var homeToService = document.getElementById("homeToService");
 var HamburgerTrigger = document.getElementById("nav-container");
 var trlTrigger = document.getElementsByClassName("trl")[0];
 
-var body = document.getElementsByTagName("body")[0];
-openDetailPage();
+var goToSectionTwo = document.getElementById('goSectionTwo');
+var goToSectionThree = document.getElementById('goSectionThree');
+var goToSectionFour = document.getElementById('goSectionFour');
 
-function openDetailPage() {
+var sectionOne = document.getElementsByClassName('how-section-1')[0];
+var sectionTwo = document.getElementsByClassName('how-section-2')[0];
+var sectionThree = document.getElementsByClassName('how-section-3')[0];
+var sectionFour = document.getElementsByClassName('how-section-4')[0];
+var goToDaas = document.getElementById('goToDaas');
+
+var body = document.getElementsByTagName("body")[0];
+openAbout();
+
+function openAbout() {
   body.classList.add("show");
-  TweenMax.from(".sign-logo-wrapper, .work-back", 0.3, {
+  TweenMax.from(".sign-logo-wrapper", 1, {
     width: "0px",
     ease: Power2.easeInOut
   });
-  TweenMax.staggerFrom('.anim-content',1,{
-      opacity:0,
-      y:200,
-      delay:0.3,
-      ease: Power2.easeInOut
-  },0.1);
+  TweenMax.from(".ky-my", 1, {
+    opacity: 0,
+    y: 100,
+    delay: 0.5,
+    ease: Power2.easeInOut
+  });
 
+  TweenMax.from(".skill-h2", 1, {
+    x: 100,
+    delay: 0.8,
+    opacity: 0,
+    ease: Power2.easeInOut
+  });
+
+  TweenMax.staggerFrom(
+    "#about .about-container ul.firstList li",
+    1,
+    {
+      opacity: 0,
+      y: 200,
+      delay: 0.7,
+      ease: Power2.easeInOut
+    },
+    0.1
+  );
   TweenMax.from(".hamburger-menu", 1, {
     opacity: 0,
     delay: 1.2,
@@ -85,6 +113,15 @@ headerToHome.addEventListener("click", function() {
 headerToAbout.addEventListener("click", function() {
   body.classList.remove("open-menu");
   HamburgerTrigger.classList.remove("pushed");
+  setTimeout(function(){
+    TweenMax.to(".page-transition-black", 1, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut
+    });
+    setTimeout(function() {
+      window.location.pathname = "/hakkimda";
+    }, 1200);
+  },400);
 });
 
 goToHome.addEventListener("mouseenter", function() {
@@ -103,49 +140,31 @@ HamburgerTrigger.addEventListener("click", function() {
   HamburgerTrigger.classList.toggle("pushed");
 });
 
-headerToAbout.addEventListener("click", function() {
-    body.classList.remove("open-menu");
-    setTimeout(function() {
-        TweenMax.to(".page-transition-black", 1, {
-            transform: "translateX(0)",
-            ease: Power2.easeInOut,
-          });
-        TweenMax.to(".page-transition-white", 1, {
-          transform: "translateX(0)",
-          ease: Power2.easeInOut,
-          delay:0.1
-        });
-      setTimeout(function() {
-        window.location.pathname = "/hakkimda";
-      }, 1200);
-    }, 500);
-  });
+headerToService.addEventListener('click', function(){
+  HamburgerTrigger.classList.remove('pushed');
+  body.classList.remove('open-menu');
+});
 
-  headerToWork.addEventListener("click", function() {
-    TweenMax.to(".page-transition-white", 1, {
-      transform: "translateX(0)",
+headerToWork.addEventListener("click", function() {
+  body.classList.remove("open-menu");
+  setTimeout(function() {
+    TweenMax.to(".page-transition-black", 1, {
+      transform: "translateX(100%)",
       ease: Power2.easeInOut
     });
-    setTimeout(function() {
-      window.location.pathname = "/works";
-    }, 1200);
-  });
-
-  headerToService.addEventListener("click", function() {
-    body.classList.remove("open-menu");
-    setTimeout(function() {
-      TweenMax.to(".page-transition-black", 1, {
-        transform: "translateX(100%)",
-        ease: Power2.easeInOut
-      });
-      TweenMax.to(".page-transition-white", 1, {
-        transform: "translateX(0)",
-        ease: Power2.easeInOut,
-        delay:0.2
-      });
-      setTimeout(function() {
-      window.location.pathname = "/service";
-      }, 1200);
-    }, 500);
+    TweenMax.to(".page-transition-white", 1, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut,
+      delay:0.1
     });
-  
+     setTimeout(function() {
+       window.location.pathname = "/works";
+     }, 1200);
+  }, 500);
+});
+
+goToDaas.addEventListener('click', function(){
+  window.location.pathname = '/daas'
+})
+
+

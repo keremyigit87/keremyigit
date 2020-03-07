@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+    <title>{%if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}
+    </title>
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.image }}" />
+    <meta property="og:site_name" content="Kerem Yiğit's Blog">
+    <meta property="article:publisher" content="http://www.facebook.com/kerem.yigit.566" />
+    <meta property="article:author" content="https://www.facebook.com/kerem.yigit.566" />
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400&display=swap">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+
+    <!-- Modernizr -->
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+    {% include_cached analytics.html %}
+</head>
+
+<body id="daas" class="page">
+
+    <div class="container">
+        <div class="space150"></div>
+        <div class="space150"></div>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="h3">DaaS (Design as a Service) Nedir?</h3>
+                <p class="text"><span>DaaS (Design as a Service),</span> tasarımcı olarak sermayem olan zamanı 'hizmet aboneliği modeli' ile sunan bir iş modelidir. </p>
+                <div class="space20"></div>
+                <p class="text"><span>Burası çok önemli; </span>Proje sahibine gönderilen fiyat tekliflerinde standartlar ve şartlar gözden kaçırılarak, direkt fiyat alanına gidilir.
+                Beni ve iş modelimi daha iyi anlamanız için lütfen aşağıda yazanları dikkatle okumanızı rica ederim.</p>
+                <div class="space100"></div>
+                <h3 class="h3">Tasarım İşinde Abonelik mi Olur?</h3>
+                <p class="text">Hem proje sahibinin finansal yatırımını, hem kendi sermayemi (zamanımı) korumak ve yapılacak işe uygun zamanı ayırarak, kaliteli sonuçlar ile mutlu müşterileri ve mutlu hizmet veren olalığını sağlamak için oluşturulmuş bir iş modelidir. Geleneksel proje bazlı fiyat teklifinin uydurma bir efor hesabı ile yapılması ve yine uydurma bir proje bitiş tarihi vermesi üzerine geliştirilmiştir.</p>
+                <p class="text">DaaS modelinde, sizin projenize ayırdığınız bütçe ve öngördüğünüz süre önemlidir.</p>
+                <div class="space30"></div>
+                <p class="text">DaaS paketlerinin <span>Adam/Saat</span> rakamları daha önceki deneyimlerimden yola çıkarak bir projede <span>aylık ortalama UI ve UX </span>için harcanan saatleri baz alınarak düzenlenmiştir.</p>
+                <div class="space100"></div>
+                <h3 class="h3">Kullandığım DaaS'ın Standardı Nedir?</h3>
+                <ul class="list">
+                    <li>Her hizmet ayının sonunda, proje sahibi için harcanan tüm efor (kişi / görev / dakika bazında) raporlanır.</li>
+                    <li>Kontrat süresince, proje sahibinin bütçesindeki kaynak herhangi bir sebeple <span>%100</span> oranında kullanılmaz ise kaynağın <span>%50</span> üzerindeki bölümü bir sonraki aya devreder.</li>
+                    <li>Ay içerisinde <span>max ay/saat proje sahibi onayı ile aşılırsa 145 TL Adam/Saat</span> fiyatı üzerinden ek fatura düzenlenir.</li>
+                    <li>Tüm paketlerdeki <span>minimum</span> standart kontrat süresi <span>2</span> ay, kontrat <span>iptal ihbar</span> süresi <span>30</span> gündür.</li>
+                    <li>Kontrat süresi tamamlandığında <span>devreden kaynak</span> bulunması durumunda, ilgili kaynağın tüketimi için tanınacak ek süre, kontrat süresinin <span>(ay bazında) %50'si</span> ile limitlidir.</li>
+                    <li>Ay içerisinde, sonraki aylarda düzenli olarak <span>max Adam/Saat</span> üzerinden kullanım yapılacağına dair açık bulgular ve (veya) proje sahibinin <span>yazılı onayı</span> olması durumunda, bir üst DaaS paketine geçilebilir.</li>
+                    <li>Startup ve Business paketlerinin <span>ilk ayında +5 Adam/Saat benden.</span></li>
+                    <li>Fatura kesim tarihleri proje başlangıç tarihinden <span>10 gün sonra</span> başlar. Projenize yeterli katma değeri sağlayamayacağımı düşünürseniz diye bu süreye kadar <span>kontratı fesih edebilirsiniz.</span></li>
+                    <li>Proje sahibi tarafından, <span>proje başlangıcında ilk 10 gün</span> içerisinde kontrat feshi gerçekleşirse, o zamana kadar <span>harcanan toplam Adam/Saat</span> tutarının yarısı için tarafınıza fatura kesilir.</li>
+                </ul>
+                <div class="space100"></div>
+                <div class="daas-boxes">
+                    <div class="box">
+                        <h5>Startup</h5>
+                        <p class="total-price">6250 TL / AY</p>
+                        <p class="man-hour">(50 Adam / Saat için)</p>
+                        <div class="line"></div>
+                        <p class="hour-price"><span>125 TL</span> Adam / Saat</p>
+                    </div>
+                    <div class="box">
+                        <h5>Business</h5>
+                        <p class="total-price">10350 TL / AY</p>
+                        <p class="man-hour">(90 Adam / Saat için)</p>
+                        <div class="line"></div>
+                        <p class="hour-price"><span>115 TL</span> Adam / Saat</p>
+                    </div>
+                </div>
+                <div class="space100"></div>
+                <ul class="list">
+                    <li>Tarafımın proje sahibine ilettiği faturaların <span>ödeme vadeleri 10</span> gündür.</li>
+                    <li>Teklif, tarafınıza iletildiği günden sonraki <span>10</span> iş günü süreyle geçerlidir.</li>
+                    <li>Teklifin geçerlilik süresinin aşılması durumunda tarafımdan <span>güncellenmesi</span> gerekmektedir.</li>
+                    <li><span>Workshoplar, yerinde ya da Skype</span> üzerinden yapılan toplantılar Adam/Saat kaynak harcamasına dahildir.</li>
+                    <li>Proje yönetimi boyunca ve sonrasında kullanılacak programların <span>lisans ücretleri tarafıma aittir.</span></li>
+                    <li><span>Kullanıcı görüşmeleri, kullanılabilirlik testleri, odak grupları, anketler vb.</span> çalışmalarda kullanıcılara verilmesi gereken bir ücret var ise bu <span>proje sahibi</span> tarafından karşılanır.</li>
+                    <li>Tasarımda kullanılacak <span>lisanslı fotoğraf, vektör dosyası (özel grafik tasarım), ikon</span> veya <span>font</span> gibi gereksinimler istenirse bunlar da proje sahibi tarafından karşılanır.</li>
+                    <li>Tüm paketlerin fiyatlarının geçerlilik süresi <span>31 Aralık 2020</span>'dir</li>
+                    <li>Fiyatlara <span>KDV</span> dahil değildir.</li>
+                </ul>
+                <div class="space100"></div>
+                <div class="text-center">
+                    <a href="https://keremyigit.typeform.com/to/q0kBuR" class="btn-primary" id="" target="_blank">Teklif Alın<span></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="space150"></div>
+
+ {% include_cached header.html %} {% include_cached footer.html %}
+    <div class="page-transition-white"></div>
+    <div class="page-transition-black"></div>
+
+  
+</body>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="{{ site.baseurl }}/js/about.js"></script>
+
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Begin Jekyll SEO tag v2.5.0 -->
+    <meta itemprop="description" name="description"
+        content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+    <title>{%if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}
+    </title>
+
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.image }}" />
+    <meta property="og:site_name" content="Kerem Yiğit's Blog">
+    <meta property="article:publisher" content="http://www.facebook.com/kerem.yigit.566" />
+    <meta property="article:author" content="https://www.facebook.com/kerem.yigit.566" />
+    <meta property="article:published_time" content="{{ page.date }}" />
+    <meta property="og:description"
+        content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Nunito:300,400&display=swap">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/fullpage.min.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+
+    <!-- Modernizr -->
+    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
+    {% include_cached analytics.html %}
+</head>
+
+<body id="how" class="page">
+    <main id="fullpage">
+
+
+        <section class="how-section-1 section" id="section0">
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+            <div class="how-container text-center">
+                <div class="space50"></div>
+                <img src="/img/how/ui_ux_not.png" alt="" class="w-100" style="width: 400px; max-width: 100%;">
+                <div class="space50"></div>
+                <p class="text-19 w-70 text-left"><span>UI</span> (Kullanıcı Arayüzü) ve <span>UX</span> (Kullanıcı Deneyimi) ülkemizde
+                    birlikte kullanılan ve birbirleri ile karıştırılan iki terimdir. </p>
+                <p class="text-19 w-70 text-left"><span>UI (Kullanıcı Arayüzü),</span> kullanıcılarınızın ne gördüğü ile ilgilidir. Renkler, tipografi,
+                    grafikler, ızgara sistemi, butonlar vs.</p>
+                <p class="text-19 w-70 text-left"><span>UX (Kullanıcı Deneyimi)</span> ise kullanıcılarınızın nasıl deneyimlediği ile
+                    ilgilenir. O süslü buton tıklanıyor mu? Neden tıklanmıyor? Tıklanması için ne yapmalı? gibi sorulara hep cevap arayışı içerisindedir.</p>
+
+                <!-- <a href="javascript:void(0);" data-text="Devam Et" class="btn-primary" id="goSectionTwo">Devam Et<span></span></a> -->
+            </div>
+            <div class="space150"></div>
+        </section>
+
+        <section class="how-section-2 section" id="section1">
+            <div class="how-ui-container">
+                <div class="brain-img">
+                    <img src="/img/how/brain-white-left.svg" alt="">
+                </div>
+                <ul class="ui-content">
+                    <li class="h4">UI</li>
+                    <li>Görsel Tasarım</li>
+                    <li>Renkler</li>
+                    <li>Grafik Tasarım</li>
+                    <li>Yerleşim</li>
+                    <li>Tipografi</li>
+                </ul>
+            </div>
+            <div class="how-ux-container">
+                <div class="brain-img">
+                    <img src="/img/how/brain-black-right.svg" alt="">
+                </div>
+                <ul class="ux-content">
+                    <li class="h4">UX</li>
+                    <li>Etkileşim Tasarımı</li>
+                    <li>Wireframe & Prototip</li>
+                    <li>Bilgi Mimarisi</li>
+                    <li>Kullanıcı Araştırmaları</li>
+                    <li>Kullanıcı Testleri</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="how-section-3 section" id="section2">
+            <div class="mouse">
+                <div class="scroll"></div>
+            </div>
+            <div class="how-container">
+                <div class="section-3-header">
+                    <h2 class="h2">Servislerim</h2>
+                    <p class="text-19 w-70">Arayüz tasarımı ve kullanıcı deneyimi tasarımı alanlarında uçtan uça hizmet
+                        verebildiğim gibi, yazılım tarafında da işin ehli iş ortaklarımla çalışmaktayım. </p>
+                    <div class="space50"></div>
+                </div>
+                <div class="section-3-tabs">
+                    <ul>
+                        <li>
+                            <a href="#a" data-tab="a" class="active">
+                                <img src="/img/how/discovery-icon.svg" alt="">
+                                <p class="text">Keşif ve İhtiyaç Analizi</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#b" data-tab="b">
+                                <img src="/img/how/analysis-icon.svg" alt="">
+                                <p class="text">Kullanıcı Deneyimi Analizi</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#c" data-tab="c">
+                                <img src="/img/how/ia-icon.svg" alt="">
+                                <p class="text">İçerik Stratejisi ve Bilgi Mimarisi</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#d" data-tab="d">
+                                <img src="/img/how/uxd-icon.svg" alt="">
+                                <p class="text">Kullanıcı Deneyimi Stratejisi ve Tasarımı</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#e" data-tab="e">
+                                <img src="/img/how/optimization-icon.svg" alt="">
+                                <p class="text">Dönüşüm Optimizasyonu</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#f" style="width:50%" data-tab="f">
+                                <img src="/img/how/development-icon.svg" alt="">
+                                <p class="text">Arayüz Yazılımı</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="section-3-tab-content">
+                    <div class="content active" id="a">
+                        <h4 class="h4">Keşif ve İhtiyaç Analizi</h4>
+                        <p class="text">Ürün, hizmet veya sisteminizinin geçmişe dönük tüm verilerinizi inceler,
+                            verimliğinizi arttırmanıza ve geri dönüşlerinizi arttırmanıza yardımcı olur.
+                            Probleminizin çözümünü içgüdülerden ziyade verilere dayandırarak çözüm sunarım.</p>
+                    </div>
+                    <div class="content" id="b">
+                        <h4 class="h4">Kullanıcı Deneyimi Analizi</h4>
+                        <p class="text">Kullanıcılarınızın, ürününüz ya da servisinizi kullanırken nasıl hareket ediyor?
+                            Bu süreç işinizi nasıl etkiliyor? Bütün verilerinizi derinlemesine inceleyip, problemi
+                            tanımlayıp, çözüm önerileri sunuyorum.</p>
+                    </div>
+                    <div class="content" id="c">
+                        <h4 class="h4">İçerik Stratejisi ve Bilgi Mimarisi</h4>
+                        <p class="text">Hedef kitlenize uygun personlar ile iş hedeflerinize uygun içerik stratejisini
+                            tasarlıyor, bilgi mimarisi ile kullanıcılarınızın beklentilerini analiz edip onlara en çok
+                            istedikleri şeyi görmeleri için özüm üretiyorum.</p>
+                    </div>
+                    <div class="content" id="d">
+                        <h4 class="h4">Kullanıcı Deneyimi Stratejisi ve Tasarımı</h4>
+                        <p class="text">Kullanıcılarınızı tanımlıyor, onlar için en uygun etkileşimli deneyimler ve
+                            arabirimler tasarlıyorum.</p>
+                    </div>
+                    <div class="content" id="e">
+                        <h4 class="h4">Dönüşüm Optimizasyonu</h4>
+                        <p class="text">Ürün ya da servisinizi kullanan kullanıcılarınızın verilerini inceleyerek
+                            tasarımsal, metinsel ve yapısal çözüm önerileri sunuyor. Yapıtığım testler ile hangi
+                            çözümlerin sonuç verdiğini raporlayarak ürün ya da servisinizin değerini arttırıyorum.</p>
+                    </div>
+                    <div class="content" id="f">
+                        <h4 class="h4">Arayüz Yazılımı</h4>
+                        <p class="text">Kullanıcılara gösterebileceğiniz göz alıcı ürün ya da hizmetinizin tüm arayüz
+                            kodlamalarını yapıyor. İşin ehlileri ile çalışıp projenizi canlıya alıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="how-section-4 section" id="section3">
+            <div class="how-container text-center">
+                <h4 class="h2">Hizmetlerimden nasıl faydalanmak istersiniz?</h4>
+                <div class="space20"></div>
+                <p class="text-19">Farklı isteklere hitap edebilmek için iki farklı fiyat modeli ile teklif vermekteyim.
+                </p>
+                <div class="space50"></div>
+                <div class="prices-wrapper">
+                    <div class="daas" id="goToDaas">
+                        <div class="box">
+                            <h4 class="h4">DaaS</h4>
+                            <p class="text">Design as a Service</p>
+                            <span></span>
+                        </div>
+                        <div class="space20"></div>
+                        <p class="text">Karmaşık yapılardaki ve uzun soluklu projelerde birlikte çalışmak için! </p>
+                    </div>
+                    <a class="self-service" href="https://keremyigit.typeform.com/to/QL0kDK" target="_blank">
+                        <div class="box">
+                            <h4 class="h4">Self-Service</h4>
+                            <p class="text">Her Bütçeye Uygun</p>
+                            <span></span>
+                        </div>
+                        <div class="space20"></div>
+                        <p class="text">Bütçenize göre hizmetlerimle size özel çözümler sunabilirim.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    {% include_cached header.html %}
+    <div class="page-transition-white"></div>
+    <div class="page-transition-black"></div>
+
+    <script type="text/javascript">
+        window.sr = ScrollReveal();
+        sr.reveal('.anim', {
+            duration: 2000,
+            distance: '100px',
+        })
+
+
+
+        'use strict';
+
+        function Tabs() {
+            var bindAll = function () {
+                var menuElements = document.querySelectorAll('[data-tab]');
+                for (var i = 0; i < menuElements.length; i++) {
+                    menuElements[i].addEventListener('mouseover', change, false);
+                }
+            }
+
+            var clear = function () {
+                var menuElements = document.querySelectorAll('[data-tab]');
+                for (var i = 0; i < menuElements.length; i++) {
+                    menuElements[i].classList.remove('active');
+                    var id = menuElements[i].getAttribute('data-tab');
+                    document.getElementById(id).classList.remove('active');
+                }
+            }
+
+            var change = function (e) {
+                clear();
+                e.target.classList.add('active');
+                var id = e.currentTarget.getAttribute('data-tab');
+                document.getElementById(id).classList.add('active');
+            }
+
+            bindAll();
+        }
+
+        var connectTabs = new Tabs();
+
+    </script>
+</body>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="{{ site.baseurl }}/js/fullpage.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/vendors/scrolloverflow.min.js"></script>
+<script src="{{ site.baseurl }}/js/services.js"></script>
+<script>
+    new fullpage('#fullpage', {
+        sectionsColor: ['#fff', '#fff', '#F8F8F8', '#fff'],
+        navigation: false,
+        navigationPosition: 'left',
+        navigationTooltips: ['1', '2', '3', '4'],
+        keyboardScrolling: true,
+        sectionSelector: 'section',
+        scrollOverflow: true,
+        scrollOverflowOptions: {
+            scrollbars: true,
+            mouseWheel: true,
+            hideScrollbars: false,
+            fadeScrollbars: false,
+            disableMouse: true
+        }
+    });
+</script>
+
+</html>
