@@ -108,11 +108,13 @@
     font-size: 22px;
     font-weight: 600;
     padding-bottom: 10px;
+    line-height: 32px;
 }
 .h2{
     font-size: 26px;
     font-weight: 600;
     padding-bottom: 10px;
+    line-height: 36px;
 }
 .list li{
     font-size: 16px;
@@ -2364,5 +2366,61 @@ body.open-menu {
         -moz-transform: translateY(20px);
         -ms-transform: translateY(20px);
         -o-transform: translateY(20px);
+    }
+}
+@media(max-width:768px){
+    .w-70{
+        width: 100%;
+    }
+    .how-section-1{
+        padding-top: 100px;
+    }
+    .how-ux-container .brain-img img,
+    .how-ui-container .brain-img img{
+        width: 70px;
+    }
+    .how-ux-container .brain-img,
+    .how-ui-container .brain-img{
+        top:30%;
+    }
+    .ui-content, .ux-content{
+        top: initial;
+        bottom: 40px;
+        transform: initial;
+    }
+    .ux-content{
+        right: 20px;
+    }
+    .ui-content{
+        left: 20px;
+    }
+    .how-section-2 .h4{
+        font-size: 30px !important;
+    }
+    .ux-content li,
+    .ui-content li{
+        font-size: 14px;
+    }
+    .section-3-header{
+        margin-top: 150px;
+    }
+    .section-3-tab-content{
+        display: none;
+    }
+    .section-3-tabs ul li{
+        width: 140px;
+    }
+    .how-section-4{
+        padding-top: 90px;
+    }
+    .daas, .self-service{
+        margin:0 0 64px 0;
+    }
+    .daas-boxes{
+        flex-direction: column;
+    }
+    .daas-boxes .box{
+        width: 100%;    margin-bottom: 60px;
+        padding: 36px 0;
     }
 }
