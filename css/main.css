@@ -1061,9 +1061,13 @@ body.open-menu {
     .footer-phone {
         margin: 0 0 50px 20px !important;
     }
+    .open-menu .menu-wrapper ul li{
+        margin:18px 0;
+    }
 }
 
-.page-transition-white {
+.page-transition-white,
+.page-transition-white-2 {
     position: fixed;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
@@ -1078,7 +1082,8 @@ body.open-menu {
     top: 0;
 }
 
-.page-transition-black {
+.page-transition-black,
+.page-transition-black-2 {
     position: fixed;
     transform: translateX(-100%);
     -webkit-transform: translateX(-100%);
@@ -1770,12 +1775,6 @@ body.open-menu {
     line-height: 21px;
 }
 
-.portfolio-detail .page-transition-white{
-    z-index: 1100;
-}
-.portfolio-detail .page-transition-black{
-    z-index: 1000;
-}
 .work-back{
     background: #000;
     position: fixed;

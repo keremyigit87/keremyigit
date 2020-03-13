@@ -45,46 +45,44 @@ function openDetailPage() {
 
 goToHome.addEventListener("click", function() {
   TweenMax.to(".page-transition-black", 1, {
-    transform: "translateX(0)",
+    transform: "translateX(100%)",
     ease: Power2.easeInOut
   });
-  setTimeout(function() {
-    window.location.pathname = "/";
-  }, 1200);
+  TweenMax.to(".page-transition-white", 0.8, {
+    transform: "translateX(0)",
+    ease: Power2.easeInOut,
+    delay:0.1
+  });
+  TweenMax.to(".page-transition-black-2", 1, {
+    transform: "translateX(0)",
+    ease: Power2.easeInOut,
+    delay:0.2
+  });
+   setTimeout(function() {
+     window.location.pathname = '/';
+   }, 1200);
 });
 headerToHome.addEventListener("click", function() {
   body.classList.remove("open-menu");
   setTimeout(function() {
     TweenMax.to(".page-transition-black", 1, {
-      transform: "translateX(0)",
+      transform: "translateX(100%)",
       ease: Power2.easeInOut
     });
-    setTimeout(function() {
-      window.location.pathname = "/";
-    }, 1200);
+    TweenMax.to(".page-transition-white", 0.8, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut,
+      delay:0.1
+    });
+    TweenMax.to(".page-transition-black-2", 1, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut,
+      delay:0.2
+    });
+     setTimeout(function() {
+       window.location.pathname = '/';
+     }, 1200);
   }, 500);
-});
-// Case study sayfasına geçiş stransition'ı js
-// headerToWorks.addEventListener("click", function() {
-//   body.classList.remove("open-menu");
-//   setTimeout(function() {
-//     TweenMax.to(".page-transition-black", 1, {
-//       transform: "translateX(100%)",
-//       ease: Power2.easeInOut
-//     });
-//     TweenMax.to(".page-transition-white", 1, {
-//       transform: "translateX(0)",
-//       ease: Power2.easeInOut
-//     });
-//     setTimeout(function() {
-//       window.location.pathname = "/work-studies";
-//     }, 1200);
-//   }, 500);
-// });
-
-headerToAbout.addEventListener("click", function() {
-  body.classList.remove("open-menu");
-  HamburgerTrigger.classList.remove("pushed");
 });
 
 goToHome.addEventListener("mouseenter", function() {
@@ -105,47 +103,58 @@ HamburgerTrigger.addEventListener("click", function() {
 
 headerToAbout.addEventListener("click", function() {
     body.classList.remove("open-menu");
-    setTimeout(function() {
-        TweenMax.to(".page-transition-black", 1, {
-            transform: "translateX(0)",
-            ease: Power2.easeInOut,
-          });
-        TweenMax.to(".page-transition-white", 1, {
-          transform: "translateX(0)",
-          ease: Power2.easeInOut,
-          delay:0.1
-        });
-      setTimeout(function() {
-        window.location.pathname = "/hakkimda";
-      }, 1200);
-    }, 500);
+    HamburgerTrigger.classList.remove("pushed");
+    setTimeout(function(){
+      TweenMax.to(".page-transition-black", 1, {
+        transform: "translateX(100%)",
+        ease: Power2.easeInOut
+      });
+      TweenMax.to(".page-transition-white", 0.8, {
+        transform: "translateX(0)",
+        ease: Power2.easeInOut,
+        delay:0.1
+      });
+       setTimeout(function() {
+         window.location.pathname = '/hakkimda';
+       }, 1000);
+      }, 400);
   });
 
   headerToWork.addEventListener("click", function() {
-    TweenMax.to(".page-transition-white", 1, {
-      transform: "translateX(0)",
-      ease: Power2.easeInOut
-    });
-    setTimeout(function() {
-      window.location.pathname = "/works";
-    }, 1200);
+    body.classList.remove("open-menu");
+    HamburgerTrigger.classList.remove("pushed");
+    setTimeout(function(){
+      TweenMax.to(".page-transition-black", 1, {
+        transform: "translateX(100%)",
+        ease: Power2.easeInOut
+      });
+      TweenMax.to(".page-transition-white", 0.8, {
+        transform: "translateX(0)",
+        ease: Power2.easeInOut,
+        delay:0.1
+      });
+       setTimeout(function() {
+         window.location.pathname = '/works';
+       }, 1000);
+      }, 500);
   });
 
   headerToService.addEventListener("click", function() {
     body.classList.remove("open-menu");
+    HamburgerTrigger.classList.remove("pushed");
     setTimeout(function() {
       TweenMax.to(".page-transition-black", 1, {
         transform: "translateX(100%)",
         ease: Power2.easeInOut
       });
-      TweenMax.to(".page-transition-white", 1, {
+      TweenMax.to(".page-transition-white", 0.8, {
         transform: "translateX(0)",
         ease: Power2.easeInOut,
-        delay:0.2
+        delay:0.1
       });
       setTimeout(function() {
       window.location.pathname = "/service";
-      }, 1200);
+      }, 1000);
     }, 500);
     });
   

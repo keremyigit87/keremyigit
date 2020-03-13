@@ -90,45 +90,55 @@ HamburgerTrigger.addEventListener("click", function() {
 headerToHome.addEventListener("click", function() {
   body.classList.remove("open-menu");
   setTimeout(function() {
-    TweenMax.to(".page-transition-black", 1, {
-      transform: "translateX(0)",
-      ease: Power2.easeInOut
-    });
+    TweenMax.to(".page-transition-white", 1, {
+		transform: "translateX(100%)",
+		ease: Power2.easeInOut
+	  });
+	  TweenMax.to(".page-transition-black", 0.8, {
+		transform: "translateX(0)",
+		ease: Power2.easeInOut,
+		delay:0.1
+	  });
     setTimeout(function() {
       window.location.pathname = "/";
-    }, 1200);
+    }, 1000);
   }, 500);
 });
 
 
 headerToAbout.addEventListener("click", function() {
-  body.classList.remove("open-menu");
-  setTimeout(function() {
-    TweenMax.to(".page-transition-white", 1, {
-      transform: "translateX(0)",
-      ease: Power2.easeInOut
-    });
-    setTimeout(function() {
-      window.location.pathname = "/hakkimda";
-    }, 1200);
-  }, 500);
-});
+	body.classList.remove("open-menu");
+	pageTransition('/hakkimda');
+  });
 
 headerToService.addEventListener("click", function() {
 	body.classList.remove("open-menu");
-	setTimeout(function() {
-	  TweenMax.to(".page-transition-white", 1, {
-		transform: "translateX(0)",
-		ease: Power2.easeInOut
-	  });
-	  setTimeout(function() {
-		window.location.pathname = "/service";
-	  }, 1200);
-	}, 500);
+	pageTransition('/service');
   });
 
 
 
+  function pageTransition(url){
+	  setTimeout(function(){
+		TweenMax.to(".page-transition-white", 1, {
+		  transform: "translateX(100%)",
+		  ease: Power2.easeInOut
+		});
+		TweenMax.to(".page-transition-black", 0.8, {
+		  transform: "translateX(0)",
+		  ease: Power2.easeInOut,
+		  delay:0.1
+		});
+		TweenMax.to(".page-transition-white-2", 1, {
+		  transform: "translateX(0)",
+		  ease: Power2.easeInOut,
+		  delay:0.2
+		});
+		 setTimeout(function() {
+		   window.location.pathname = url;
+		 }, 1200);
+	  }, 500);
+  }
 
 
 
