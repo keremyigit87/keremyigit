@@ -103,6 +103,6 @@ function pageTransition(url){
     delay:0.2
   });
    setTimeout(function() {
-     window.location.pathname = '/works';
+     window.location.pathname = url;
    }, 1200);
 }
