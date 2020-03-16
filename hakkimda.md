@@ -5,7 +5,7 @@ description:
 permalink: /hakkimda/
 lang: TR
 ref: about
-introText: Merhabalar, adım <span>Kerem.</span> 2014 yılında arayüz kodlama, SEO ve arayüz tasarımı yaparak çalışmaya başladım. <h1>Kullanıcı deneyimi</h1> ve <h3>Tasarım Odaklı Düşünme</h3> metodolojisi kavramlarıyla tanışmam ile  tüm ilgimi kullanıcıları anlamak, problemlerini analiz edip davranışlarını ölçümleyerek tasarım yapmaya, kendimi bu yönde ilerlemeye ve geliştirmeye odaklandım. Bu süreçte birçok projede kullanıcı araştırmaları, fikir üretme çalışmaları, akış diyagramları, wireframe, etkileşim tasarımları ve arayüz tasarımları yaptım.
+introText: Merhabalar, adım <span>Kerem.</span> 2014 yılında arayüz kodlama, SEO ve arayüz tasarımı yaparak çalışmaya başladım. <h1>Kullanıcı deneyimi</h1> ve <h3>Tasarım Odaklı Düşünme</h3> metodolojisi kavramlarıyla tanışmam ile tüm ilgimi kullanıcıları anlamaya, kullanıcıların problemlerini analiz edip davranışlarını ölçümleyerek tasarım yapmaya, kendimi bu yönde ilerlemeye ve geliştirmeye odakladım. Bu süreçte birçok projede kullanıcı araştırmaları, fikir üretme çalışmaları, akış diyagramları, wireframe, etkileşim tasarımları ve arayüz tasarımları yaptım.
 btnText: BLOG
 btnUrl: /blogs/
 abilityTitle: UX Yeteneklerim
