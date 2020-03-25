@@ -1543,6 +1543,10 @@ body.open-menu {
     width: 70%;
     margin: 0 auto;
 }
+.w-50{
+    width:50%;
+    display: inline-block;
+}
 #home.work{
     background: #fff;
     overflow: auto;
@@ -2083,10 +2087,6 @@ body.open-menu {
       text-decoration: none;
   }
   
-  .daas-boxes .box:hover{
-      box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.36);
-      -webkit-box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.36);
-  }
   .prices-wrapper .box{
       padding: 32px 36px;
   }
@@ -2155,7 +2155,7 @@ body.open-menu {
   .daas-boxes .box{
       display: inline-block;
       padding: 36px 24px;
-      width: 220px;
+      width: 100%;
       text-align: center;
       border-radius: 4px;
       box-shadow: 0px 3px 6px rgba(000, 000, 000, 0.10);
@@ -2285,12 +2285,13 @@ body.open-menu {
     font-weight: 600;
 }
 .daas-boxes .total-price{
-    font-size:18px;
-    padding-bottom: 8px;
+    font-size:16px;
+    padding-bottom: 4px;
     line-height: 28px;
 }
 .daas-boxes .man-hour{
     opacity: .75;
+    font-size: 14px;
 }
 .daas-boxes .line{
     display: block;
@@ -2301,8 +2302,12 @@ body.open-menu {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.daas-boxes .hour-price span{
+    font-weight: 600;
+}
 .daas-boxes .hour-price{
     font-size: 18px;
+    padding-top: 16px;
 }
 
 
@@ -2422,4 +2427,42 @@ body.open-menu {
         width: 100%;    margin-bottom: 60px;
         padding: 36px 0;
     }
+}
+.grey-title{
+    font-weight: 600;
+    font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+    color:#B2B2B2;
+    font-size:34px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    letter-spacing: -20;
+
+}
+.text-italic-big{
+    font-style: italic;
+    font-size:22px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pl-50-mr{
+    padding-left:50px;
+    margin-right: -50px;
+}
+#daas hr{width: 300px;
+    height: 2px;
+    background-color: #000;
+    border: none;
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    margin-bottom: 40px;
+}
+@media(max-width:1200px){
+    #daas hr,
+    .section-3-tab-content{
+        display: none;
+    }
+}
+.fp-viewing-1 #fp-nav ul li a span{
+    background:#fff;
 }
