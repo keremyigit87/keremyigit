@@ -106,13 +106,13 @@
 }
 .h3{
     font-size: 22px;
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 10px;
     line-height: 32px;
 }
 .h2{
     font-size: 26px;
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 10px;
     line-height: 36px;
 }
@@ -126,7 +126,7 @@
     margin-left: 17px;
 }
 .list li span{
-    font-weight: 600;
+    font-weight: 700;
 }
 /* ==========================
         Homepage Styles
@@ -431,7 +431,7 @@ body {
     }
 }
 
-@media(max-width:600px) {
+@media(max-width:700px) {
     .my-main-lines {
         display: none;
     }
@@ -489,7 +489,7 @@ body {
 }
 
 .ky-my span {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .skill-h2 {
@@ -587,7 +587,7 @@ body {
 }
 
 .language-switch a.active {
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
 }
 
@@ -600,7 +600,7 @@ body {
 
 .EN:lang(en),
 .TR:lang(tr) {
-    font-weight: 600;
+    font-weight: 700;
     color: #000;
 }
 
@@ -624,9 +624,9 @@ body {
     display: block;
     position: absolute;
     width: 100%;
-    -webkit-transition: margin 600ms;
-    -moz-transition: margin 600ms;
-    transition: margin 600ms;
+    -webkit-transition: margin 700ms;
+    -moz-transition: margin 700ms;
+    transition: margin 700ms;
     cursor: pointer;
     top: 50%;
     left: 50%;
@@ -646,9 +646,9 @@ body {
     -webkit-transition-property: -webkit-transform, margin, border-right-color, box-shadow;
     -moz-transition-property: -moz-transform, margin, border-right-color, box-shadow;
     transition-property: transform, margin, border-right-color, box-shadow;
-    -webkit-transition-duration: 600ms;
-    -moz-transition-duration: 600ms;
-    transition-duration: 600ms;
+    -webkit-transition-duration: 700ms;
+    -moz-transition-duration: 700ms;
+    transition-duration: 700ms;
 }
 
 .toggle-icon .bar:nth-of-type(1) {
@@ -1499,19 +1499,19 @@ body.open-menu {
 }
 
 .aboutIntro span {
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .aboutIntro h3,
 .aboutIntro h1 {
     display: inline-block;
-    font-weight: 600;
+    font-weight: 700;
 }
 
 .title {
     font-size: 23px;
     color: #000;
-    font-weight: 600;
+    font-weight: 700;
     font-family: 'Montserrat';
     line-height: 30px;
     margin-bottom: 14px;
@@ -1529,7 +1529,7 @@ body.open-menu {
 
 .text span,
 .text-19 span {
-    font-weight: 600;
+    font-weight: 700;
 }
 .text-19 {
     font-size: 19px;
@@ -1746,7 +1746,7 @@ body.open-menu {
         margin: 0 20px;
     }
 }
-@media (max-width: 600px){
+@media (max-width: 700px){
 .my-main-lines {
     display: block;
 }}
@@ -1811,7 +1811,7 @@ body.open-menu {
     text-align: center;
 }
 .detail-subtitle{
-    font-weight: 600;
+    font-weight: 700;
     color:#555;
     font-size: 14px;
 }
@@ -1832,12 +1832,12 @@ body.open-menu {
 
 .h5{color: #000;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
 }
 .h4{color: #000;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 10px;
     line-height: 30px;
 }
@@ -2171,7 +2171,7 @@ body.open-menu {
       -o-transform-origin: center;
   }
   .daas-boxes .box h5{
-      font-weight: 600;
+      font-weight: 700;
       font-size: 24px;
       padding-bottom: 24px;
   }
@@ -2264,7 +2264,7 @@ body.open-menu {
 .not-found-container h2{
     color:#ffffff;
     font-size:36px;
-    font-weight: 600;
+    font-weight: 700;
     padding-bottom: 20px;
     opacity: .6;
     line-height: 44px;
@@ -2282,7 +2282,7 @@ body.open-menu {
 .not-found-container ul li a{
     text-transform: uppercase;
     color: #fff;
-    font-weight: 600;
+    font-weight: 700;
 }
 .daas-boxes .total-price{
     font-size:16px;
@@ -2303,7 +2303,7 @@ body.open-menu {
     margin-bottom: 20px;
 }
 .daas-boxes .hour-price span{
-    font-weight: 600;
+    font-weight: 700;
 }
 .daas-boxes .hour-price{
     font-size: 18px;
@@ -2429,7 +2429,7 @@ body.open-menu {
     }
 }
 .grey-title{
-    font-weight: 600;
+    font-weight: 700;
     font-family: 'Montserrat', Arial, Helvetica, sans-serif;
     color:#B2B2B2;
     font-size:34px;
