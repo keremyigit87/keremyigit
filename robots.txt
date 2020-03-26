@@ -1,3 +1,3 @@
 User-agent: *
 Sitemap: https://keremyigit.com/sitemap.xml
-Disallow: /404.html
+Disallow: https://keremyigit.com/404.html
