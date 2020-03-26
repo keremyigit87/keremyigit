@@ -29,6 +29,7 @@ plugins:
   - jekyll-feed
   - jekyll-gzip
   - jekyll-include-cache
+  - jekyll-sitemap
 
 gem: 
   - jekyll-sitemap

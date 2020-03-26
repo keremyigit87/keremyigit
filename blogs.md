@@ -1,6 +1,7 @@
 ---
 layout: blogs
 title: Blog List
+sitemap: false
 ---
 
 <div class="container">

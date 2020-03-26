@@ -39,6 +39,8 @@ GEM
       sass (~> 3.4)
     jekyll-seo-tag (2.5.0)
       jekyll (~> 3.3)
+    jekyll-sitemap (1.4.0)
+      jekyll (>= 3.7, < 5.0)
     jekyll-watch (2.1.2)
       listen (~> 3.0)
     kramdown (1.17.0)
@@ -76,6 +78,7 @@ DEPENDENCIES
   jekyll-gzip
   jekyll-include-cache
   jekyll-redirect-from
+  jekyll-sitemap
   minima (~> 2.0)
   tzinfo-data
 
