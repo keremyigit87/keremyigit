@@ -29,8 +29,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
 
-gems: 
-  - jekyll-sitemap
 
 css:
   style: compressed
