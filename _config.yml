@@ -27,21 +27,12 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-gzip
   - jekyll-include-cache
   - jekyll-sitemap
 
 gem: 
   - jekyll-sitemap
   - jekyll-redirect-from
-
-#gzip configuration
-gzip:
-  extensions:
-    - '.html'
-    - '.css'
-    - '.js'
-    - '.md'
 
 css:
   style: compressed
