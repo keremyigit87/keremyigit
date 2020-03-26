@@ -9,4 +9,6 @@ permalink: robots.txt
 User-agent: *
 Disallow: /blogs.html
 Disallow: /process/
+Allow: /
+
 Sitemap: https://keremyigit.com/sitemap.xml
