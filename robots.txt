@@ -1,3 +1,4 @@
 User-agent: *
+Disallow: /404.html
+Disallow: /blogs.html
 Sitemap: https://keremyigit.com/sitemap.xml
-Disallow: https://keremyigit.com/404.html
