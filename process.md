@@ -1,7 +1,7 @@
 ---
 layout: process
-title: UX Process | Kullanıcı Deneyimi süreçleri nasıl işler?
-description: Kullanıcı deneyimi süreclerindeki UX methodları nelerdir? Hangi aşamalardan geçer? Proje yol haritası nasıl olur?
+title: UI/UX Roadmap | Kullanıcı Deneyimi süreçleri nasıl işler?
+description: Kullanıcı deneyimi ve arayüz tasarımı yol haritası nasıl olur? Süreçler neler? Hangi UX methodları kullanılır.
 permalink: /process/
 ---
 
