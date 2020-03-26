@@ -1,14 +1,7 @@
----
-layout: null
-permalink: robots.txt
----
-
-# www.robotstxt.org/
-# www.google.com/support/webmasters/bin/answer.py?hl=en&answer=156449
-
-User-agent: *
+User-Agent: *
+Allow: 
+Disallow: /404.html
+Disallow: /process
 Disallow: /blogs.html
-Disallow: /process/
-Allow: /
 
 Sitemap: https://keremyigit.com/sitemap.xml
