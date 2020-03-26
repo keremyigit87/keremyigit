@@ -33,9 +33,6 @@ plugins:
 gems: 
   - jekyll-sitemap
 
-whitelist:
-  - jekyll-sitemap
-
 css:
   style: compressed
 
