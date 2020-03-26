@@ -30,7 +30,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-sitemap
 
-gem: 
+gems: 
   - jekyll-sitemap
   - jekyll-redirect-from
 
