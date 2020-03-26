@@ -6,12 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta itemprop="description" name="description"
+        content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
+    <title>{%if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}
+    </title>
     <!-- Styles -->
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Nunito:300,400&display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Nunito:300,400&display=swap">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/fullpage.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/style-sub-page.css" />{% include analytics.html %}
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/style-sub-page.css" />
+    {% include analytics.html %}
+    <meta name="robots" content="noindex nofollow">
 </head>
 
 
@@ -30,7 +37,8 @@
                     <div class="col-12">
                         <h5 class="font-24-dark-grey margin-bottom-10">Step by Step</h5>
                         <h1 class="font-82-dark-grey margin-bottom-30">UI / UX Roadmap</h1>
-                        <p class="font-34-dark-grey">Kullanıcı deneyimi yaklaşımı dijital ürününüzü yaratmanıza yardımcı olur.</p>
+                        <p class="font-34-dark-grey">Kullanıcı deneyimi yaklaşımı dijital ürününüzü yaratmanıza yardımcı
+                            olur.</p>
                     </div>
                 </div>
             </div>
@@ -44,7 +52,9 @@
                     <div class="col-8">
                         <span class="font-process-number margin-bottom-50">01.</span>
                         <h2 class="font-55-white margin-bottom-10">Keşfet</h2>
-                        <h6 class="font-24-white">Proje kapsamını doğru tanımlamak için “Hangi noktadayız, ne yapmak istiyoruz, neden yapmak istiyoruz, ne yapmalıyız ve nasıl yapacağız?” sorularını süreç boyunca yanıtlamayı, projenin başarılı olması yolunda en önemli aşama olarak
+                        <h6 class="font-24-white">Proje kapsamını doğru tanımlamak için “Hangi noktadayız, ne yapmak
+                            istiyoruz, neden yapmak istiyoruz, ne yapmalıyız ve nasıl yapacağız?” sorularını süreç
+                            boyunca yanıtlamayı, projenin başarılı olması yolunda en önemli aşama olarak
                             görürüz.
                         </h6>
                     </div>
@@ -60,10 +70,16 @@
                     <div class="col-6">
                         <h3 class="font-40-black margin-bottom-25">1. Workshops</h3>
                         <hr class="process-line margin-bottom-25">
-                        <p class="font-24-dark-grey margin-bottom-20">İş hedefleri, kısıtlamaları ve potansiyelleri hakkında bilgi toplama, kullanıcılar, kaynaklar, pazar, proje tanıtımı.</p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Lean Canvas, Business Model Canvas, İlk İzlenim Çalıştayı, Sezgisel Analiz, Empati Haritası</p>
-                        <p class="font-16-dark-grey margin-bottom-50">Amacımız ve hedeflerimiz neler? Kısıtlarımız neler? Hangi kaynakları kullanılabiliriz? Ürün oluştururken akılda tutulması gerekenler nelerdir? Ürünün eşsiz değer önerisi nedir? Hali hazırda saptanmış bilgiler neler? Hangi platformlar
-                            için tasarım yapılacak? Hedef kitle kim? Hedef kitle nasıl segmente edilmiş? Proje rolleri nedir? </p>
+                        <p class="font-24-dark-grey margin-bottom-20">İş hedefleri, kısıtlamaları ve potansiyelleri
+                            hakkında bilgi toplama, kullanıcılar, kaynaklar, pazar, proje tanıtımı.</p>
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Lean Canvas,
+                            Business Model Canvas, İlk İzlenim Çalıştayı, Sezgisel Analiz, Empati Haritası</p>
+                        <p class="font-16-dark-grey margin-bottom-50">Amacımız ve hedeflerimiz neler? Kısıtlarımız
+                            neler? Hangi kaynakları kullanılabiliriz? Ürün oluştururken akılda tutulması gerekenler
+                            nelerdir? Ürünün eşsiz değer önerisi nedir? Hali hazırda saptanmış bilgiler neler? Hangi
+                            platformlar
+                            için tasarım yapılacak? Hedef kitle kim? Hedef kitle nasıl segmente edilmiş? Proje rolleri
+                            nedir? </p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
                             <li>Ürünün tutarlı vizyonu</li>
@@ -103,8 +119,11 @@
                     <div class="col-6">
                         <h3 class="font-40-black margin-bottom-25">2. Araştırma ve Rakip Analizi</h3>
                         <hr class="process-line margin-bottom-25">
-                        <p class="font-24-dark-grey margin-bottom-20">Rakip analizi, dijital kanalların kalitatif ve kantitatif analizi, </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Rakipler kimler? Neyi daha iyi yapıyorlar? Neyi onlardan daha iyi yapabiliriz? Onların hatalarından neler öğrenilebilir? Avantajları neler? Onlara kıyasla avantajlarımız neler? Onlardan farklılaşmayı nasıl planlıyoruz?
+                        <p class="font-24-dark-grey margin-bottom-20">Rakip analizi, dijital kanalların kalitatif ve
+                            kantitatif analizi, </p>
+                        <p class="font-16-dark-grey margin-bottom-50">Rakipler kimler? Neyi daha iyi yapıyorlar? Neyi
+                            onlardan daha iyi yapabiliriz? Onların hatalarından neler öğrenilebilir? Avantajları neler?
+                            Onlara kıyasla avantajlarımız neler? Onlardan farklılaşmayı nasıl planlıyoruz?
                         </p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
@@ -125,10 +144,16 @@
                     <div class="col-6">
                         <h3 class="font-40-black margin-bottom-25">3. Kullanıcı Araştırmaları & İçgörü Toplama</h3>
                         <hr class="process-line margin-bottom-25">
-                        <p class="font-24-dark-grey margin-bottom-20">Kullanıcılar hakkında bilgi toplama, hedeflerini, davranışlarını, motivasyonlarını, karar verme süreçlerini, bilgilerini ve problemlerini öğrenme.</p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Birebir görüşmeler, kullanıcı ile bir gün, anketler, bağlamsal görüşme, gözlemler.
+                        <p class="font-24-dark-grey margin-bottom-20">Kullanıcılar hakkında bilgi toplama, hedeflerini,
+                            davranışlarını, motivasyonlarını, karar verme süreçlerini, bilgilerini ve problemlerini
+                            öğrenme.</p>
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Birebir
+                            görüşmeler, kullanıcı ile bir gün, anketler, bağlamsal görüşme, gözlemler.
                         </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Potansiyel kullanıcılarınız kimler? Neye ihtiyaçları var? Ürünü nasıl kullanacaklar? Beklentileri neler? Çözüme ihtiyaçları olan problemleri neler? Rekabetçi çözümleri kullanıyorlar mı? Onları nasıl ve neden kullanıyorlar?</p>
+                        <p class="font-16-dark-grey margin-bottom-50">Potansiyel kullanıcılarınız kimler? Neye
+                            ihtiyaçları var? Ürünü nasıl kullanacaklar? Beklentileri neler? Çözüme ihtiyaçları olan
+                            problemleri neler? Rekabetçi çözümleri kullanıyorlar mı? Onları nasıl ve neden
+                            kullanıyorlar?</p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
                             <li>Personalar</li>
@@ -158,7 +183,9 @@
                     <div class="col-8">
                         <span class="font-process-number margin-bottom-50">02.</span>
                         <h2 class="font-55-white margin-bottom-10">Düşün</h2>
-                        <h6 class="font-24-white">Keşif aşamasında elde ettiğimiz bulguları derinlemesine analiz edip yapılandırarak, bizi gitmek istediğimiz noktaya götürecek en etkin yolu tanımlamak, tasarım sürecinin doğru temellere oturması için vazgeçilmezdir.
+                        <h6 class="font-24-white">Keşif aşamasında elde ettiğimiz bulguları derinlemesine analiz edip
+                            yapılandırarak, bizi gitmek istediğimiz noktaya götürecek en etkin yolu tanımlamak, tasarım
+                            sürecinin doğru temellere oturması için vazgeçilmezdir.
                         </h6>
                     </div>
                 </div>
@@ -173,10 +200,14 @@
                     <div class="col-6">
                         <h3 class="font-40-black margin-bottom-25">1. Problemi Tanımlama</h3>
                         <hr class="process-line margin-bottom-25">
-                        <p class="font-24-dark-grey margin-bottom-20">Toplanan tüm bilgilerin analizi, hipotez backlog, strateji geliştirme, marka kişiliği, kullanıcı tipleri ve yetkileri. </p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Marka kişliği çalıştayı, Brainstorming, Ideations prompts, What if … prompts.
+                        <p class="font-24-dark-grey margin-bottom-20">Toplanan tüm bilgilerin analizi, hipotez backlog,
+                            strateji geliştirme, marka kişiliği, kullanıcı tipleri ve yetkileri. </p>
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Marka kişliği
+                            çalıştayı, Brainstorming, Ideations prompts, What if … prompts.
                         </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Potansiyel kullanıcılarınız yaşadığı problemler neler? Biz bu problemelere nasıl çözümler üretebiliriz? Markanızın dili ne olmalı? Hipotezlerimiz neler? Yol haritamızı yeniden güncellemeli miyiz?</p>
+                        <p class="font-16-dark-grey margin-bottom-50">Potansiyel kullanıcılarınız yaşadığı problemler
+                            neler? Biz bu problemelere nasıl çözümler üretebiliriz? Markanızın dili ne olmalı?
+                            Hipotezlerimiz neler? Yol haritamızı yeniden güncellemeli miyiz?</p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
                             <li>Hipotez backlog</li>
@@ -215,10 +246,14 @@
                         <h3 class="font-40-black margin-bottom-25">2. Kullanıcı Senaryoları, Akışlar
                         </h3>
                         <hr class="process-line margin-bottom-25">
-                        <p class="font-24-dark-grey margin-bottom-20">Ürünü kullanırken olası kullanıcı yollarını tanımlama. Temel ekranların ilk taslaklarını oluşturma.</p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>User flows, Story boards, Lo-Wi Wireframe, Overflow.io
+                        <p class="font-24-dark-grey margin-bottom-20">Ürünü kullanırken olası kullanıcı yollarını
+                            tanımlama. Temel ekranların ilk taslaklarını oluşturma.</p>
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>User flows, Story
+                            boards, Lo-Wi Wireframe, Overflow.io
                         </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Kullanıcılar ürünü kullanırken nasıl davranacak? Kaç tane kullanıcı yolu tanımlayabiliriz? Kullanıcılar ana görevleri gerçekleştirmek için adım adım ne yapacak? Olası kullanıcı senaryoları nelerdir? Ürünü kullanmanın olası yolları
+                        <p class="font-16-dark-grey margin-bottom-50">Kullanıcılar ürünü kullanırken nasıl davranacak?
+                            Kaç tane kullanıcı yolu tanımlayabiliriz? Kullanıcılar ana görevleri gerçekleştirmek için
+                            adım adım ne yapacak? Olası kullanıcı senaryoları nelerdir? Ürünü kullanmanın olası yolları
                             nelerdir? Ürünü kullanma bağlamı nedir?</p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
@@ -240,10 +275,14 @@
                     <div class="col-6">
                         <h3 class="font-40-black margin-bottom-25">3. Bilgi Mimarisi</h3>
                         <hr class="process-line margin-bottom-25">
-                        <p class="font-24-dark-grey margin-bottom-20">Kapsamın şimdiye kadar toplanan bilgiler temelinde ayarlanması. </p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Card Sorting, Tree Test, Flows, Site map, mind mapping
+                        <p class="font-24-dark-grey margin-bottom-20">Kapsamın şimdiye kadar toplanan bilgiler temelinde
+                            ayarlanması. </p>
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Card Sorting,
+                            Tree Test, Flows, Site map, mind mapping
                         </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Hangi özellikler gereklidir? MVP (Minimum Viable Product) nedir? Hangi özellikler erken müşteri memnuniyeti ve geri bildirim sağlamak ve gelecekte ürünü geliştirmek için çok önemlidir? Bir sonraki aşamada ne yapılabilir?</p>
+                        <p class="font-16-dark-grey margin-bottom-50">Hangi özellikler gereklidir? MVP (Minimum Viable
+                            Product) nedir? Hangi özellikler erken müşteri memnuniyeti ve geri bildirim sağlamak ve
+                            gelecekte ürünü geliştirmek için çok önemlidir? Bir sonraki aşamada ne yapılabilir?</p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
                             <li>Site Haritası</li>
@@ -273,7 +312,9 @@
                     <div class="col-8">
                         <span class="font-process-number margin-bottom-50">03.</span>
                         <h2 class="font-55-white margin-bottom-10">Tasarla</h2>
-                        <h6 class="font-24-white">Keşif aşamasında elde ettiğimiz bulguları derinlemesine analiz edip yapılandırarak, bizi gitmek istediğimiz noktaya götürecek en etkin yolu tanımlamak, tasarım sürecinin doğru temellere oturması için vazgeçilmezdir.
+                        <h6 class="font-24-white">Keşif aşamasında elde ettiğimiz bulguları derinlemesine analiz edip
+                            yapılandırarak, bizi gitmek istediğimiz noktaya götürecek en etkin yolu tanımlamak, tasarım
+                            sürecinin doğru temellere oturması için vazgeçilmezdir.
                         </h6>
                     </div>
                 </div>
@@ -289,9 +330,12 @@
                         <h3 class="font-40-black margin-bottom-25">1. Prototip ve Etkileşimler</h3>
                         <hr class="process-line margin-bottom-25">
                         <p class="font-24-dark-grey margin-bottom-20">Ürünün belirli kısımlarının görsel sunumu. </p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Hi-Fi Mockups, Adobe XD
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Hi-Fi Mockups,
+                            Adobe XD
                         </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Hangi ekranlara ihtiyacımız var? Ekrana belirli elemanlar nasıl yerleştirilir? Hangi bilgiler vurgulanmalı? Çözüm olası tüm kullanıcı senaryolarını kapsıyor mu?</p>
+                        <p class="font-16-dark-grey margin-bottom-50">Hangi ekranlara ihtiyacımız var? Ekrana belirli
+                            elemanlar nasıl yerleştirilir? Hangi bilgiler vurgulanmalı? Çözüm olası tüm kullanıcı
+                            senaryolarını kapsıyor mu?</p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
                             <li>Hi-Fi Mockups</li>
@@ -330,10 +374,15 @@
                         <h3 class="font-40-black margin-bottom-25">2. Kullanıcı Testleri & Ürün Geliştirme
                         </h3>
                         <hr class="process-line margin-bottom-25">
-                        <p class="font-24-dark-grey margin-bottom-20">Fikrin sezgisel ve izleyici için çekici olup olmadığını kontrol etmek. Hataların belirlenmesi, prototipi uygulamadan önce optimize etmek.</p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Kullanılabilirlik testleri, A/B Testleri,
+                        <p class="font-24-dark-grey margin-bottom-20">Fikrin sezgisel ve izleyici için çekici olup
+                            olmadığını kontrol etmek. Hataların belirlenmesi, prototipi uygulamadan önce optimize etmek.
                         </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Bu çözüm optimal mi? kullanıcılar ürününüze nasıl tepki veriyor? Kullanıcıların belirli görevleri tamamlamaları ne kadar kolay? Yazılım aşamasından önce neleri geliştirebiliriz?
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Kullanılabilirlik
+                            testleri, A/B Testleri,
+                        </p>
+                        <p class="font-16-dark-grey margin-bottom-50">Bu çözüm optimal mi? kullanıcılar ürününüze nasıl
+                            tepki veriyor? Kullanıcıların belirli görevleri tamamlamaları ne kadar kolay? Yazılım
+                            aşamasından önce neleri geliştirebiliriz?
                         </p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
@@ -353,9 +402,12 @@
                         <h3 class="font-40-black margin-bottom-25">3. Arayüz Tasarımı</h3>
                         <hr class="process-line margin-bottom-25">
                         <p class="font-24-dark-grey margin-bottom-20">Ürünün son görünümünü yaratmak. </p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Adobe XD, Photoshop, Illustrator
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">TOOLS: </span>Adobe XD,
+                            Photoshop, Illustrator
                         </p>
-                        <p class="font-16-dark-grey margin-bottom-50">Son görünüm ve kullanım, kullanıcılara uygun mu? Bu aşamada kullanılabilirlik ile ilgili bir problem var mı? Nihai tasarım ürünün vizyonuyla uyumlu mu? Etkileşimli öğeler benzer mi görünüyor? Harekete geçirme çağrısı (CTA - Call
+                        <p class="font-16-dark-grey margin-bottom-50">Son görünüm ve kullanım, kullanıcılara uygun mu?
+                            Bu aşamada kullanılabilirlik ile ilgili bir problem var mı? Nihai tasarım ürünün vizyonuyla
+                            uyumlu mu? Etkileşimli öğeler benzer mi görünüyor? Harekete geçirme çağrısı (CTA - Call
                             to Action) doğru şekilde mi vurgulanıyor? Öğelerin hiyerarşisi doğru mu?</p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
                         <ul class="process-list">
@@ -386,7 +438,8 @@
                     <div class="col-8">
                         <span class="font-process-number margin-bottom-50">04.</span>
                         <h2 class="font-55-white margin-bottom-10">Uygulama</h2>
-                        <h6 class="font-24-white">Uygulamanızı canlıya alırken, modern arayüz frameworklerini kullanır, SEO uyumlu ve Erişebilir olması için çalışırız.
+                        <h6 class="font-24-white">Uygulamanızı canlıya alırken, modern arayüz frameworklerini kullanır,
+                            SEO uyumlu ve Erişebilir olması için çalışırız.
                         </h6>
                     </div>
                 </div>
@@ -402,7 +455,8 @@
                         <h3 class="font-40-black margin-bottom-25">1. Yazılım Geliştirme</h3>
                         <hr class="process-line margin-bottom-25">
                         <p class="font-24-dark-grey margin-bottom-20">Ürününüzün yazılım geliştirme süreci </p>
-                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">FRAMEWORKS & LANGUAGE: </span> HTML5, CSS3, Javascript, Jquery, Angular, Lottie, Fullpage.js, anime.js
+                        <p class="font-16-dark-grey margin-bottom-30"><span class="bold">FRAMEWORKS & LANGUAGE: </span>
+                            HTML5, CSS3, Javascript, Jquery, Angular, Lottie, Fullpage.js, anime.js
                         </p>
                         <p class="font-16-dark-grey margin-bottom-50"></p>
                         <div class="font-30-dark-grey margin-bottom-20">Çıktılar</div>
