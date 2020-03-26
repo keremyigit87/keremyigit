@@ -29,10 +29,13 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 gems: 
   - jekyll-sitemap
-  - jekyll-redirect-from
+
+whitelist:
+  - jekyll-sitemap
 
 css:
   style: compressed
