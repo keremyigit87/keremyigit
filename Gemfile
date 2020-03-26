@@ -23,7 +23,6 @@ group :jekyll_plugins do
   gem "jekyll-include-cache"
 end
 
-gem 'jekyll-redirect-from'
 gem 'jekyll-sitemap'
 
 
