@@ -108,7 +108,7 @@ headerToHome.addEventListener("click", function() {
 
 headerToAbout.addEventListener("click", function() {
 	body.classList.remove("open-menu");
-	pageTransition('/hakkimda');
+	pageTransition('/about');
   });
 
 headerToService.addEventListener("click", function() {

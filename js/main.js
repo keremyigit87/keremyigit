@@ -74,7 +74,7 @@ function openHome() {
 function openWelcome() {}
 
 homeToAbout.addEventListener("click", function() {
-  pageTransition('/hakkimda');
+  pageTransition('/about');
 });
 
 homeToServices.addEventListener("click", function() {

@@ -115,7 +115,7 @@ headerToAbout.addEventListener("click", function() {
         delay:0.1
       });
        setTimeout(function() {
-         window.location.pathname = '/hakkimda';
+         window.location.pathname = '/about';
        }, 1000);
       }, 400);
   });
