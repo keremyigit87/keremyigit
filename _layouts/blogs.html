@@ -2,35 +2,7 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Begin Jekyll SEO tag v2.5.0 -->
-    <meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
-    <title>{%if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %} </title>
-
-    <meta property="og:locale" content="en_US">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:image" content="{{ site.url }}/thumbs/{{ page.image }}" />
-    <meta property="og:site_name" content="Kerem Yiğit's Blog">
-    <meta property="article:publisher" content="http://www.facebook.com/kerem.yigit.566" />
-    <meta property="article:author" content="https://www.facebook.com/kerem.yigit.566" />
-    <meta property="article:published_time" content="{{ page.date }}" />
-    <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-
-    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
-
-    <!-- Styles -->
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/reset.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700|Nunito:300,400&display=swap">
-    <link rel="stylesheet" type="text/css" media="screen" href="{{ site.baseurl }}/css/main.css" />
-
-    <!-- Modernizr -->
-    <script src="{{ site.baseurl }}/js/modernizr.js"></script>
-    {% include analytics.html %}
+    {% include head.html %}
 </head>
 
 <body id="work-studies" class="page">
