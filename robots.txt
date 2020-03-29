@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: 
+
+Sitemap: https://keremyigit.com/sitemap.xml
