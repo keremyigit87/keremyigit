@@ -428,7 +428,14 @@ body {
 .my-main-social li:nth-of-type(5) a {
     background: url('/img/dribbble.svg') no-repeat center center;
 }
-
+@media(max-width:1366px) and (min-width:1024px){
+    #home .my-main-nav ul li a{
+        font-size: 50px;
+    }
+    #home .my-main-nav ul li{
+        margin-top: 0vh;
+    }
+}
 @media(max-width:1024px) {
     #home .my-hello {
         font-size: 178px;
@@ -473,6 +480,13 @@ body {
     }
     #home.work .sign-logo-wrapper{
         display: block !important;
+    }
+    #home .my-main-nav ul li{
+        margin-top:0;
+    }
+    #home .my-main-nav ul li a{
+        font-size: 7vw;
+        line-height: 14vw;
     }
 }
 
@@ -2720,7 +2734,7 @@ ul.blog-nav li a:hover+span:before{
     padding-bottom: 20px;
     color: #434343;
     letter-spacing: -.20px;
-    padding-top:20px;
+    padding-top:40px;
 }
 
 .blog-detail h5{
@@ -2774,7 +2788,7 @@ ul.blog-nav li a:hover+span:before{
     left: 0;
     width:3px;
     height:100%;
-    background:#0A00FD;
+    background:#d4d4d4;
 }
 .blog-detail blockquote p{
     padding-top:20px;
