@@ -986,6 +986,11 @@ body.open-menu {
     .container {
         max-width: 768px;
     }
+    .container-blog{
+        max-width: 100%;
+        margin: 0;
+        padding: 0 20px;
+    }
 }
 
 @media(max-width:768px) {
@@ -2735,6 +2740,7 @@ ul.blog-nav li a:hover+span:before{
     color: #434343;
     letter-spacing: -.20px;
     padding-top:40px;
+    line-height: 34px;
 }
 
 .blog-detail h5{
@@ -2744,6 +2750,7 @@ ul.blog-nav li a:hover+span:before{
     color: #434343;
     letter-spacing: -.20px;
     padding-top:20px;
+    line-height:30px;
 }
 .blog-detail h6{
     font-size:16px;
@@ -2751,6 +2758,7 @@ ul.blog-nav li a:hover+span:before{
     padding-bottom: 10px;
     color: #434343;
     letter-spacing: -.20px;
+    line-height: 26px;
 }
 .blog-detail img{
     width:100%;
@@ -2797,4 +2805,16 @@ ul.blog-nav li a:hover+span:before{
     margin-top: 40px;
     padding-left:40px;
     font-weight: 600;
+}
+@media(max-width:768px){
+    .blog-card{
+        width: 100%;
+    }
+    .blog-detail h1{
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .blog-detail .space100{
+        height: 50px;
+    }
 }
