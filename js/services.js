@@ -134,6 +134,30 @@ headerToAbout.addEventListener("click", function() {
   },400);
 });
 
+headerToBlog.addEventListener("click", function() {
+  body.classList.remove("open-menu");
+  HamburgerTrigger.classList.remove("pushed");
+  setTimeout(function() {
+    TweenMax.to(".page-transition-black", 1, {
+      transform: "translateX(100%)",
+      ease: Power2.easeInOut
+    });
+    TweenMax.to(".page-transition-white", 0.8, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut,
+      delay:0.1
+    });
+    TweenMax.to(".page-transition-black-2", 1, {
+      transform: "translateX(0)",
+      ease: Power2.easeInOut,
+      delay:0.2
+    });
+     setTimeout(function() {
+       window.location.pathname = '/';
+     }, 1200);
+  }, 500);
+});
+
 goToHome.addEventListener("mouseenter", function() {
   TweenMax.to(goToHome, 1, {
     scale: 1.3

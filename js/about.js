@@ -106,23 +106,11 @@ headerToHome.addEventListener("click", function() {
      }, 1200);
   }, 500);
 });
-// Case study sayfasına geçiş stransition'ı js
-// headerToWorks.addEventListener("click", function() {
-//   body.classList.remove("open-menu");
-//   setTimeout(function() {
-//     TweenMax.to(".page-transition-black", 1, {
-//       transform: "translateX(100%)",
-//       ease: Power2.easeInOut
-//     });
-//     TweenMax.to(".page-transition-white", 1, {
-//       transform: "translateX(0)",
-//       ease: Power2.easeInOut
-//     });
-//     setTimeout(function() {
-//       window.location.pathname = "/work-studies";
-//     }, 1200);
-//   }, 500);
-// });
+
+headerToBlog.addEventListener('click', function(){
+  body.classList.remove('open-menu');
+  pageTransition('/blog');
+});
 
 headerToAbout.addEventListener("click", function() {
   body.classList.remove("open-menu");

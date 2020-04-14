@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include head.html %}
+</head>
+
+<body id="blog-list" class="page">
+    {% include header.html %}
+    <section>
+        <div class="space150"></div>
+        <div class="space150"></div>
+        <div class="container-blog">
+            <div class="row">
+                <div class="col-8">
+                    <h4 class="h4">SON YAZILAR</h4>
+                    {% for post in site.posts %}
+                        {% if post.category[0] == 'BLOG' %}
+                                <a href="{{ post.url }}" class="blog-card">
+                                    <div class="blog-card-img-wrapper">
+                                        <img src="{{site.baseurl}}/img/blog/list-images/{{post.image}}" alt="" class="w-100">
+                                        <span class="blog-card_img_maintag">{{post.category[1] | replace: '-',' '}}</span>
+                                    </div>
+                                    <div class="blog-card_content_wrapper">
+                                        <p class="title">{{ post.title }}</p>
+                                        <span class="subtitle">{{post.tags | join: ", "}}</span>
+                                    </div>
+                                </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <!--<div class="col-4">
+                    <ul class="blog-nav">
+                        <li><a href="">ANALİZ</a><span></span></li>
+                        <li><a href="">ARAŞTIRMA</a><span></span></li>
+                        <li><a href="">TASARIM</a><span></span></li>
+                    </ul>
+                </div>-->
+            </div>
+        </div>
+        <div class="space150"></div>
+        {% include footer.html %}
+    </section>
+    <div class="page-transition-white"></div>
+    <div class="page-transition-black"></div>
+    <div class="page-transition-white-2"></div>
+    <div class="page-transition-black-2"></div>
+</body>
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+<script src="{{ site.baseurl }}/js/blog.js"></script>
+
+</html>

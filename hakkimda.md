@@ -7,7 +7,7 @@ lang: TR
 ref: about
 introText: Merhabalar, adım <span>Kerem.</span> 2014 yılında arayüz kodlama, SEO ve arayüz tasarımı yaparak çalışmaya başladım. <h1>Kullanıcı deneyimi</h1> ve <h3>Tasarım Odaklı Düşünme</h3> metodolojisi kavramlarıyla tanışmam ile tüm ilgimi kullanıcıları anlamaya, kullanıcıların problemlerini analiz edip davranışlarını ölçümleyerek tasarım yapmaya, kendimi bu yönde ilerlemeye ve geliştirmeye odakladım. Bu süreçte birçok projede kullanıcı araştırmaları, fikir üretme çalışmaları, akış diyagramları, wireframe, etkileşim tasarımları ve arayüz tasarımları yaptım.
 btnText: BLOG
-btnUrl: /blogs/
+btnUrl: /blog/
 abilityTitle: UX Yeteneklerim
 abilityContent: <li>Kullanıcı Araştırmaları</li> <li>Keşif &amp; İhtiyaç Analizi</li> <li>Dönüşüm Optimizasyonu</li> <li>Kullanıcı Deneyimi Stratejisi &amp; Tasarımı</li> <li>Kullanıcı Arayüz Tasarımı</li> <li>Etkileşim ve Animasyon Tasarımı</li> <li>Tek Kafesleme ve Prototip</li> <li>Bilgi Mimarisi</li> <li>Kullanılabilirlik Testleri</li> <li>Persona & Kullanıcı Hikayeleri</li><li>Stil Şablonu & Tasarım Sistemi</li><li>Kurumsal Kimlik Oluşturma</li>
 myToolsTitle: Kullandığım Araçlar

@@ -8,6 +8,7 @@ var body = document.getElementsByTagName("body")[0];
 var homeToAbout = document.getElementById("homeToAbout");
 var homeToWorks = document.getElementById("homeToWorks");
 var homeToServices = document.getElementById("homeToServices");
+var homeToBlog = document.getElementById("homeToBlog");
 
 // if (localStorage.getItem('first')) {
 //     console.log('ikinci kez');
@@ -75,6 +76,9 @@ function openWelcome() {}
 
 homeToAbout.addEventListener("click", function() {
   pageTransition('/about');
+});
+homeToBlog.addEventListener("click", function() {
+  pageTransition('/blog');
 });
 
 homeToServices.addEventListener("click", function() {

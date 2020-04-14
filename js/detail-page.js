@@ -62,6 +62,25 @@ goToHome.addEventListener("click", function() {
      window.location.pathname = '/';
    }, 1200);
 });
+
+headerToBlog.addEventListener('click', function(){
+  body.classList.remove('open-menu');
+  HamburgerTrigger.classList.remove("pushed");
+    setTimeout(function(){
+      TweenMax.to(".page-transition-black", 1, {
+        transform: "translateX(100%)",
+        ease: Power2.easeInOut
+      });
+      TweenMax.to(".page-transition-white", 0.8, {
+        transform: "translateX(0)",
+        ease: Power2.easeInOut,
+        delay:0.1
+      });
+       setTimeout(function() {
+         window.location.pathname = '/blog';
+       }, 1000);
+      }, 400);
+});
 headerToHome.addEventListener("click", function() {
   body.classList.remove("open-menu");
   setTimeout(function() {

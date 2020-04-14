@@ -143,6 +143,29 @@ headerToService.addEventListener("click", function() {
 
 
 
+  headerToBlog.addEventListener("click", function() {
+	body.classList.remove("open-menu");
+	HamburgerTrigger.classList.remove("pushed");
+	setTimeout(function() {
+	  TweenMax.to(".page-transition-white", 1, {
+		transform: "translateX(100%)",
+		ease: Power2.easeInOut
+	  });
+	  TweenMax.to(".page-transition-black", 0.8, {
+		transform: "translateX(0)",
+		ease: Power2.easeInOut,
+		delay:0.1
+	  });
+	  TweenMax.to(".page-transition-white-2", 1, {
+		transform: "translateX(0)",
+		ease: Power2.easeInOut,
+		delay:0.2
+	  });
+	   setTimeout(function() {
+		 window.location.pathname = '/blog';
+	   }, 1200);
+	}, 500);
+  });
 
 
 
