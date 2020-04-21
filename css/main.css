@@ -2722,13 +2722,19 @@ ul.blog-nav li a:hover+span:before{
     font-family: 'Nunito';
     line-height: 33px;
 }
-
+.blog-detail p strong{
+    font-weight: 600;
+}
+.blog-detail p em{
+    font-style: italic;
+}
 .blog-detail h1{
     font-size: 54px;
     font-weight: 600;
     color: #434343;
     letter-spacing: -.20px;
     padding-bottom: 20px;
+    line-height: 68px;
 }
 .blog-detail p{
     padding-bottom: 40px;
@@ -2766,10 +2772,16 @@ ul.blog-nav li a:hover+span:before{
 
 .blog-detail ol{
     list-style: decimal;
-    margin-left:18px;
+    margin-left:24px;
     padding-bottom:40px;
 }
-.blog-detail ol li{
+.blog-detail ul{
+    list-style: disc;
+    margin-left:24px;
+    padding-bottom:40px;
+}
+.blog-detail ol li,
+.blog-detail ul li{
     font-size: 21px;
     color: #5A5A5A;
     font-weight: 100;
@@ -2809,6 +2821,10 @@ ul.blog-nav li a:hover+span:before{
 @media(max-width:768px){
     .blog-card{
         width: 100%;
+    }
+    #blog-list .blog-card{
+        margin-right:auto !important;
+        margin-left:auto !important;
     }
     .blog-detail h1{
         font-size: 32px;

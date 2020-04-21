@@ -7,7 +7,7 @@ category: [BLOG, GROWTH-HACKING]
 tags: [GROWTH HACKING, GİRİŞİMCİLİK, PROJE VE ÜRÜN YÖNEİTMİ]
 author: Kerem Yiğit
 permalink: /:categories/:title
-image: /lean_canvas_2.jpg
+image: /growth_hacking/lean_canvas_list.jpg
 
 ---
 # LEAN CANVAS (YALIN KANVAS)
@@ -17,7 +17,7 @@ image: /lean_canvas_2.jpg
 
 Bir iş fikriniz var ve hayata geçirmek istiyorsunuz. Kapsamlı bir iş planı çıkartacak kadar ya zamanınız yok ya da bilginiz. Ama fikrinizi anlatabileceğiniz ve önemli noktaları görmenizi sağlayacak bir plana ihtiyacınız var. İşte tam bu noktada yalın kanvas (Lean Canvas) işinizi görecektir.
 
-![Lean Canvas (Yalın Kanvas şablonu nasıl oluşturulur?)](/img/blog/list-images/lean_canvas_2.jpg "Yalın Kanvas (Lean Canvas) Şablonu")
+![Lean Canvas (Yalın Kanvas şablonu nasıl oluşturulur?)](/img/blog/growth_hacking/lean_canvas/lean_canvas_main.jpg "Yalın Kanvas (Lean Canvas) Şablonu")
 
 ### Nedir Bu Yalın Kanvas?
 
@@ -35,8 +35,8 @@ Hızlı karar alabilen, yeteneklerini aksiyon almaya adayan her Start-up yalın 
 
 ### Yalın Kanvas (Lean Canvas) Nasıl Oluşturulur?
 
-<a href="/img/blog/growth_hacking/lean_canvas.pdf" title="Yalın Kanvas (Lean Canvas) Template" target="_blank" class="link-img">
-  ![Lean Canvas (Yalın Kanvas şablonu nasıl oluşturulur?)](/img/blog/growth_hacking/lean_canvas.jpg "Yalın Kanvas (Lean Canvas) Şablonu")
+<a href="/img/blog/growth_hacking/lean_canvas/lean_canvas.pdf" title="Yalın Kanvas (Lean Canvas) Template" target="_blank" class="link-img">
+  ![Lean Canvas (Yalın Kanvas şablonu nasıl oluşturulur?)](/img/blog/growth_hacking/lean_canvas/lean_canvas.jpg "Yalın Kanvas (Lean Canvas) Şablonu")
   <span>Yalın Kanvas (Lean Canvas) Şablonunu Buradan İndirebilirsiniz.</span>
 </a>
 
