@@ -2591,6 +2591,7 @@ body#blog-list{
 }
 .blog-card_content_wrapper{
     padding: 20px 20px 16px 20px;
+    position: relative;
 }
 .blog-card_content_wrapper .title{
     height: 131px;
@@ -2599,6 +2600,9 @@ body#blog-list{
     color:#898989;
     font-weight: 100;
     font-size: 14px;
+    position: absolute;
+    bottom: 10px;
+    line-height: 20px;
 }
 #blog-list h4.h4:after{
     content: '';

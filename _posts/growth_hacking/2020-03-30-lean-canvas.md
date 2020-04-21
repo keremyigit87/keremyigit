@@ -4,7 +4,7 @@ title:  Lean Canvas (Yalın Kanvas) Nedir?
 description: İş fikrinizin pratik bir şeması olarak tabir edebileceğimiz yalın kanvas nedir? nasıl oluşturulur?
 date:   2020-04-13 19:31:00 +0300
 category: [BLOG, GROWTH-HACKING]
-tags: [GROWTH HACKING, GİRİŞİMCİLİK, PROJE VE ÜRÜN YÖNEİTMİ]
+tags: [GROWTH HACKING, GİRİŞİMCİLİK]
 author: Kerem Yiğit
 permalink: /:categories/:title
 image: /growth_hacking/lean_canvas_list.jpg
