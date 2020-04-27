@@ -987,7 +987,7 @@ body.open-menu {
         max-width: 768px;
     }
     .container-blog{
-        max-width: 100%;
+        max-width: calc(100% - 40px);
         margin: 0;
         padding: 0 20px;
     }
