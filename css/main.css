@@ -98,7 +98,7 @@
     position: absolute !important;
     top: 20%;
     left: 50%;
-    z-index: 1000;
+    z-index: 100;
     transform: translateX(-50%);
 }
 .d-block{
@@ -2822,6 +2822,13 @@ ul.blog-nav li a:hover+span:before{
     padding-left:40px;
     font-weight: 600;
 }
+.blog-detail .img-subtitle{
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    line-height: 18px;
+}
 @media(max-width:768px){
     .blog-card{
         width: 100%;
@@ -2836,5 +2843,8 @@ ul.blog-nav li a:hover+span:before{
     }
     .blog-detail .space100{
         height: 50px;
+    }
+    .blog-detail a{
+        word-wrap: break-word;
     }
 }
