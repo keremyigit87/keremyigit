@@ -1,31 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
+<a href="{{site.baseurl}}/works" class="work-back">BACK</a>
+<main>
+    {{content}}
+</main>
 
-<head>
-    {% include head.html %}
-    <script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
-</head>
-<body class="portfolio-detail">
-    {% include header.html %}
-    <a href="{{site.baseurl}}/works" class="work-back">BACK</a>
-    <main>
-        {{content}}
-    </main>
-    <div class="page-transition-white"></div>
-    <div class="page-transition-black"></div>
-    <div class="page-transition-white-2"></div>
-    <div class="page-transition-black-2"></div>
-    <div class="welcome-screen">
-        <div class="welcome-content">
-            <h4>hello</h4>
-            <h3>My name is Kerem Yiğit</h3>
-            <h2>I am a UX & AI Product Leader / Venture Builder</h2>
-            <p>and this is my portfolio website</p>
-        </div>
-    </div>
-    {% include footer.html %}
-</body>
-
+<script src="https://unpkg.com/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
 <script type="text/javascript">
     window.sr = ScrollReveal();
     sr.reveal('.anim', {
@@ -34,9 +15,5 @@
     })
 </script>
 <!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.min.js"></script>
 <script src="{{ site.baseurl }}/js/detail-page.js"></script>
-
-
-</html>

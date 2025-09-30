@@ -5,8 +5,6 @@ var scene2 = document.getElementsByClassName("js-scene2")[0];
 var parallax2 = new Parallax(scene2);
 
 var body = document.getElementsByTagName("body")[0];
-var homeToAbout = document.getElementById("homeToAbout");
-var homeToBlog = document.getElementById("homeToBlog");
 
 // if (localStorage.getItem('first')) {
 //     console.log('ikinci kez');
@@ -71,33 +69,3 @@ function openHome() {
 }
 
 function openWelcome() {}
-
-homeToAbout.addEventListener("click", function() {
-  pageTransition('/about');
-});
-homeToBlog.addEventListener("click", function() {
-  pageTransition('/blog');
-});
-
-
-
-
-function pageTransition(url){
-  TweenMax.to(".page-transition-white", 1, {
-    transform: "translateX(100%)",
-    ease: Power2.easeInOut
-  });
-  TweenMax.to(".page-transition-black", 0.8, {
-    transform: "translateX(0)",
-    ease: Power2.easeInOut,
-    delay:0.1
-  });
-  TweenMax.to(".page-transition-white-2", 1, {
-    transform: "translateX(0)",
-    ease: Power2.easeInOut,
-    delay:0.2
-  });
-   setTimeout(function() {
-     window.location.pathname = url;
-   }, 1200);
-}

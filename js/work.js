@@ -1,15 +1,7 @@
 var scene = document.getElementsByClassName("js-scene")[0];
 var parallax = new Parallax(scene);
 
-
-
 var body = document.getElementsByTagName("body")[0];
-var homeToAbout = document.getElementById("homeToAbout");
-var homeToWorks = document.getElementById("homeToWorks");
-var homeToService = document.getElementById("homeToService");
-var HamburgerTrigger = document.getElementById("nav-container");
-var headerToHome = document.getElementById("headerToHome");
-
 
 openHome();
 
@@ -77,93 +69,6 @@ function openHome() {
 }
 
 function openWelcome() {}
-
-
-HamburgerTrigger.addEventListener("click", function() {
-  body.classList.toggle("open-menu");
-  HamburgerTrigger.classList.toggle("pushed");
-});
-
-
-
-
-headerToHome.addEventListener("click", function() {
-  body.classList.remove("open-menu");
-  setTimeout(function() {
-    TweenMax.to(".page-transition-white", 1, {
-		transform: "translateX(100%)",
-		ease: Power2.easeInOut
-	  });
-	  TweenMax.to(".page-transition-black", 0.8, {
-		transform: "translateX(0)",
-		ease: Power2.easeInOut,
-		delay:0.1
-	  });
-    setTimeout(function() {
-      window.location.pathname = "/";
-    }, 1000);
-  }, 500);
-});
-
-
-headerToAbout.addEventListener("click", function() {
-	body.classList.remove("open-menu");
-	pageTransition('/about');
-  });
-
-
-
-
-  function pageTransition(url){
-	  setTimeout(function(){
-		TweenMax.to(".page-transition-white", 1, {
-		  transform: "translateX(100%)",
-		  ease: Power2.easeInOut
-		});
-		TweenMax.to(".page-transition-black", 0.8, {
-		  transform: "translateX(0)",
-		  ease: Power2.easeInOut,
-		  delay:0.1
-		});
-		TweenMax.to(".page-transition-white-2", 1, {
-		  transform: "translateX(0)",
-		  ease: Power2.easeInOut,
-		  delay:0.2
-		});
-		 setTimeout(function() {
-		   window.location.pathname = url;
-		 }, 1200);
-	  }, 500);
-  }
-
-
-
-
-  headerToBlog.addEventListener("click", function() {
-	body.classList.remove("open-menu");
-	HamburgerTrigger.classList.remove("pushed");
-	setTimeout(function() {
-	  TweenMax.to(".page-transition-white", 1, {
-		transform: "translateX(100%)",
-		ease: Power2.easeInOut
-	  });
-	  TweenMax.to(".page-transition-black", 0.8, {
-		transform: "translateX(0)",
-		ease: Power2.easeInOut,
-		delay:0.1
-	  });
-	  TweenMax.to(".page-transition-white-2", 1, {
-		transform: "translateX(0)",
-		ease: Power2.easeInOut,
-		delay:0.2
-	  });
-	   setTimeout(function() {
-		 window.location.pathname = '/blog';
-	   }, 1200);
-	}, 500);
-  });
-
-
 
 ;(function(window) {
 
@@ -360,5 +265,3 @@ headerToAbout.addEventListener("click", function() {
 	window.TiltFx = TiltFx;
 
 })(window);
-
-

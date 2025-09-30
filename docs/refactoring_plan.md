@@ -9,9 +9,9 @@ Bu doküman, projedeki kod tekrarını azaltmak ve daha sürdürülebilir bir ya
     - [ ] Temel HTML iskeletini (`<html>`, `<head>`) içermeli.
     - [ ] `<body>` etiketi, `<body id="{{ page.page_id }}" class="page {{ page.body_class }}">` yapısıyla hem `id` hem de `class` için dinamik olmalı.
     - [ ] `{% include head.html %}` çağrısını içermeli.
-    - [ ] `{% include header.html %}` çağrısını içermeli.
+    - [ ] `{% include header.html %}` çağrısını içermeli (Anasayfa hariç).
     - [ ] Sayfa içeriği için `{{ content }}` değişkenini eklemeli.
-    - [ ] `{% include footer.html %}` çağrısını içermeli.
+    - [ ] `{% include footer.html %}` çağrısını içermeli (Anasayfa hariç).
     - [ ] `_includes/page-transitions.html` çağrısını içermeli.
     - [ ] `_includes/scripts.html` (Global script'ler için) çağrısını içermeli.
     - [ ] `_layouts/service.html` içindeki GTM `noscript` etiketi kaldırılacak.
@@ -25,9 +25,9 @@ Bu doküman, projedeki kod tekrarını azaltmak ve daha sürdürülebilir bir ya
 ## Bölüm 2: JavaScript Kod Tekrarını Ortadan Kaldırma
 
 - [ ] **Yeni `js/global.js` dosyası oluştur:**
-    - [ ] Tüm sayfalarda ortak olan `pageTransition` fonksiyonunu bu dosyaya taşı ve merkezileştir. Bu fonksiyon, farklı animasyon sürelerini yönetebilmek için parametrik bir yapıda (`pageTransition(url, timeout)`) olmalıdır.
+    - [ ] Tüm sayfalarda ortak olan `pageTransition` fonksiyonunu bu dosyaya taşı ve merkezileştir. Bu fonksiyon, farklı animasyon sürelerini yönetebilmek için parametrik bir yapıda (`pageTransition(url, timeout, transitionType)`) olmalıdır. `transitionType` parametresi, sayfanın arka plan rengine göre doğru geçiş animasyonunu (siyah veya beyaz) tetiklemelidir. Beyaz arka planlı sayfalardan geçiş yaparken 'white' tipinde animasyonun, siyah arka planlı sayfalardan geçiş yaparken ise 'black' tipinde animasyonun kullanılmasına dikkat edilmelidir.
     - [ ] Header, logo ve menü gibi ortak elemanların event listener'larını bu dosyaya taşı.
-- [ ] **`_includes/scripts.html` dosyasını güncelle:** Oluşturulan `js/global.js` dosyasını diğer ortak script'lerle birlikte bu dosyadan çağır.
+- [ ] **`_includes/scripts.html` dosyasını güncelle:** Oluşturulan `js/global.js` dosyasını diğer ortak script'lerle birlikte bu dosyadan çağır. Script'lerin doğru sırada yüklenmesi (`TweenMax` gibi kütüphanelerin, onları kullanan script'lerden önce gelmesi) için `_layouts/default.html` dosyasında `scripts.html` include'u `<body>` etiketinin hemen sonrasına yerleştirilmelidir.
 - [ ] **Sayfaya özel JS dosyalarını (`main.js`, `about.js` vb.) temizle:**
     - [ ] `global.js`'e taşınan tüm ortak fonksiyonları ve event listener'ları bu dosyalardan sil.
     - [ ] Bu dosyalarda sadece o sayfaya özgü işlevleri bırak.

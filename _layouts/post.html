@@ -1,29 +1,14 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang }}">
-
-<head>
-    {% include head.html %}
-</head>
-
-<body>
-    <a href="{{site.baseurl}}/blog" class="work-back">BACK</a>
-    <div class="row">
-        <div class="container">
-            <div class="space100"></div>
-            <div class="space100"></div>
-            <div class="col-12 blog-detail">{{content}}
-            </div>
+---
+layout: default
+---
+<a href="{{site.baseurl}}/blog" class="work-back">BACK</a>
+<div class="row">
+    <div class="container">
+        <div class="space100"></div>
+        <div class="space100"></div>
+        <div class="col-12 blog-detail">{{content}}
         </div>
     </div>
-
-    {% include footer.html %} {% include header.html %}
-    <div class="page-transition-white"></div>
-    <div class="page-transition-black"></div>
-    <div class="page-transition-white-2"></div>
-    <div class="page-transition-black-2"></div>
-</body>
+</div>
 <!-- Scripts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
 <script src="{{ site.baseurl }}/js/detail-page.js"></script>
-
-</html>

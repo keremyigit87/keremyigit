@@ -1,5 +1,6 @@
 ---
 layout: process
+page_id: process
 title: UI/UX Roadmap | Kullanıcı Deneyimi süreçleri nasıl işler?
 description: Kullanıcı deneyimi ve arayüz tasarımı yol haritası nasıl olur? Süreçler neler? Hangi UX methodları kullanılır.
 permalink: /process/

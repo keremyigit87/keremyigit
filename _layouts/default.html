@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+{% include head.html %}
+
+<body id="{{ page.page_id }}" class="page {{ page.body_class }}">
+
+    {% include scripts.html %}
+
+    {% if page.page_id != 'home' %}
+        {% include header.html %}
+    {% endif %}
+
+    {{ content }}
+
+    {% if page.page_id != 'home' %}
+        {% include footer.html %}
+    {% endif %}
+
+    {% include page-transitions.html %}
+
+</body>
+
+</html>

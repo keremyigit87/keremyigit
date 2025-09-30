@@ -1,5 +1,6 @@
 ---
 layout: about
+page_id: about
 title: Hakkımda | Kerem Yiğit UX & AI Product Leader / Venture Builder
 description: "Kerem Yiğit'in profesyonel yolculuğu, kullanıcı deneyimi, yapay zeka ve ürün geliştirme alanındaki çalışmaları."
 permalink: /about/
