@@ -6,8 +6,6 @@ var parallax2 = new Parallax(scene2);
 
 var body = document.getElementsByTagName("body")[0];
 var homeToAbout = document.getElementById("homeToAbout");
-var homeToWorks = document.getElementById("homeToWorks");
-var homeToServices = document.getElementById("homeToServices");
 var homeToBlog = document.getElementById("homeToBlog");
 
 // if (localStorage.getItem('first')) {
@@ -81,15 +79,8 @@ homeToBlog.addEventListener("click", function() {
   pageTransition('/blog');
 });
 
-homeToServices.addEventListener("click", function() {
-  pageTransition('/service');
-});
 
 
-
-homeToWorks.addEventListener("click", function(){
-  pageTransition('/works');
-});
 
 function pageTransition(url){
   TweenMax.to(".page-transition-white", 1, {

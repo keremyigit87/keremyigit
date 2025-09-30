@@ -1,39 +1,59 @@
 ---
 layout: about
-title: Hakkımda | Kerem Yiğit UX/UI Designer & UI Developer
-description:
+title: Hakkımda | Kerem Yiğit UX & AI Product Leader / Venture Builder
+description: "Kerem Yiğit'in profesyonel yolculuğu, kullanıcı deneyimi, yapay zeka ve ürün geliştirme alanındaki çalışmaları."
 permalink: /about/
 lang: TR
 ref: about
-introText: Merhabalar, adım <span>Kerem.</span> 2014 yılında arayüz kodlama, SEO ve arayüz tasarımı yaparak çalışmaya başladım. <h1>Kullanıcı deneyimi</h1> ve <h3>Tasarım Odaklı Düşünme</h3> metodolojisi kavramlarıyla tanışmam ile tüm ilgimi kullanıcıları anlamaya, kullanıcıların problemlerini analiz edip davranışlarını ölçümleyerek tasarım yapmaya, kendimi bu yönde ilerlemeye ve geliştirmeye odakladım. Bu süreçte birçok projede kullanıcı araştırmaları, fikir üretme çalışmaları, akış diyagramları, wireframe, etkileşim tasarımları ve arayüz tasarımları yaptım.
-btnText: BLOG
-btnUrl: /blog/
-abilityTitle: UX Yeteneklerim
-abilityContent: <li>Kullanıcı Araştırmaları</li> <li>Keşif &amp; İhtiyaç Analizi</li> <li>Dönüşüm Optimizasyonu</li> <li>Kullanıcı Deneyimi Stratejisi &amp; Tasarımı</li> <li>Kullanıcı Arayüz Tasarımı</li> <li>Etkileşim ve Animasyon Tasarımı</li> <li>Tek Kafesleme ve Prototip</li> <li>Bilgi Mimarisi</li> <li>Kullanılabilirlik Testleri</li> <li>Persona & Kullanıcı Hikayeleri</li><li>Stil Şablonu & Tasarım Sistemi</li><li>Kurumsal Kimlik Oluşturma</li>
-myToolsTitle: Kullandığım Araçlar
-myToolsList: <li>Adobe XD</li> <li>Framer X</li> <li>Overflow.io</li> <li>Protopie.io</li> <li>Photoshop</li> <li>Illustrator</li> <li>Hotjar</li> <li>Google Anlytics & Google Tag manager</li> <li>Google Optimizely</li> <li>SEO Optimazly</li><li>Useberry</li>
+
+introText: |
+  Merhabalar, adım <span>Kerem Yiğit.</span>
+  2014 yılında <span>kullanıcı deneyimi</span> ve arayüz tasarımı ile başlayan yolculuğumda, ürün geliştirmenin kodlama, marketing, SEO gibi birçok alanında yer aldım. Fakat hiçbir zaman kullanıcı deneyiminden, araştırma ve analiz yapmaktan ve tasarımdan kopmadım. Şimdi ise uçtan uca bütün ürün geliştirme süreçlerine hakimim. Şimdiye kadar <span>100'ün üzerinde projede</span> tasarım, danışmanlık ve ürün geliştirme süreçlerinde yer aldım.
+
+nextluaTitle: Nextlua Yılları
+nextluaContent: |
+  2017'de arkadaşlarımla birlikte <span>Nextlua</span>'yı kurduk. Küçük bir ekiple başladığımız bu teknoloji ve yazılım şirketi, bugün 60 kişilik bir ekiple <span>Getir Araç, Garenta, Isuzu, Arçelik, İkinciyeni</span> ve <span>eba.gov.tr</span> gibi irili ufaklı onlarca markayla çalışan bir yazılım firmasına dönüştü. Nextlua'da geçirdiğim yıllar bana sadece tasarım değil, ölçekleme, ekip yönetimi ve karmaşık sistemlerde kullanıcı odaklı kalmayı öğretti.
+
+ubigTitle: "Yeni Macera: Ubig Teknoloji"
+ubigContent: |
+  Şimdi ise yeni bir yolculuğa koyuldum. <span>Ubig Teknoloji A.Ş.</span>'yi kurarak hem <span>AI Studio</span> hem de <span>Venture Studio</span> çatısı altında yıllardır hayata geçirmek istediğim fikirleri gerçeğe dönüştürüyorum. Rolüm artık sadece tasarımcı değil; <span>UX & AI Product Leader / Venture Builder</span> olarak yapay zekanın heyecan verici dünyasında kullanıcı odaklı ürünler inşa ediyorum.
+  <br><br>
+  Ubig, benim için bir evrim. Hem kullanıcı odaklı yapay zeka çözümleri sunuyoruz hem de kendi girişimlerimizi hayata geçiriyoruz. Çünkü inanıyorum ki en iyi öğrenme, yaparak ve üreterek olur.
+
+howIWorkTitle: Nasıl Çalışırım?
+howIWorkContent: |
+  Ben tamamen <span>kullanıcı odaklı</span> bir insanım. Ama bu her zaman mükemmel tasarımlar peşinde koşmak anlamına gelmez. MVP geliştirirken gerilla taktiklerle hızlı karar alır, önce pazara girmeye odaklanırım. Çünkü fikirler asla unique değildir; dünyanın bir yerlerinde birileri aynı fikri düşünüyordur. Önemli olan hızlı hareket edip, kullanıcılardan öğrenerek yolda iyileştirmeler yapmaktır.
+  <br><br>
+  Süreç boyunca multidisipliner ekiplerle çalışmayı severim. Proje yöneticileri, geliştiriciler, pazarlama ekipleri... Herkesin bilgisi ve deneyimi projeye katkı sağlar. En iyi kararlar, farklı perspektiflerin buluştuğu yerde alınır.
+
+skillsTitle: Yeteneklerim
+
+skillsList1Title: UX & Product Design
+skillsList1Content: |
+  <li>Kullanıcı Araştırmaları & Keşif</li>
+  <li>UX Stratejisi & Tasarımı</li>
+  <li>Bilgi Mimarisi & Akış Tasarımı</li>
+  <li>Arayüz & Etkileşim Tasarımı</li>
+  <li>Prototipleme & Kullanılabilirlik Testleri</li>
+  <li>Tasarım Sistemleri</li>
+
+skillsList2Title: AI & Product Development
+skillsList2Content: |
+  <li>AI Product Strategy</li>
+  <li>Conversational AI & Chatbot Design</li>
+  <li>Product-Market Fit Analysis</li>
+  <li>Rapid Prototyping & MVP Development</li>
+
+skillsList3Title: Diğer Alanlar
+skillsList3Content: |
+  <li>SEO & Dönüşüm Optimizasyonu</li>
+  <li>Growth Hacking</li>
+  <li>Venture Building</li>
+
 storyTitle: Hikaye Anlatımının Gücü
-storyContent: Benim için her <span>an</span> hikayelerden oluşmaktadır. Yaşadığımız anların hepsini iyi hikayeler oluşturacak şekilde yaşamaya özen gösteririz ya da ileride yaşamak istediğimiz hayallere aracı olması için uğraşırız. Yaptığım her işin benim ve müşterilerim için güçlü ve iyi bir hikaye olmasına özen gösteririm.
-caseBtnText: VAKA ÇALIŞMALARIM
-caseBtnUrl:
-collaborationTitle: İşbirliği
-collaborationContent: Bütün bir arayüz ve kullanıcı deneyimi tasarımı süreci multidisipliner yetenekler gerektirir. Bunların hepsine tek bir kişinin hakim olması mümkün değildir. O yüzden proje boyunca paydaşlar ile birlikte süreci yönetmek onların bilgi ve deneyimlerinden faydalanmak önemlidir. Proje yöneticisi, developer ekibi, satış ve pazarlama ekibi gibi bir çok birimin, ihtiyaca göre sürece dahil olmaları ve kararların ortak ve hedef kitleyi düşünerek alınması projenin başarı şansını arttırır.
-collaborationSubtitle: Proje paydaşları ya da takımlarla işbirliği için kullandığım araçlar
-collaborationTools: <li>Adobe XD</li> <li>MIRO</li> <li>Trello</li>
-collaborationUserTitle:
-collaborationUserContent:
-devTitle: Arayüz Yazılımı (UI Development)
-devContent: Gelişen front-end teknolojileri birçok imkanı beraberinde getiriyor. Bunların hepsine tamamen hakim olmak çok mümkün değil ama temel prensiplerde nelerin yapılabilir olabileceğini ve nasıl yapılabileceği hakkında bilgili olmak, tasarım ve kullanıcı deneyimi süreçlerinde her zaman bir avantaj olarak ortaya çıkar. Aşağıda bilgi sahibi olduğum arayüz yazılımı sürecinde kullanılan script dilleri ve kütüphaneler mevcuttur;
-devList: <li>HTML5</li> <li>CSS, Less, Scss, Sass</li> <li>JS</li><li>Jquery</li><li>Angular, React</li><li>Lottie</li><li>Tweenmax</li>
-experienceTitle: Tasarım Deneyim ile Birleşiyor
-experienceContent: Teknolojinin gelişmesi ve olanakların artmasıyla birlikte tasarım artık kullanıcılar için tek başına pek bir şey ifade etmiyor. Sizin onları anlamanızı ve deneyimledikleri ürün, hizmet ya da serviste sıkıntı yaşamamak istiyorlar. Şunu unutmamak gerekiyor ki insanların söyledikleri ile ihtiyaçları olan şeyler çoğu zaman farklılık göstermektedir. Tam bu noktada kullanıcı deneyimi devreye girer ve kullanıcılarınızı anlamak, tasarımı tasarım için değil, kullanıcılarınızın yaşadığı problemlere ilgili çözümler üretir.
-designThinkingTitle: Design Thinking (Tasarım Odaklı Düşünme)
-designThinkingContent: Tasarım odaklı düşünme, başlangıçtaki bilgi düzeyimiz ve anlayışımız ile göremediğimiz yaklaşımları, stratejileri, problemleri ve/veya çözümleri belirlediğimiz ya da yeniden tanımladığımız iteratif bir süreçtir. Tasarım odaklı düşüncenin tüm çeşitlerinde, nobel ödüllü <span>Herbert Simon</span> tarafından 1969 yılında tarif edilen prensipler geçerlidir. Her projede bu prensipleri göz önünde bulundurarak paydaşlarla birlikte imkanlar ve kısıtlar doğrultusunda projeye uygun bir metodoloji ve özgün yol haritası oluşturarak her projeye ait özel bir hikaye ortaya çıkartırız.
-designThinkingUserTitle:
-designThinkingUserContent:
-designThinkingUser2Title:
-designThinkingUser2Content:
-caseStudyTitle: Örnek birkaç vaka çalışması
-musicTitle: Müzik Deneyimi
-musicContent: 2006 yılından itibaren amatör olarak Bateri çalıyorum. Birçok farklı tarzda birçok farklı grupla sahne aldım. 8 sene önce <span>The Band</span> isimli Blues/Classic Rock grubu kurduk ve hala aktif olarak sahne alıyoruz. Son bir senedir ise <span>FunkOut</span> isimli bir funk grubu ile çalışmalar yapıyoruz.
+storyContent: |
+  Benim için her <span>an</span> hikayelerden oluşur. Yaptığım her işin benim ve müşterilerim için güçlü bir hikaye olmasına özen gösteririm. Çünkü iyi bir ürün, aslında iyi anlatılmış bir hikayedir.
+
+contactText: |
+  <span>İşbirliği yapmak, proje hakkında konuşmak ya da sadece merhaba demek isterseniz benimle iletişime geçebilirsiniz.</span>
 ---

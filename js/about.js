@@ -3,9 +3,7 @@ var scene = document.getElementsByClassName("js-scene")[0];
 
 var goToHome = document.getElementsByClassName("sign-logo-wrapper")[0];
 var headerToHome = document.getElementById("headerToHome");
-var headerToWorks = document.getElementById("headerToWorks");
 var headerToAbout = document.getElementById("headerToAbout");
-var headerToService = document.getElementById("headerToService");
 var HamburgerTrigger = document.getElementById("nav-container");
 var trlTrigger = document.getElementsByClassName("trl")[0];
 
@@ -61,10 +59,6 @@ function openAbout() {
   );
 }
 
-headerToService.addEventListener("click", function() {
-  body.classList.remove("open-menu");
-  pageTransition('/service');
-});
 goToHome.addEventListener("click", function() {
   TweenMax.to(".page-transition-black", 1, {
     transform: "translateX(100%)",
@@ -133,11 +127,6 @@ HamburgerTrigger.addEventListener("click", function() {
   HamburgerTrigger.classList.toggle("pushed");
 });
 
-
-headerToWork.addEventListener("click", function() {
-  body.classList.remove("open-menu");
-  pageTransition('/works');
-});
 
 
 

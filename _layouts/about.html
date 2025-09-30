@@ -13,87 +13,70 @@
             <div class="row">
                 <div class="space150"></div>
                 <div class="space150"></div>
-                <div class="aboutIntro anim">{{page.introText}}</div>
-                <div class="space30"></div>
-                <!-- <a class="button"><span>BLOG<i class="btn-arrow-icon"></i></span></a> -->
+                <div class="col-8">
+                    <p class="aboutIntro anim">{{ page.introText | newline_to_br }}</p>
+                </div>
             </div>
             <div class="space50"></div>
             <div class="row">
-                <div class="col-6">
-                    <ul class="aboutList firstList">
-                        <li>
-                            <span class="anim">{{page.abilityTitle}}</span>
-                        </li>
-                        {{page.abilityContent}}
-                    </ul>
+                <div class="col-8">
+                    <h2 class="title anim">{{ page.nextluaTitle }}</h2>
+                    <p class="aboutIntro anim">{{ page.nextluaContent | newline_to_br }}</p>
                 </div>
-                <div class="col-6">
-                    <ul class="aboutList firstList">
-                        <li>
-                            <span>{{page.myToolsTitle}}</span>
-                        </li>
-                        {{page.myToolsList}}
-                    </ul>
+            </div>
+            <div class="space50"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{ page.ubigTitle }}</h2>
+                    <p class="aboutIntro anim">{{ page.ubigContent | newline_to_br }}</p>
+                </div>
+            </div>
+            <div class="space50"></div>
+            <div class="row">
+                <div class="col-8">
+                    <h2 class="title anim">{{ page.howIWorkTitle }}</h2>
+                    <p class="aboutIntro anim">{{ page.howIWorkContent | newline_to_br }}</p>
                 </div>
             </div>
             <div class="space150"></div>
             <div class="row">
-                <div class="col-8">
-                    <h2 class="title anim">{{page.storyTitle}}</h2>
-                    <p class="text anim">{{page.storyContent}}</p>
-                    <div class="space30"></div>
+                <div class="col-12">
+                    <h2 class="title anim">{{ page.skillsTitle }}</h2>
                 </div>
             </div>
-            <div class="space150"></div>
             <div class="row">
-                <div class="col-8">
-                    <h2 class="title anim">{{page.collaborationTitle}}</h2>
-                    <p class="text anim">{{page.collaborationContent}}</p>
-                    <div class="space30"></div>
+                <div class="col-4">
                     <ul class="aboutList anim">
-                        <li>
-                            <span>{{page.collaborationSubtitle}}</span>
-                        </li>
-                        {{page.collaborationTools}}
+                        <li><span>{{ page.skillsList1Title }}</span></li>
+                        {{ page.skillsList1Content }}
                     </ul>
                 </div>
-            </div>
-            <div class="space150"></div>
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="title anim">{{page.devTitle}}</h2>
-                    <p class="text anim">{{page.devContent}}</p>
-                    <div class="space30"></div>
+                <div class="col-4">
                     <ul class="aboutList anim">
-                        {{page.devList}}
+                        <li><span>{{ page.skillsList2Title }}</span></li>
+                        {{ page.skillsList2Content }}
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <ul class="aboutList anim">
+                        <li><span>{{ page.skillsList3Title }}</span></li>
+                        {{ page.skillsList3Content }}
                     </ul>
                 </div>
             </div>
-            <div class="space150"></div>
+            <div class="space50"></div>
             <div class="row">
                 <div class="col-8">
-                    <h2 class="title anim">{{page.experienceTitle}}</h2>
-                    <p class="text anim">{{page.experienceContent}}</p>
+                    <h2 class="title anim">{{ page.storyTitle }}</h2>
+                    <p class="aboutIntro anim">{{ page.storyContent | newline_to_br }}</p>
                 </div>
             </div>
-            <div class="space150"></div>
+            <div class="space50"></div>
             <div class="row">
                 <div class="col-8">
-                    <h2 class="title anim">{{page.designThinkingTitle}}</h2>
-                    <p class="text anim">{{page.designThinkingContent}}</p>
-                </div>
-            </div>
-            <div class="space150"></div>
-            <div class="row">
-                <div class="col-8">
-                    <h2 class="title anim">{{page.musicTitle}}</h2>
-                    <p class="text anim">{{page.musicContent}}</p>
-                    <a href="https://www.instagram.com/thebandnerede/" class="band-box anim" target="_blank">
-                        <img src="/img/the_band.jpg" alt="the band music band" loading="lazy">
-                    </a>
-                    <a href="https://www.youtube.com/channel/UCYWG86Ia6QyxNc5QCkuKpwA" class="band-box anim" target="_blank">
-                        <img src="/img/funkout.jpg" alt="funkout funk music band" loading="lazy">
-                    </a>
+                    <hr style="border-top: 1px solid #dbdbdb; margin: 30px 0;">
+                    <p class="aboutIntro anim">{{ page.contactText }}</p>
+                    
                 </div>
             </div>
         </div>
@@ -105,13 +88,6 @@
     <div class="page-transition-white-2"></div>
     <div class="page-transition-black-2"></div>
 
-    <script type="text/javascript">
-        window.sr = ScrollReveal();
-        sr.reveal('.anim', {
-            duration: 2000,
-            distance: '100px',
-        })
-    </script>
 </body>
 <!-- Scripts -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>

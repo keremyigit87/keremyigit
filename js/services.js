@@ -3,7 +3,6 @@ var scene = document.getElementsByClassName("js-scene")[0];
 
 var goToHome = document.getElementsByClassName("sign-logo-wrapper")[0];
 var headerToHome = document.getElementById("headerToHome");
-var headerToWorks = document.getElementById("headerToWorks");
 var headerToService = document.getElementById("headerToService");
 var headerToAbout = document.getElementById("headerToAbout");
 var HamburgerTrigger = document.getElementById("nav-container");
@@ -177,24 +176,6 @@ HamburgerTrigger.addEventListener("click", function() {
 headerToService.addEventListener('click', function(){
   HamburgerTrigger.classList.remove('pushed');
   body.classList.remove('open-menu');
-});
-
-headerToWork.addEventListener("click", function() {
-  body.classList.remove("open-menu");
-  setTimeout(function() {
-    TweenMax.to(".page-transition-black", 1, {
-      transform: "translateX(100%)",
-      ease: Power2.easeInOut
-    });
-    TweenMax.to(".page-transition-white", 1, {
-      transform: "translateX(0)",
-      ease: Power2.easeInOut,
-      delay:0.1
-    });
-     setTimeout(function() {
-       window.location.pathname = "/works";
-     }, 1200);
-  }, 500);
 });
 
 

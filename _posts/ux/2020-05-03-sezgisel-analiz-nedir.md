@@ -12,7 +12,7 @@ image: /ux/sezgisel-analiz-nedir.jpg
 ---
 # SEZGİSEL DEĞERLEME (HEURISTIC EVALUATION) NEDİR?
 
-<div class="tags">UX DESIGN, UX ANALYSIS, UX METHODS</div>
+<div class="tags" aria-hidden="true">UX DESIGN, UX ANALYSIS, UX METHODS</div>
 <div class="space100"></div>
 
 > 'Geçmiş deneyimlerden öğrenerek pratik yollarla problem çözme metodu.' Oxford English Dictionary

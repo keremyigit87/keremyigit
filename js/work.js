@@ -111,10 +111,6 @@ headerToAbout.addEventListener("click", function() {
 	pageTransition('/about');
   });
 
-headerToService.addEventListener("click", function() {
-	body.classList.remove("open-menu");
-	pageTransition('/service');
-  });
 
 
 

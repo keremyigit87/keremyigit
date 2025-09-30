@@ -12,7 +12,7 @@ image: /growth_hacking/lean_canvas_list.jpg
 ---
 # LEAN CANVAS (YALIN KANVAS)
 
-<div class="tags">GROWTH HACKING, GİRİŞİMCİLİK, PROJE VE ÜRÜN YÖNEİTMİ</div>
+<div class="tags" aria-hidden="true">GROWTH HACKING, GİRİŞİMCİLİK, PROJE VE ÜRÜN YÖNEİTMİ</div>
 <div class="space100"></div>
 
 Bir iş fikriniz var ve hayata geçirmek istiyorsunuz. Kapsamlı bir iş planı çıkartacak kadar ya zamanınız yok ya da bilginiz. Ama fikrinizi anlatabileceğiniz ve önemli noktaları görmenizi sağlayacak bir plana ihtiyacınız var. İşte tam bu noktada yalın kanvas (Lean Canvas) işinizi görecektir.

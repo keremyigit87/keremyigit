@@ -3,9 +3,8 @@ var scene = document.getElementsByClassName("js-scene")[0];
 
 var goToHome = document.getElementsByClassName("sign-logo-wrapper")[0];
 var headerToHome = document.getElementById("headerToHome");
-var headerToWorks = document.getElementById("headerToWorks");
+var headerToBlog = document.getElementById("headerToBlog");
 var headerToAbout = document.getElementById("headerToAbout");
-var homeToService = document.getElementById("homeToService");
 var HamburgerTrigger = document.getElementById("nav-container");
 var trlTrigger = document.getElementsByClassName("trl")[0];
 
@@ -138,42 +137,3 @@ headerToAbout.addEventListener("click", function() {
        }, 1000);
       }, 400);
   });
-
-  headerToWork.addEventListener("click", function() {
-    body.classList.remove("open-menu");
-    HamburgerTrigger.classList.remove("pushed");
-    setTimeout(function(){
-      TweenMax.to(".page-transition-black", 1, {
-        transform: "translateX(100%)",
-        ease: Power2.easeInOut
-      });
-      TweenMax.to(".page-transition-white", 0.8, {
-        transform: "translateX(0)",
-        ease: Power2.easeInOut,
-        delay:0.1
-      });
-       setTimeout(function() {
-         window.location.pathname = '/works';
-       }, 1000);
-      }, 500);
-  });
-
-  headerToService.addEventListener("click", function() {
-    body.classList.remove("open-menu");
-    HamburgerTrigger.classList.remove("pushed");
-    setTimeout(function() {
-      TweenMax.to(".page-transition-black", 1, {
-        transform: "translateX(100%)",
-        ease: Power2.easeInOut
-      });
-      TweenMax.to(".page-transition-white", 0.8, {
-        transform: "translateX(0)",
-        ease: Power2.easeInOut,
-        delay:0.1
-      });
-      setTimeout(function() {
-      window.location.pathname = "/service";
-      }, 1000);
-    }, 500);
-    });
-  
